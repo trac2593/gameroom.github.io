@@ -1,0 +1,47 @@
+/* Empty. Add your own CSS if you like */
+.headerImg{
+	width: 70%;
+	height: 70%;
+	position: fixed;
+}
+.bar-light{
+	height:10%;
+
+}
+table{
+	height: ;
+	width: 100%;
+	padding: 0%;
+	border-collapse: collapse;
+	line-height: 0;
+}
+tr{
+	line-height: 0;
+}
+.landingPage{
+	height: 100%;
+	width:100%;
+	padding: 0%;
+}
+.landing-Img-Top{
+	height: 20%;
+	width: 100%;
+	padding: 0%;
+	border-collapse: collapse;
+	float: left;
+}
+.landing-Img-Middle{
+	height: 50%;
+	width: 100%;
+	padding:0%;
+	border-collapse: collapse;
+	float: left;
+}
+.landing-Img-Bottom{
+	height: 25%;
+	width: 100%;
+	margin-bottom: 10%;
+	padding: 0%;
+	float: left;
+}
+
