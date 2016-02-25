@@ -37,3 +37,9 @@ nameApp.controller('AuthCtrl', function($scope, $state) {
 nameApp.controller('HomeCtrl', function($scope) {
  
 });
+
+/* Menu */
+
+$( "#ham").click(function(){
+  $("#staff").slideToggle("slow");
+});

@@ -9,6 +9,7 @@
     
    <script src="//code.ionicframework.com/nightly/js/ionic.bundle.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-messages.js"></script>
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script src = "script.js"></script>
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -26,14 +27,39 @@
   <body ng-app="starter">
 
     <ion-pane>
-      <ion-header-bar class="bar-light">
-      <div >
-    <img src = "img/header.jpg" class="headerImg">
+    <!--<div class="container">
+      <div class="bar-light" id="header">
+      <div class="row-sm-2">
+      <div class="col-s-2 col-lg-12" style="width:20%">
+      <img src = "img/hamburger.png" id="ham">
+      </div>
+     <div class = "col-s-4">
+    <img src = "img/header.jpg" class="headerImg" >
     </div>
+    </div>
+    <div class="row" id="staff">
+    <img src="img/staff.jpg">
+    </div>
+    </div>-->
+
+   
+   
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-        
-      </ion-header-bar>
-      <ion-content>
+    <ion-content>
+    <div class="container">
+      <div class="bar-light" id="header">
+      <div class="row-sm-12">
+      <div class="col-sm-2 col-lg-2" style="width:20%">
+      <img src = "img/hamburger.png" class="ham" id="ham">
+      </div>
+     <div class = "col-s-10 col-lg-6">
+    <img src = "img/header.jpg" class="headerImg" >
+    </div>
+    </div>
+    <div class="row" id="staff">
+    <img src="img/staff.jpg" style="width:100%">
+    </div>
+  </div>
       <div class = "landingPage" >
       <table class = "landingTable">
       <tr class="table-top">
@@ -52,8 +78,66 @@
           <img src = "img/map.jpg" class="map">
         </div>
       <div>
-        <div class = "info-page-det">
-          <p style="text-align:right">
+        <div class = "info-page-det" style="text-align:center">
+        <div class="row">
+          <div class="col">
+            <h1><b>Hours:</b></h1>
+          </div>
+          </div>
+          <div class="row">
+          <div class="col">
+          <h3> MON - FRI</h3>
+          </div>
+          <div class="col">
+           <h5> 11 - 11 </h5>
+           </div>
+          </div>
+          <div class="row">
+          <div class="col">
+          <h3>SAT - SUN</h3>
+          </div>
+          <div class="col">
+          <h5>Reservation Only</h5>
+          </div>
+          </div>
+          <div class="row">
+          <div class="col">
+            <h1><b>Price:</b></h1>
+          </div>
+          </div>
+          <div class="row">
+          <div class="col">
+          <h3> POOL</h3>
+          </div>
+          <div class="col">
+           <h5> $4/hour </h5>
+           </div>
+          </div>
+          <div class="row">
+          <div class="col">
+          <h3>PING PONG</h3>
+          </div>
+          <div class="col">
+          <h5>$2/hour</h5>
+          </div>
+          </div>
+          
+         
+         <!-- <table>
+          <tr>
+            <h1><b>Prices</b></h1>
+          </tr>
+          <tr>
+          <td><h3>POOL</h3></td>
+          <td><h4>$4/Hour</h4></td>
+          </tr>
+          <tr>
+          <td><h3>PING PONG</h3></td>
+          <td><h4>$2/Hour</h4></td>
+          </tr>
+          </table>
+
+          <!--<p style="text-align:right">
           <h1><b> Hours:</b></h1>
           <ul></ul> <h2> M - F 11 - 11</h2></ul>
           <ul> <h2> S - Su Reservation Only</h2></ul>
@@ -62,23 +146,19 @@
           <h1><b> Contact Us: </b></h1>
           <ul><h2> 858.534.0382</h2></ul>
           <ul><h2> gameroom@ucsd.edu</h2></ul>
-          </p>
+          </p>-->
        
-            <table>
-            <tr>
-            <td>
+            <div class="row">
             
              <a class="button button-left  ion-social-facebook" href="https://www.facebook.com/ucsdgameroom/?fref=ts" style="width:100%;background:transparent"></a>
-              </td>
-              <td>
+              
+              
               <a class="button  ion-fork" style="width:100%;background:transparent" href="http://www.yelp.com/biz/ucsd-gameroom-la-jolla"></a>
-              </td>
-              <td>
-              <a class="button button-right  ion-email" style= "width:100%;background:transparent"href= "mailto:gameroom@ucsd.edu"></a>
-            </button>
-            </td>
-            </tr>
-            </table>
+              
+              
+              <a class="button   ion-email" style= "width:100%;background:transparent"href= "mailto:gameroom@ucsd.edu"></a>
+              <a class="button button-right ion-ios-telephone" href="tel:+1858-534-0382"></a>
+            </div>
           </div>
           </div>
          
@@ -340,7 +420,60 @@ Looking to schedule your own event? Give us a call, email, or come visit us at t
             
             </table>
             </div>
+            </div>
       </ion-content>
     </ion-pane>
-  </body>
+    <script>
+$( "#ham" ).click(function() {
+  $( "#staff" ).slideToggle( "fast" );
+});
+</script>
+<script>
+var image = document.getElementById("ham")
+if(image.src.match("img/hamburger.png")){
+$("#ham").click(function(){
+  $('#ham').attr('src',"img/close.png");
+  $('#ham').attr('id', "closeImg");
+  });
+}
+else {
+  if(image.src.match("img/close.png")){
+$("#closeImg").click(function(){
+$('#closeImg').attr('src', "img/hamburger.png");
+$('#closeImg').attr('id',"ham");
+});
+}
+}
+</script>
+<!--<script>
+var image2 = document.getElementById("closeImg")
+  //$('#ham').attr('id',"closeImg");
+  if(image2.src.match("img/close.png")){
+      $('#closeImg').click(function(){
+      $('#closeImg').attr('src', "img/hamburger.png");
+      $('#closeImg').attr('id', "ham");
+    });
+}
+</script>-->
+<script>
+$(function(){
+  $(".ham").live('click', function() {
+    if ($(this).attr("id") == "ham") {
+      this.src = this.src.replace("hamburger","closeImg");
+    } else {
+      this.src = this.src.replace("closeImg","hamburger");
+    }
+    $(this).toggleId("hambuerger");
+  });
+});
+</script>
+
+<script>
+$("#closeImg").click(function(){
+  $('#closeImg').attr('src', "img/hamburger.png");
+  $('#closeImg').attr('id', "ham");
+  return false;
+});
+</script>
+</body>
 </html>
