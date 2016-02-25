@@ -10,6 +10,7 @@
    <script src="//code.ionicframework.com/nightly/js/ionic.bundle.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-messages.js"></script>
    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <script src = "script.js"></script>
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -46,17 +47,19 @@
    
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <ion-content>
-    <div class="container">
+    <div class="container-sm-12 conatiner-lg-8">
       <div class="bar-light" id="header">
       <div class="row-sm-12">
-      <div class="col-sm-2 col-lg-2" style="width:20%">
-      <img src = "img/hamburger.png" class="ham" id="ham">
+      <div class="col-sm-2 col-lg-2">
+      
+      <img src='img/hamburger.png' id="ham">
+      
       </div>
      <div class = "col-s-10 col-lg-6">
     <img src = "img/header.jpg" class="headerImg" >
     </div>
     </div>
-    <div class="row" id="staff">
+    <div class="row-sm-12" id="staff">
     <img src="img/staff.jpg" style="width:100%">
     </div>
   </div>
@@ -150,14 +153,14 @@
        
             <div class="row">
             
-             <a class="button button-left  ion-social-facebook" href="https://www.facebook.com/ucsdgameroom/?fref=ts" style="width:100%;background:transparent"></a>
+             <a class="button  ion-social-facebook" href="https://www.facebook.com/ucsdgameroom/?fref=ts" style="width:100%;background:transparent"></a>
               
               
               <a class="button  ion-fork" style="width:100%;background:transparent" href="http://www.yelp.com/biz/ucsd-gameroom-la-jolla"></a>
               
               
               <a class="button   ion-email" style= "width:100%;background:transparent"href= "mailto:gameroom@ucsd.edu"></a>
-              <a class="button button-right ion-ios-telephone" href="tel:+1858-534-0382"></a>
+              <a class="button  ion-ios-telephone" href="tel:+1858-534-0382" style="width:100%;background:transparent"></a>
             </div>
           </div>
           </div>
@@ -429,21 +432,22 @@ $( "#ham" ).click(function() {
 });
 </script>
 <script>
-var image = document.getElementById("ham")
-if(image.src.match("img/hamburger.png")){
+//var image = document.getElementById("ham")
+//if(image.src.match("img/hamburger.png")){
+  //var image = document.getElementById("ham");
+  //if (image.src== "img/hamburger.png"){
 $("#ham").click(function(){
   $('#ham').attr('src',"img/close.png");
   $('#ham').attr('id', "closeImg");
   });
-}
-else {
-  if(image.src.match("img/close.png")){
+
+
+  //else{
 $("#closeImg").click(function(){
 $('#closeImg').attr('src', "img/hamburger.png");
 $('#closeImg').attr('id',"ham");
 });
-}
-}
+//}
 </script>
 <!--<script>
 var image2 = document.getElementById("closeImg")
@@ -455,7 +459,7 @@ var image2 = document.getElementById("closeImg")
     });
 }
 </script>-->
-<script>
+<!--<script>
 $(function(){
   $(".ham").live('click', function() {
     if ($(this).attr("id") == "ham") {
@@ -466,7 +470,7 @@ $(function(){
     $(this).toggleId("hambuerger");
   });
 });
-</script>
+</script>-->
 
 <script>
 $("#closeImg").click(function(){
