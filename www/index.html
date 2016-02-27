@@ -52,7 +52,7 @@
       <div class="row-sm-12">
       <div class="col-sm-2 col-lg-2">
       
-      <img src='img/hamburger.png' id="ham">
+      <img src='img/hamburger.png' id="ham" imageOne='img/hamburger.png' imageTwo='img/close.png'>
       
       </div>
      <div class = "col-s-10 col-lg-6">
@@ -431,7 +431,22 @@ $( "#ham" ).click(function() {
   $( "#staff" ).slideToggle( "fast" );
 });
 </script>
+
 <script>
+$("#ham").click(function(){
+if($(this).attr('src')==$(this).attr('imageOne'))
+  {
+    var a = $(this).attr('imageTwo');
+    $(this).attr('src',a);
+  }     
+else
+  {
+    var b = $(this).attr('imageOne');
+    $(this).attr('src',b);
+  }
+});
+</script>
+<!--<script>
 //var image = document.getElementById("ham")
 //if(image.src.match("img/hamburger.png")){
   //var image = document.getElementById("ham");
