@@ -6,7 +6,7 @@ a<!DOCTYPE html>
     <title></title>
     <link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet">
-    
+    <link href="lib/bootstrap" rel="stylesheet">
    <script src="//code.ionicframework.com/nightly/js/ionic.bundle.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-messages.js"></script>
    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -34,20 +34,20 @@ a<!DOCTYPE html>
    
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <ion-header>
-    <div class="container-sm-12 conatiner-lg-8"
+    <div class="col-xs-12 col-md-12"
       <div class="bar-light" id="header" style="position:absolute">
-      <div class="row-sm-12">
-      <div class="col-sm-2 col-lg-2">
+      
+      <div class="col-xs-2 col-md-2">
       
       <img src='img/hamburger.png' id="ham" imageOne='img/hamburger.png' imageTwo='img/close.png'>
       
       </div>
-     <div class = "col-s-10 col-lg-6">
+     <div class = "col-xs-10 col-md-10">
     <img src = "img/header.jpg" class="headerImg" >
     </div>
     </div>
     
-    <div class="row-sm-12" id="staff">
+    <div class="col-xs-12 col-md-12" id="staff">
     <img src="img/staff.jpg" style="width:100%">
     </div>
   </div>
@@ -55,24 +55,33 @@ a<!DOCTYPE html>
   <ion-content>
 
       <div class = "landingPage" >
-      <table class = "landingTable">
-      <tr class="table-top">
-      <img src = "img/Landing-top.jpg" class="landing-Img-Top">
-      </tr>
-      <tr class = "table-middle">
-      <img src = "img/Landing-middle.jpg" class="landing-Img-Middle">
-      </tr>
-      <tr class="table-bottom">
-      <img src = "img/Landing-bottom.jpg" class="landing-Img-Bottom">
-      </tr>
-      </table>
+      
+      
+      <div class="container" style="margin-left:12%">
+      <div class="col-xs-12 col-md-10">
+      
+      <img src = "img/Landing-top.jpg" class= "landing-Img-Top">
+      
       </div>
+      
+      
+      <div class="col-xs-12 col-md-10">
+          <img src = "img/Landing-middle.jpg" class="landing-Img-Middle">
+      </div>
+      <div class="col-xs-12 col-md-10">
+      <img src = "img/Landing-bottom.jpg" class="landing-Img-Bottom">
+      </div>
+     </div>
+      </div>
+    
       <div class = "info-page">
         <div class = "info-page-map">
+        <div class="col-xs-12 col-md-8" style="margin-left:15%">
           <img src = "img/map.jpg" class="map">
+          </div>
         </div>
-      <div>
-        <div class = "info-page-det" style="text-align:center">
+      </div>
+        <div class = "info-page-det" style="text-align:center;margin-bottom:20%">
         <div class="row">
           <div class="col">
             <h1><b>Hours:</b></h1>
@@ -80,7 +89,7 @@ a<!DOCTYPE html>
           </div>
           <div class="row">
           <div class="col">
-          <h3> MON - FRI</h3>
+          <h3 style="text-align-center"> MON - FRI</h3>
           </div>
           <div class="col">
            <h5> 11 - 11 </h5>
@@ -117,7 +126,7 @@ a<!DOCTYPE html>
           </div>
           
          
-         <!-- <table>
+         <table>
           <tr>
             <h1><b>Prices</b></h1>
           </tr>
@@ -157,6 +166,7 @@ a<!DOCTYPE html>
           </div>
          
       </div>
+
 
       
       <div class = "menu-page">
@@ -206,7 +216,7 @@ a<!DOCTYPE html>
       </div>
       
 
-<!--    <ion-nav-back-button class="button-clear">
+<!--  <ion-nav-back-button class="button-clear">
       <i class="ion-arrow-left-c"></i> Back
     </ion-nav-back-button>
   </ion-nav-bar>
@@ -277,6 +287,7 @@ a<!DOCTYPE html>
       Maximum length of this field is 20 characters!
     </div>
   </script>   -->
+
 </div>
 <div class="events-page">
   <table>

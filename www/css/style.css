@@ -1,18 +1,21 @@
 /* Empty. Add your own CSS if you like */
 .headerImg{
-	width:60%;
-	margin-left:10%;
+	width:90%;
+	margin-left:5%;
 	position: absolute;
 	z-index:9000;
 	height:4em;
+	margin-top: 1%;
+	padding:0%;
 }
 .bar-light{
 	height:10%;
 	position:absolute;
 }
 #ham{
-width: 20%;
+width: 100%;
 padding:0%;
+margin-right: 0%;
 height:4em;
 position: absolute;
 z-index:9000;
@@ -38,8 +41,8 @@ z-index:9000;
 #header{
 	position:absolute;
 	width:100%;
-	background-color: #fff;
-	height: 5em;
+	background-color: #0E89E8;
+	height: 7em;
 	z-index: 8000;
 }
 table{
@@ -56,8 +59,8 @@ tr{
 	height:50%;
 
 }
-h3{
-	text-align:left;
+h1,h3,h5{
+	text-align:center;
 }
 
 .button-clear{
@@ -68,12 +71,27 @@ h3{
 	width:100%;
 	padding: 0%;
 }
+/*.center-block{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}*/
+.img-responsive{
+	/*margin: auto;*/
+	width:100%;
+	margin-left: 40%;
+
+}
+.landing-page{
+	margin-left:50%;
+}
 .landing-Img-Top{
-	height: 20%;
+	height:15em;
 	width: 100%;
 	padding: 0%;
 	border-collapse: collapse;
 	float: left;
+	
 }
 .landing-Img-Middle{
 	height: 50%;
@@ -95,7 +113,7 @@ h3{
 }
 .info-page-map{
 	width: 100%;
-	height:15em;
+	height:20em;
 	padding: 0%;
 	margin-top: 0%;
 
