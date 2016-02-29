@@ -3,10 +3,11 @@ a<!DOCTYPE html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet">
-    <link href="lib/bootstrap" rel="stylesheet">
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
    <script src="//code.ionicframework.com/nightly/js/ionic.bundle.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-messages.js"></script>
    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -54,158 +55,186 @@ a<!DOCTYPE html>
   </ion-header>
   <ion-content>
 
-      <div class = "landingPage" >
+    
       
       
-      <div class="container" style="margin-left:12%">
-      <div class="col-xs-12 col-md-10">
-      
-      <img src = "img/Landing-top.jpg" class= "landing-Img-Top">
-      
+
+      <div class="landing-page">  
+      <div class=" row-xs-12 row-md-10 row-lg-10">
+      <div class="center-block">
+      <div class="col-xs-14 col-md-10 col-lg-10 col-lg-offset-1">
+      <img src = "img/Landing-top.jpg" class= "img-responsive">
+      </div>
+      </div>
       </div>
       
+      <div class=" row-xs-12 row-md-10 row-lg-10">
+      <div class="center-block">
+      <div class="col-xs-14 col-md-10 col-lg-10 col-lg-offset-1">
+          <img src = "img/Landing-middle.jpg" class="img-responsive">
+      </div>
+      </div>
+      </div>
+      <div class=" row-xs-12 row-md-10 row-lg-10">
+      <div class="center-block">
+      <div class="col-xs-14 col-md-10 col-lg-10 col-lg-offset-1">
+      <img src = "img/Landing-bottom.jpg" class="img-responsive">
+    </div>
+      </div>
+      </div>
+      </div>
+
+
+  
+    
       
-      <div class="col-xs-12 col-md-10">
-          <img src = "img/Landing-middle.jpg" class="landing-Img-Middle">
-      </div>
-      <div class="col-xs-12 col-md-10">
-      <img src = "img/Landing-bottom.jpg" class="landing-Img-Bottom">
-      </div>
-     </div>
-      </div>
+      
+
     
       <div class = "info-page">
-        <div class = "info-page-map">
-        <div class="col-xs-12 col-md-8" style="margin-left:15%">
-          <img src = "img/map.jpg" class="map">
-          </div>
-        </div>
-      </div>
-        <div class = "info-page-det" style="text-align:center;margin-bottom:20%">
-        <div class="row">
-          <div class="col">
-            <h1><b>Hours:</b></h1>
-          </div>
-          </div>
-          <div class="row">
-          <div class="col">
-          <h3 style="text-align-center"> MON - FRI</h3>
-          </div>
-          <div class="col">
-           <h5> 11 - 11 </h5>
-           </div>
-          </div>
-          <div class="row">
-          <div class="col">
-          <h3>SAT - SUN</h3>
-          </div>
-          <div class="col">
-          <h5>Reservation Only</h5>
-          </div>
-          </div>
-          <div class="row">
-          <div class="col">
-            <h1><b>Price:</b></h1>
-          </div>
-          </div>
-          <div class="row">
-          <div class="col">
-          <h3> POOL</h3>
-          </div>
-          <div class="col">
-           <h5> $4/hour </h5>
-           </div>
-          </div>
-          <div class="row">
-          <div class="col">
-          <h3>PING PONG</h3>
-          </div>
-          <div class="col">
-          <h5>$2/hour</h5>
-          </div>
-          </div>
-          
-         
-         <table>
-          <tr>
-            <h1><b>Prices</b></h1>
-          </tr>
-          <tr>
-          <td><h3>POOL</h3></td>
-          <td><h4>$4/Hour</h4></td>
-          </tr>
-          <tr>
-          <td><h3>PING PONG</h3></td>
-          <td><h4>$2/Hour</h4></td>
-          </tr>
-          </table>
-
-          <!--<p style="text-align:right">
-          <h1><b> Hours:</b></h1>
-          <ul></ul> <h2> M - F 11 - 11</h2></ul>
-          <ul> <h2> S - Su Reservation Only</h2></ul>
-          </p>
-          <p>
-          <h1><b> Contact Us: </b></h1>
-          <ul><h2> 858.534.0382</h2></ul>
-          <ul><h2> gameroom@ucsd.edu</h2></ul>
-          </p>-->
+        
        
-            <div class="row">
-            
-             <a class="button  ion-social-facebook" href="https://www.facebook.com/ucsdgameroom/?fref=ts" style="width:100%;background:transparent"></a>
-              
-              
-              <a class="button  ion-fork" style="width:100%;background:transparent" href="http://www.yelp.com/biz/ucsd-gameroom-la-jolla"></a>
-              
-              
-              <a class="button   ion-email" style= "width:100%;background:transparent"href= "mailto:gameroom@ucsd.edu"></a>
-              <a class="button  ion-ios-telephone" href="tel:+1858-534-0382" style="width:100%;background:transparent"></a>
+    
+        <div class="container">
+        <div class=" row-xs-6 row-md-6 row-lg-6">
+          <div class="col-xs-4 col-md-4 col-lg-4">
+            <span><h2 class="text-left">Hours</h2>
+            </span> 
+            <span><h5 class="text-left"> M - F 11 - 11</h5></span>
+            <span> <h5 class="text-left">S - Su Reservation Only</h5></span>
+            </div>
+             <div class="col-xs-4 col-md-4 col-lg-4">
+            <span><h2 class="text-left">Price</h2></span>
+            <span><h5 class="text-left"> POOL $4/hour </h5></span>
+            <span><h5 class="text-left">PING PONG $2/hour</h5></span>
+            </div>
+            <div class="center-block">
+            <div class="col-xs-3 col-md-4 col-lg-4">
+            <img src = "img/map.jpg" class="img-responsive" id="map">
+            </div>
+            </div>
+            </div>
+            </div>
+          
+
+            <div class="container" id="social-bar" style="margin-left:20%">
+            <div class="row-xs-2 row-md-6 row-lg-6" style="margin-right:0%">
+            <div class="center-block">
+            <div class="col-xs-2 col-md-2 col-lg-2">
+            <a href="https://www.facebook.com/ucsdgameroom/?fref=ts" target="_blank">
+            <img src="img/facebookIcon.jpg" class="img-responsive" id="social-icon-bar">
+            </a>
+            </div>
+            </div>
+            <div class="center-block">
+            <div class="col-xs-2 col-md-2 col-lg-2">
+            <a href="http://www.yelp.com/biz/ucsd-gameroom-la-jolla" target="_blank">
+            <img src="img/yelpIcon.jpg" class="img-responsive" id="social-icon-bar">
+            </a>
+            </div>
+            </div>
+            <div class="center-block">
+            <div class="col-xs-2 col-md-2 col-lg-2">
+            <a href="mailto:gameroom@ucsd.edu">
+            <img src = "img/emailIcon.jpg" class="img-responsive" id="social-icon-bar">
+            </a>
+            </div>
+            </div>
+            <div class="center-block">
+            <div class="col-xs-2 col-md-2 col-lg-2">
+            <a href="tel:+1858-534-0382">
+            <img src="img/phoneIcon.jpg" class="img-responsive" id="social-icon-bar">
+            </a>
             </div>
           </div>
-          </div>
-         
+        </div>
+        </div>
+        <div class="row-xs-12 row-md-12 row-lg-12">
+        <div class="col-xs-4 col-md-4 col-lg-4">
+        <span><h5 class="text-center"> Six Pool Tables</h5></span>
+        </div>
+        <div class="col-xs-4 col-md- col-lg-4">
+        <span><h5 class="text-center"> One Ping Pong Table</h5></span>
+        </div>
+        <div class="col-xs-4 col-md-4 col-lg-4">
+        <span><h5 class="text-center"> One Foosball Table</h5></span>
+        </div>
+        </div>
       </div>
+    </div>
+
+          
+
+
+
 
 
       
       <div class = "menu-page">
-      <table class = "menu-table">
-      <tr>
+      <div class="row-xs-2 row-md-2 row-lg-2">
       <img src = "img/poolImg.jpg" class="poolImg">
-      </tr>
-      <tr>
-      <img src = "img/byob.jpg" class="byobImg">
-      </tr>
-      </table>
-      <p>
-      <h4 style="text-align:center">Feel free to bring your own food and drinks (even alcohol if you're 21+)!</h4>
-      </p>
-      <img src = "img/shogunImg.jpg" class="shogunImg">
-      <p>
-      <h4>Next To Shogun!</h4>
-      <h4><b>Hours:</b></h4>
-      <h4> M - F 10 - 9 </h4>
-      <h4> S - Su 11:30 - 8</h4>
-      </p>
+      </div>
+      <div class="row-xs-2 row-md-2 row-lg-2">
+      <span><h1 class="text-center" style="margin-bottom:10%">FOOD</h1></span>
+      </div>
+      <div class="row-xs-6 row-md-6 row-lg-6">
+      <div class="col-xs-4 col-md-4 col-lg-4">
+      <img src = "img/shogun.jpg" class="shogunLogo">
+      </div>
+      <div class="col-xs-8 col-md-8 col-lg-8">
+      <p><h3 class="text-center" style="margin-bottom:20%">the gameroom is located right next to SHOGUN</h3></p>
+      </div>
+      </div>
+      <div class="row-xs-6 row-md-6 row-lg-6">
+      <span><h1 class="text-center" style="margin-bottom:5%">SHOGUN HOURS</h1></span>
+      </div>
+      <div class="row-xs-6 row-md-6 row-lg-6" style="margin-left:30%">
+      <span><h3 class="text-left">MON-FRI 9 - 9</h3></span>
+      </div>
+      <div class="row-xs-6 row-md-6 row-lg-6" style="margin-left:30%">
+      <span><h3 class="text-left" style="margin-bottom: 10%">SAT - SUN 11:30 - 8</h3></span>
+      </div>
+      <div class="row-xs-12 row-md-4 row-lg-4">
+      <div class="col-xs-4 col-md-4 col-lg-8">
+      <img src = "img/bottle.jpg" class="bottleLogo" >
+      </div>
+      <div class="col-xs-8 col-md-4 col-lg-4">
+      <h3 class="text-left">not into sushi? feel free to bring your own food and drinks</h3>
+      </div>
+      </div>
       </div>
 
-      <div class ="reservation-page">
-      <table>
-      <tr >
-      <img src="img/poolBallsImg.jpg" class="reserveImg1">
-      </tr>
-      <tr>
-      <img src ="img/reserveImg.jpg" class="reserveImg2">
-      </tr>
-      </table>
-      <p>
+
+
+
+
+
+
+
+     
+
+
+      <div class ="reservation-page" >
+      <!--<div class="row-xs-6 row-md-6 row-lg-6">
+      img src="img/poolBallsImg.jpg" class="reserveImg1">
+      </div>-->
+     <div class="row-xs-6 row-md-6 row-lg-6" style="margin-top:10%">
+      <h1 class="text-center" style="margin-right:5%;margin-bottom:5%">RESERVE</h1>
+      <h1 class="text-center">How?</h1>
+      <h4 class="text-center">Minimum requirements for a reservation:</h4>
+      </div>
+      <div class="row-xs-6 row-md-6 row-lg-6" style="margin-left:40%">
+      <h3 class="text-left">2 Pool Tables</h3>
+      <h3 class="text-left">1 Hour</h3>
+   
+            </div>
       <h4 style="text-align:center">
       Want to play pool? Reserve a table so you don't have to wait!
       </h4>
       </p>
-      <div class="formLocation">
-      <div id="TTE-653779c5-8d13-49b1-9587-d85995fcebf8"></div>
+      </div>
+      
+      <div id="TTE-653779c5-8d13-49b1-9587-d85995fcebf8" style="margin:auto"></div>
 <script src="https://d3saea0ftg7bjt.cloudfront.net/embed/js/embed.min.js"></script>
 <script>
   window.TTE.init({
@@ -214,6 +243,7 @@ a<!DOCTYPE html>
   });
 </script>
       </div>
+
       
 
 <!--  <ion-nav-back-button class="button-clear">
@@ -289,6 +319,7 @@ a<!DOCTYPE html>
   </script>   -->
 
 </div>
+
 <div class="events-page">
   <table>
     <tr>

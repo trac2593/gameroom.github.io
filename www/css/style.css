@@ -1,3 +1,13 @@
+.center-block{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.cinemagraph{
+	width:100%;
+
+}
+
 /* Empty. Add your own CSS if you like */
 .headerImg{
 	width:90%;
@@ -66,31 +76,25 @@ h1,h3,h5{
 .button-clear{
 	width: 33.3%;
 }
-.landingPage{
-	height: 100%;
-	width:100%;
-	padding: 0%;
+
+.landing-page{
+	height:auto;
 }
-/*.center-block{
-	display: block;
+.img-responsive{
+	display:block;
 	margin-left: auto;
 	margin-right: auto;
-}*/
-.img-responsive{
-	/*margin: auto;*/
 	width:100%;
-	margin-left: 40%;
+	
 
 }
-.landing-page{
-	margin-left:50%;
-}
+/
 .landing-Img-Top{
 	height:15em;
 	width: 100%;
 	padding: 0%;
 	border-collapse: collapse;
-	float: left;
+	/*float: left;*/
 	
 }
 .landing-Img-Middle{
@@ -98,13 +102,13 @@ h1,h3,h5{
 	width: 100%;
 	padding:0%;
 	border-collapse: collapse;
-	float: left;
+	
 }
 .landing-Img-Bottom{
 	height: 25%;
 	width: 100%;
 	padding: 0%;
-	float: left;
+	
 }
 .info-page{
 	padding: 0%;
@@ -118,9 +122,9 @@ h1,h3,h5{
 	margin-top: 0%;
 
 }
-.map{
+#map{
 	width: 100%;
-	height: 100%;
+	height: 5em;
 	padding: 0%;
 }
 .info-page-det{
@@ -130,7 +134,14 @@ h1,h3,h5{
 	position: center;
 	font-family: 'Lemon milk';
 }
-
+#social-icon-bar{
+	width:100%;
+	height:3em;
+}
+#social-bar{
+	margin-top:10%;
+	margin-bottom:10%;
+}
 .poolImg{
 	width: 100%;
 	height:11em;
@@ -150,13 +161,26 @@ h1,h3,h5{
 .menu-page{
 	padding:0%;
 	width: 100%;
-	height:50%;
+	
+}
+.shogunLogo{
+	height:10em;
+	width:100%;
+	padding: 0%;
+}
+.bottleLogo{
+	margin:auto;
+	width:40%;
+	height:20em;
+	padding: 0%;
+	z-index: 7000;
 }
 .reserveImg1{
 	padding: 0%;
 	width:100%;
 	height:10em;
-	margin-top:0%;
+	margin-top:80%;
+	z-index:8000;
 }
 .reserveImg2{
 	padding: 0%;
