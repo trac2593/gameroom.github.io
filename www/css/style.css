@@ -116,7 +116,7 @@ h1,h3,h5{
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: left;
-  padding:5%;
+  padding:0%;
 
   z-index: 14;
 }
@@ -135,7 +135,7 @@ h1,h3,h5{
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: left;
-  padding:5%;
+  padding:0%;
  }
 
 #hourPrice{
@@ -144,7 +144,7 @@ h1,h3,h5{
   color: rgb(3, 81, 255);
   line-height: 1.2;
   text-align: left;
-  padding:5%;
+  padding:0%;
 
 }
 
@@ -152,7 +152,7 @@ h1,h3,h5{
 
 
 }
-._2 {
+#two {
   font-size: 40px;
   font-family: "Lemon/Milk";
   color: rgb(3, 79, 255);
@@ -427,9 +427,19 @@ h1,h3,h5{
 	top:-60;
 	padding:0;*/
 	margin:-50 auto 30 auto;
+	padding:5%;
+}
 .champion_txt{
 	text-align:right;
 }
+#winners{
+  font-size: 24px;
+  font-family: "Lemon/Milk";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;
+}
+
 }
 #trophy{
 	margin:0;
@@ -437,7 +447,10 @@ h1,h3,h5{
 	position:relative;
 	top:50;
 	left:-70;
-
+}
+img.champ_pic1, img.champ_pic2, img.champ_pic3{
+	border-radius: 50%;
+}
 
 /* Equipment CSS */
 
