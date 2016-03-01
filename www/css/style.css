@@ -1,4 +1,4 @@
-.center-block{
+champion.center-block{
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
@@ -397,40 +397,20 @@ h1,h3,h5{
   p
 
 }
-/*
-#upcoming{
-	font-weight:bolder;
-	font-size: 40px;
-	line-height:0;
-	text-align: center;
-	position: relative;
-	left:-25;
-	top:-60;
-	margin:0;
-	padding:0;
+
+.champion_row{
+	padding-top:2%;
 }
-#cross_cue{
-	margin:0;
-	padding:0;
-	position:relative;
-	top:40;
-	left:10;
-}
-*/
+
 #champions{
 	font-weight:bolder;
 	font-size: 40px;
 	line-height:1;
 	text-align: center-block;
-	/*position: relative;
-	left:-155;
-	top:-60;
-	padding:0;*/
 	margin:-50 auto 30 auto;
 	padding:5%;
 }
-.champion_txt{
-	text-align:right;
+
 }
 #winners{
   font-size: 24px;
@@ -448,8 +428,15 @@ h1,h3,h5{
 	top:50;
 	left:-70;
 }
-img.champ_pic1, img.champ_pic2, img.champ_pic3{
+img.champ_pic{
+	margin: 5%;
 	border-radius: 50%;
+	width: 100%;
+}
+.champ_name{
+ padding-top:50px;
+ font-weight: bold;
+ text-align: center-block;
 }
 
 /* Equipment CSS */
