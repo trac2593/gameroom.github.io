@@ -12,6 +12,7 @@ a<!DOCTYPE html>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-messages.js"></script>
    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -48,9 +49,18 @@ a<!DOCTYPE html>
     </div>
     </div>
 
-    <div class="col-xs-12 col-md-12" id="staff">
-    <img src="img/staff.jpg" style="width:100%">
+    <div class="col-xs-12 col-md-12" id="staff" style="height:40em">
+    <div class="row-xs-12 row-md-12 row-lg-12" style="background-color:#0f89e8">
     </div>
+    <div class="row-xs-12 row-md-12 row-lg-12" style="background-color:#ffffff">
+      <div class = "col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff"><a href="#info"><img src="img/infoIcon.png" style="width:25px;height:25px"></a></div>
+
+      <div class = "col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff"><a href="#menu"><img src="img/foodIcon.png" style="width:25px;height:25px"></a></div>
+      <div class = "col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff"><a href="#reservation"><img src="img/reserveIcon.png" style="width:25px;height:25px"></a></div>
+      <div class = "col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff"><a href="#events"><img src="img/eventsIcon.png" style="width:25px;height:25px"></a></div>
+      <div class = "col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff"><a href=".#about"><img src="img/aboutIcon.png" style="width:25px;height:25px"></a></div>
+    </div>
+    <div class= "row-xs-12 row-md-12 row-lg-12"></div>
   </div>
   </ion-header>
   <ion-content>
@@ -91,13 +101,14 @@ a<!DOCTYPE html>
 
 
 
-      <div class = "info-page" style="margin-bottom:60%">
+      <div class = "info-page" id="/info" name="info" style="margin-bottom:60%">
 
 
 
         <div class="container">
         <div class="row-xs-12 row-md-12 row-lg-12">
         <h1 class="text-center" id="info"> INFO</h1>
+
         </div>
         <div class=" row-xs-12 row-md-12 row-lg-12">
           <div class="col-xs-4 col-md-4 col-lg-4">
@@ -167,9 +178,9 @@ a<!DOCTYPE html>
         </div>
 
         <div class="col-xs-6 col-md-6 col-lg-6">
-        <span><h3 class="text-center" style="padding:10%" id="tables">Pool Table</h3></span>
-         <span><h3 class="text-center" style="padding:10%" id="tables">Ping Pong Table</h3></span>
-          <span><h3 class="text-center" style="padding:10%" id="tables">Foosball Table</h3></span>
+        <span><h3 class="text-center" style="padding:8%" id="tables">Pool Table</h3></span>
+         <span><h3 class="text-center" style="padding:8%" id="tables">Ping Pong Table</h3></span>
+          <span><h3 class="text-center" style="padding:8%" id="tables">Foosball Table</h3></span>
         </div>
         </div>
 
@@ -196,7 +207,7 @@ a<!DOCTYPE html>
 
 
 
-      <div class = "menu-page">
+      <div class = "menu-page" id="menu">
         
          <div class="row-xs-12 row-md-12 row-lg-12">
           
@@ -212,10 +223,10 @@ a<!DOCTYPE html>
           <h1 class="text-center" style="padding:10%" id="shogunFood">FOOD</h1>
           </div>
         </div>
-        <div class="row-xs-12 row-md-12 row-lg-12" style="margin-bottom:10%">
+        <div class="row-xs-12 row-md-12 row-lg-12 " style="margin-bottom:10%">
           <div class="col-xs-6 col-md-6 col-lg-4">
           <div class="center-block">
-          <img src="img/shogun.jpg" class="img-responsive" style="vertical-align:right; width:175px;height:175px">
+          <img src="img/shogun.jpg" class="img-responsive" style="vertical-align:right; width:175px;height:175px;vertical-align:center">
           </div>
           </div>
           <div class="col-xs-6 col-md-6 col-lg-6">
@@ -245,9 +256,9 @@ a<!DOCTYPE html>
             <h4> 11:30 - 8</h4>
           </div>
         </div>-->
-        <div class="row-xs-12 row-md-12 row-lg-12 row-lg-offset-1" style="margin-bottom:10%">
+        <div class="row-xs-12 row-md-12 row-lg-12" style="margin-bottom:10%">
           <div class="col-xs-6 col-md-6 col-lg-6" style="margin-top:10%">
-          <img src="img/bottle.jpg" class="img-responsive" style="margin-bottom:50%; height:250px;width:75px">
+          <img src="img/bottle.jpg" class="img-responsive" style="margin-bottom:50%;margin-left:25%; height:250px;width:75px">
           </div>
           <div class="col-xs-6 col-md-6 col-lg-6" style="margin-top:15%">
           <h4 class="text-center" style="margin-top:10%" id="shogunLoc">not into sushi? bring your own food and drink</h4>
@@ -270,7 +281,7 @@ a<!DOCTYPE html>
 
 
 
-      <div class ="reservation-page" >
+      <div class ="reservation-page" id="reservation">
       <div class="row-xs-12 row-md-12 row-lg-12">
       <div class="center-block">
       <img src="img/poolBallsImg.jpg" class="img-responsive" style="height:10em">
@@ -381,7 +392,7 @@ a<!DOCTYPE html>
 
 </div>
 
-<div class="events-page">
+<div class="events-page" id="events">
       <div class="row-xs-12 row-md-12 row-lg-12">
         <div class="center-block">
           <img src="img/poolImg.jpg" class="img-responsive" style="height:10em;width:100%">
@@ -431,7 +442,7 @@ a<!DOCTYPE html>
 </div>
 
 
-<div class = "equipment-page">
+<div class = "equipment-page" id="about">
   <table>
     <tr>
       <img src = "img/eightBall.jpg" class="eightBall">
