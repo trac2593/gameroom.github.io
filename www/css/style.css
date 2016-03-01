@@ -85,10 +85,61 @@ h1,h3,h5{
 	margin-left: auto;
 	margin-right: auto;
 	width:100%;
+
 	
 
 }
-/
+._2 {
+  font-size: 40px;
+  font-family: "Lemon/Milk";
+  color: rgb(3, 79, 255);
+  line-height: 1.2;
+  text-align: center;
+  padding:5%;
+ 
+}
+#How_ {
+ font-size: 45;
+  font-family: "Lemon/Milk";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: center;
+  padding: 0%
+  
+  }
+  
+ 
+#reserve {
+  font-size:60;
+  font-family: "Lemon/Milk";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: center;
+  padding:5%;
+  
+}
+
+.Pool_tables {
+  font-size: 30px;
+  font-family: "Lemon/Milk";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;
+  padding:7%;
+  
+  
+  /*z-index: 41;*/
+}
+#minimum {
+  font-size: 30px;
+  font-family: "Myriad Pro";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: center;
+}
+
+
+/* Landing Page CSS */
 .landing-Img-Top{
 	height:15em;
 	width: 100%;
@@ -123,9 +174,10 @@ h1,h3,h5{
 
 }
 #map{
-	width: 100%;
-	height: 5em;
+	width: 80%;
+	height: 8em;
 	padding: 0%;
+	margin-bottom:20%;
 }
 .info-page-det{
 	width:100%;
@@ -136,11 +188,12 @@ h1,h3,h5{
 }
 #social-icon-bar{
 	width:100%;
-	height:3em;
+	height:4em;
 }
 #social-bar{
 	margin-top:10%;
-	margin-bottom:10%;
+	margin-bottom:20%;
+	height:40em;
 }
 .poolImg{
 	width: 100%;
@@ -155,14 +208,11 @@ h1,h3,h5{
 }
 .menu-page{
 	text-align: center;
+	width: 100%;
 }
 
 /* Reserve CSS */
-.menu-page{
-	padding:0%;
-	width: 100%;
-	
-}
+
 .shogunLogo{
 	height:10em;
 	width:100%;
