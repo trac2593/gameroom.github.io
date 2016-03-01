@@ -87,6 +87,71 @@ h1,h3,h5{
 	width:100%;
 
 }
+#info {
+  font-size: 60px;
+  font-family: "Lemon/Milk";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: center;
+}
+
+#tables{
+  font-size: 16px;
+  font-family: "Lemon/Milk";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;
+}
+#numbers{
+ font-size: 40px;
+  font-family: "Lemon/Milk";
+  color: rgb(3, 79, 255);
+  line-height: 1.2;
+  text-align: center;
+  padding:5%;
+}
+#prices{
+  font-size: 22px;
+  font-family: "Lemon/Milk";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;
+  padding:5%;
+ 
+  z-index: 14;
+}
+#days {
+  font-size: 12px;
+  font-family: "Lemon/Milk";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;
+  padding:5%;
+}
+
+#games {
+  font-size: 14px;
+  font-family: "Lemon/Milk";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;
+  padding:5%;
+ }
+
+#hourPrice{
+  font-size: 12px;
+  font-family: "Lemon/Milk";
+  color: rgb(3, 81, 255);
+  line-height: 1.2;
+  text-align: left;
+  padding:5%;
+  
+}
+
+
+
+	
+}
 ._2 {
   font-size: 40px;
   font-family: "Lemon/Milk";
