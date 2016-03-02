@@ -5,6 +5,17 @@
 // the 2nd parameter is an array of 'requires'
 angular.module('starter', ['ionic'])
 
+.controller('PageController', function($scope, $location, $anchorScroll, $ionicScrollDelegate)
+{
+  
+  $scope.scrollToAnchorWithinCurrentPage = function(anchor)
+  {
+    $location.hash(anchor);
+    var handle = $ionicScrollDelegate.$getByHandle('content');
+    handle.anchorScroll();
+  };
+})
+
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     if(window.cordova && window.cordova.plugins.Keyboard) {
