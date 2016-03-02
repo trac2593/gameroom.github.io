@@ -1,17 +1,17 @@
-a<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-    <!-- <link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet"/> -->
+    <link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet"/> 
     <link href="css/style.css" rel="stylesheet">
     <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-   <!-- <script src="//code.ionicframework.com/nightly/js/ionic.bundle.js"></script> -->
+  <script src="//code.ionicframework.com/nightly/js/ionic.bundle.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-messages.js"></script>
    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
@@ -36,7 +36,7 @@ a<!DOCTYPE html>
 
     <!-- <link href="lib/ionic/css/ionic.css" rel="stylesheet"> -->
     <ion-header>
-    <div class="col-xs-12 col-md-12"
+    
       <div class="bar-light" id="header" style="position:absolute">
 
       <div class="col-xs-2 col-md-2">
@@ -53,7 +53,7 @@ a<!DOCTYPE html>
     <div class="row-xs-12 row-md-12 row-lg-12" style="background-color:#0f89e8">
     </div>
     <div class="row-xs-12 row-md-12 row-lg-12" style="background-color:#ffffff">
-      <div class = "col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff"><a href="#info"><img src="img/infoIcon.png" style="width:25px;height:25px"></a></div>
+      <div class = "col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff"><a ng-click="scrollToAnchorWithinCurrentPage('info')"><img src="img/infoIcon.png" style="width:25px;height:25px"></a></div>
 
       <div class = "col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff"><a href="#menu"><img src="img/foodIcon.png" style="width:25px;height:25px"></a></div>
       <div class = "col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff"><a href="#reservation"><img src="img/reserveIcon.png" style="width:25px;height:25px"></a></div>
@@ -62,8 +62,9 @@ a<!DOCTYPE html>
     </div>
     <div class= "row-xs-12 row-md-12 row-lg-12"></div>
   </div>
+
   </ion-header>
-  <ion-content>
+  <ion-content delegate-handle="content">
 
 
 
@@ -101,9 +102,9 @@ a<!DOCTYPE html>
 
 
 
-      <div class = "info-page" id="/info" name="info" style="margin-bottom:60%">
+      <div class = "info-page"  style="margin-bottom:60%">
 
-
+      <section ng-controller="info">
 
         <div class="container">
         <div class="row-xs-12 row-md-12 row-lg-12">
@@ -130,7 +131,9 @@ a<!DOCTYPE html>
             </div>
             <div class="col-xs-4 col-md-4 col-lg-4">
             <div class="center-block">
+            <a href="https://www.google.com/maps/place/Shogun+of+La+Jolla/@32.8800079,-117.2390936,17z/data=!3m1!4b1!4m2!3m1!1s0x80dc06d869a3c4bd:0xb6363e71a61bcfa1" target="blank">
             <img src = "img/map.jpg" class="img-responsive" id="map">
+            </a>
             </div>
             </div>
             </div>
@@ -138,49 +141,56 @@ a<!DOCTYPE html>
 
 
 
-            <div class="row-xs-12 row-md-12 row-lg-12" style="margin-right:14%;paddinf:10%">
-            <div class="center-block">
-            <div class="col-xs-2 col-xs-offset-3 col-md-2 col-lg-2 col-lg-offset-3">
-            <a href="https://www.facebook.com/ucsdgameroom/?fref=ts" target="_blank">
+            <div class="row">
+            
+            <div class="col-xs-3 centered">
+                       <a href="https://www.facebook.com/ucsdgameroom/?fref=ts" target="_blank">
             <img src="img/facebookIcon.jpg" class="img-responsive" id="social-icon-bar">
             </a>
-
+           
             </div>
+            
 
-            <div class="col-xs-2 col-md-2 col-lg-2">
+            <div class="col-xs-3 right" style="float:left">
+          
             <a href="http://www.yelp.com/biz/ucsd-gameroom-la-jolla" target="_blank">
             <img src="img/yelpIcon.jpg" class="img-responsive" id="social-icon-bar">
             </a>
-
+          
             </div>
-
-            <div class="col-xs-2 col-md-2 col-lg-2">
+           
+            <div class="col-xs-3" style="float:left">
+          
             <a href="mailto:gameroom@ucsd.edu">
             <img src = "img/emailIcon.jpg" class="img-responsive" id="social-icon-bar">
             </a>
-
+           
             </div>
-
-            <div class="col-xs-2 col-md-2 col-lg-2">
+           
+           
+            <div class="col-xs-3 centered"> 
+           
             <a href="tel:+1858-534-0382">
             <img src="img/phoneIcon.jpg" class="img-responsive" id="social-icon-bar">
             </a>
-            </div>
+         
+           </div>
+        
         </div>
+
+
+        <div class="row-xs-12 row-md-12 row-lg-12" style="margin-top:0%">
+        <div class="col-xs-6 col-md-4 col-lg-4" style="margin-top:40%"> 
+        <span><h3 class="text-right" id="numbers" style="padding:"> 6 </h3></span>
+        <span><h3 class="text-right"  id="numbers"> 1 </h3></span>
+        <span><h3 class="text-right"  id="numbers"> 1 </h3></span>
         </div>
 
 
-        <div class="row-xs-12 row-md-12 row-lg-12 row-lg-offset-1" style="margin-top:40%">
-        <div class="col-xs-6 col-md-6 col-lg-6">
-        <span><h3 class="text-center" id="numbers"> 6 </h3></span>
-        <span><h3 class="text-center"  id="numbers"> 1 </h3></span>
-        <span><h3 class="text-center"  id="numbers"> 1 </h3></span>
-        </div>
-
-        <div class="col-xs-6 col-md-6 col-lg-6">
-        <span><h3 class="text-center" style="padding:8%" id="tables">Pool Table</h3></span>
-         <span><h3 class="text-center" style="padding:8%" id="tables">Ping Pong Table</h3></span>
-          <span><h3 class="text-center" style="padding:8%" id="tables">Foosball Table</h3></span>
+        <div class="col-xs-6 col-md-6 col-lg-6" style="margin-top:0%">
+        <span><h3 class="text-center" style="margin-top:120%" id="tables">Pool Table</h3></span>
+         <span><h3 class="text-center" style="margin-top:40%" id="tables">Ping Pong Table</h3></span>
+          <span><h3 class="text-center" style="margin-top:40%" id="tables">Foosball Table</h3></span>
         </div>
         </div>
 
@@ -463,132 +473,122 @@ a<!DOCTYPE html>
 
 
 <div class = "equipment-page" id="about">
-  <table>
-    <tr>
-      <img src = "img/eightBall.jpg" class="eightBall">
-    </tr>
-    <tr>
-      <img src = "img/equipment.jpg" class="equipmentImg">
-    </tr>
-    <tr>
-      <img src = "img/brunswick.jpg" class="brunswick">
-    </tr>
-    <tr>
-      <p>
+<div class="row-xs-12 row-md-12 row-lg-12">
+  
+      <img src = "img/eightBall.jpg" class="eightBall" style="height:20em">
+  
+</div>
+  <div class= "container">
+  <h1 style="text-align:center" id="aboutTxt">ABOUT</h1>
+
+  <div class="row-xs-12 row-md-12 row-lg-12">
+      <img src = "img/equipmentTitle.jpg" class="img-responsive" style="height:5em;width:70%;vertical-align:center">
+  <div class="row-xs-8 row-md-8 row-lg-8">
+    <div class="center-block">
+      <img src = "img/brunswick.jpg" class="brunswick img-responsive">
+      </div>
         <h2 style="text-align:center"><b>Brunswick Gold Crown 3</b></h2>
         <h4 style="text-align:center"><b>Simonis 860 HR (Felted 2015)</b></h4><h4 style="text-align:center"> Nine feet of tournament level playing space. Beautifully crafted for your playing pleasure.</h4>
-      </p>
-    </tr>
-    <tr>
-      <img src = "img/aramith.jpg" class="aramith">
-    </tr>
-    <tr>
+
+</div>
+<div class="row-xs-8 row-md-8 row-lg-8">
+  <div class="center-block">
+      <img src = "img/aramith.jpg" class="aramith img-responsive">
+  </div>
       <p>
         <h2 style="text-align:center"><b>Aramith Billiard Balls</b></h2>
         <h4 style="text-align:center">Outstanding performance and uncompromising quality.</h4>
       </p>
-    </tr>
-    <tr>
-      <img src = "img/dufferin.jpg" class="dufferin">
-    </tr>
-    <tr>
+</div>
+<div class="row-xs-8 row-md-8 row-lg-8">
+  <div class="center-block">
+      <img src = "img/dufferin.jpg" class="dufferin img-responsive">
+  </div>
       <p>
         <h2 style="text-align:center"><b>Dufferin Cues</b></h2>
         <h4 style="text-align:center">Known for their legendary quality and perfect straightness.</h4>
       </p>
-    </tr>
- </table>
 </div>
+</div>
+</div>
+   
 
 <div class="staff-page">
-  <table>
-    <tr>
-      <img src= "img/staff.jpg" class="staffImg">
-    </tr>
-
-    <tr>
-      <img src = "img/manager.jpg" class="managerImg">
-    </tr>
-    <tr>
+  <div class="row-xs-12 row-md-12 row-lg-12">
+    <div class="center-block">
+      <img src= "img/staff.jpg" class="img-responsive" style="height:11em;width:70%;vertical-align:center;padding:10%">
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row-xs-12 row-md-12 row-lg-12">
+      <img src = "img/manager.jpg" class="managerImg img-responsive">
       <p>
       <h2 style="text-align:center"><b>Roy Barnea</b></h2>
       <h4 style="text-align:center">Manager and pool enthusiast.</h4>
       </p>
-    </tr>
-    <tr>
-      <img src = "img/studentMan.jpg" class="studManImg">
-    </tr>
-    <tr>
-    <p>
-      <h2 style="text-align:center"><b>Stephen Trac</b></h2>
-      <h4 style="text-align:center">Student manager and pool tournament champion.</h4>
-    </p>
-    </tr>
-    <tr>
-    <img src = "img/team.jpg" class="teamImg">
-    </tr>
-    <tr>
+    </div>
+    </div>
+    
+    <div class="row-xs-12 row-md-12 row-lg-12">
+    <img src = "img/studStaff.jpg" class="teamImg img-responsive">
     <p>
       <h2 style="text-align:center"><b>The Team</b></h2>
       <h4 style="text-align:center">Tritons dedicated to making the Gameroom great!</h4>
     </p>
-    </tr>
-  </table>
-</div>
+    </div>
+  </div>
+
+   
 
 <div class = "footer">
-<table style="border-collapse:collapse">
-  <tr>
-    <td>
+<div class = "row">
+<h1 style="text-align:center" id="footerHours">HOURS</h1>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-md-6 col-lg-6">
+  <h3 style="text-align:left" id="footerDays">mon - fri</h3>
+  <h3 style="text-align:left" id="footerDays">sat - sun</h3>
+  </div>
+  <div class="col-xs-6 col-md-6 col-lg-6">
+  <h3 style="text-align:center" id="footerDays">11 - 11</h3>
+  <h3 style="text-align:center" id="footerDays">reservation only</h3>
+  </div>
+  </div>
 
-      <h3 style = "text-align:left; color:#fff; font-family:myriad"> Hours:</h3>
-      </ul>
-      </td>
-      <td>
-      <h4 style = "text-align:right; color:#fff; font-family:myriad;">858.534.0382</h4>
-      </td>
-      <tr>
-      <td>
-      <h4 style = "text-align:lrft; color:#fff; font-family:myriad; margin-right:0%;" > MON - FRI</h4></td><td> <h4  style = "text-align:left; color:#fff; font-family:myriad; margin-right:20%">11 - 11</h4></td>
-      </tr>
-      <tr>
-      <td>
-      <ul><h4 style = "text-align:left; color:#fff; font-family:myriad"></h4><h4 style = "text-align:left; color:#fff; font-family:myriad;"> SAT - SUN</h4></td>
-      <td><h4  style = "text-align:left; color:#fff; font-family:myriad;"> Reservation Only</h4></td>
-    </tr>
+     <div class="row-xs-12 row-md-12 row-lg-12" style="margin-right:0;paddinf:0%">
+            
+            <div class="col-xs-3 col-xs-offset-0 col-md-2 col-lg-2 col-lg-offset-3 centered">
+            <a href="https://www.facebook.com/ucsdgameroom/?fref=ts" target="_blank">
+            <img src="img/footerFacebook.jpg" class="img-responsive" id="social-icon-bar" style="height:50px;width:60%;float:left">
+            </a>
 
-      </table>
-
-
-
-       <table style="height:5em">
-            <tr>
-            <td class="facebook-footer">
-
-             <a class="button button-left  ion-social-facebook" href="https://www.facebook.com/ucsdgameroom/?fref=ts" style="width:100%;background:transparent"></a>
-              </td>
-              <td>
-              <a class="button  ion-fork" style="width:100%;background:transparent" href="http://www.yelp.com/biz/ucsd-gameroom-la-jolla"></a>
-              </td>
-              <td>
-              <a class="button button-right  ion-email" style= "width:100%;background:transparent"href= "mailto:gameroom@ucsd.edu"></a>
-            </td>
-            </tr>
-            </table>
-            <table>
-            <tr>
-            <p>
-            <h4 style="text-align:center; color:#fff; font-family:myriad"> Photos by Ashlee Palka</h4>
-            </p>
-            </tr>
-            <tr>
-            <p>
-            <h4 style="text-align:center; color:#fff; font-family:myriad"><b>© 2016 Cue Ball, all rights reserved</b></h4>
-            </p>
-            </tr>
-
-            </table>
             </div>
+
+            <div class="col-xs-3 col-md-2 col-lg-2 centered">
+            <a href="http://www.yelp.com/biz/ucsd-gameroom-la-jolla" target="_blank">
+            <img src="img/footerYelp.jpg" class="img-responsive" id="social-icon-bar" style="height:50px;width:60%;float:left">
+            </a>
+
+            </div>
+
+            <div class="col-xs-3 col-md-2 col-lg-2 centered">
+            <a href="mailto:gameroom@ucsd.edu">
+            <img src = "img/footerEmail.jpg" class="img-responsive" id="social-icon-bar" style="height:50px;width:60%;float:left">
+            </a>
+
+            </div>
+
+            <div class="col-xs-3 col-md-2 col-lg-2 center">
+            <a href="tel:+1858-534-0382">
+            <img src="img/footerPhone.jpg" class="img-responsive" id="social-icon-bar" style="height:50px;width:60%;float:left">
+            </a>
+            </div>
+        </div>
+        </div>
+
+</div>
+      
             <div>
       </ion-content>
     </ion-pane>
