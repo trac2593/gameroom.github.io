@@ -40,20 +40,16 @@ z-index:9000;
 }
 #staff{
 	display: none;
-	position:absolute;
+	position:fixed;
 	top:5em;
-	padding:0%;
-	z-index: 9000;
-	width: 100%;
-	height: 2em;
-
 }
-#header{
-	position:absolute;
+#navbar{
+	position:fixed;
+	top:0;
 	width:100%;
-	background-color: #0E89E8;
-	height: 7em;
+	background-color: #fff;
 	z-index: 8000;
+	height:0;
 }
 table{
 	height: ;
@@ -96,21 +92,19 @@ h1,h3,h5{
 }
 
 #tables{
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Lemon/Milk";
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: left;
-	margin-top: 25%;
 }
 #numbers{
  font-size: 40px;
   font-family: "Lemon/Milk";
   color: rgb(3, 79, 255);
   line-height: 1.2;
-  text-align: center;
+  text-align: left;
   padding:5%;
-	margin-top:10%;
 }
 #prices{
   font-size: 22px;
@@ -150,6 +144,9 @@ h1,h3,h5{
 
 }
 
+
+
+
 }
 #two {
   font-size: 40px;
@@ -172,7 +169,7 @@ h1,h3,h5{
 
 
 #reserve {
-  font-size:60px;
+  font-size:60;
   font-family: "Lemon/Milk";
   color: rgb(0, 0, 0);
   line-height: 1.2;
@@ -279,7 +276,7 @@ h1,h3,h5{
   font-family: "Lemon/Milk";
   color: rgb(0, 0, 0);
   line-height: 1.2;
-  text-align: center;
+  text-align: left;
 }
 #shogunFood{
   font-size:60px;
@@ -293,7 +290,7 @@ h1,h3,h5{
   font-family: "Myriad Pro";
   color: rgb(1, 0, 0);
   line-height: 1.2;
-  text-align: center;
+  text-align: left;
   }
 
 
@@ -391,12 +388,12 @@ h1,h3,h5{
 }
 #events-txt{
 
-  font-size: 60px;
+  font-size: 80px;
   font-family: "Lemon/Milk";
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
-
+  
 
 }
 
@@ -436,8 +433,7 @@ img.champ_pic{
 	width: 100%;
 }
 .champ_name{
- padding-top:30px;
- padding-left:10px;
+ padding-top:50px;
  font-weight: bold;
  text-align: center-block;
 }
@@ -459,7 +455,7 @@ img.champ_pic{
 	border-radius:100%;
 	vertical-align: middle;
 	float:center;
-
+	
 }
 .dufferin{
 	width: 80%;
@@ -474,6 +470,7 @@ img.champ_pic{
 }
 .eightBall{
 	width:100%;
+	padding:0%;
 }
 
 /* Staff CSS */
@@ -510,7 +507,7 @@ img.champ_pic{
   line-height: 1.2;
   text-align: center;
   padding:5%;
-
+  
 }
 
 .footer{
@@ -524,7 +521,7 @@ img.champ_pic{
   font-family: "Lemon/Milk";
   color: rgb(255, 255, 255);
   line-height: 1.2;
-  text-align: right;
+  text-align: center;
   margin-left:20%;
 }
 #footerDays {
@@ -534,3 +531,5 @@ img.champ_pic{
   line-height: 1.2;
   text-align: left;
 }
+
+
