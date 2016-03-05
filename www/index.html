@@ -1,97 +1,121 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <!--<link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet"/> -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
- <!-- <script src="//code.ionicframework.com/nightly/js/ionic.bundle.js"></script>-->
-  <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-messages.js"></script>-->
-   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
-   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <!--<link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet"/> -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+  <!-- <script src="//code.ionicframework.com/nightly/js/ionic.bundle.js"></script>-->
+  <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-messages.js"></script>-->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<!-- This Section was placed in order to use bootstrap icons  -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- This Section was placed in order to use bootstrap icons  -->
+
+
+
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
 
-    <!-- ionic/angularjs js -->
-   <!-- <script src="lib/ionic/js/ionic.bundle.js"></script>-->
+  <!-- ionic/angularjs js -->
+  <!-- <script src="lib/ionic/js/ionic.bundle.js"></script>-->
 
-    <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
 
-    <!-- your app's js -->
-    <script src="js/app.js"></script>
-    <scipt src="script.js"></scipt>
-  </head>
-  <body>
-  
+  <!-- your app's js -->
+  <script src="js/app.js"></script>
+  <scipt src="script.js"></scipt>
+</head>
 
-   
+<body>
 
 
 
 
-    <!-- <link href="lib/ionic/css/ionic.css" rel="stylesheet"> -->
-    <div id="navbar">
-        <div class="col-xs-2 col-md-2">
 
-          <img src='img/hamburger.png' id="ham" imageOne='img/hamburger.png' imageTwo='img/close.png'>
 
-        </div>
-     <div class = "col-xs-10 col-md-10">
-        <img src = "img/header.jpg" class="headerImg" >
+
+  <!-- <link href="lib/ionic/css/ionic.css" rel="stylesheet"> -->
+  <div id="navbar">
+    <div class="row" style="background-color: #0e89e7">
+      <div class="col-xs-2 col-md-2">
+        <a href="#">
+          <span class="glyphicon glyphicon-menu-hamburger" style="width:100%; font-size:55px; color:#ffffff;"></span>
+        </a>
+        <!-- <img src='img/hamburger.png' id="ham" imageOne='img/hamburger.png' imageTwo='img/close.png'> -->
+      </div>
+      <div class="col-xs-10 col-md-10">
+        <img src="img/header.jpg" class="headerImg">
+      </div>
     </div>
-
+  </div>
     <div id="staff">
       <div class="row-xs-12 row-md-12 row-lg-12" style="background-color:#0f89e8"></div>
-      
+
       <div class="row-xs-12 row-md-12 row-lg-12" style="background-color:#ffffff">
-        <div class = "col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff"><a href="#info"><img src="img/infoIcon.png" style="width:25px;height:25px"></a></div>
+        <div class="col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff">
+          <a href="#info"><img src="img/infoIcon.png" style="width:25px;height:25px"></a>
+        </div>
 
-          <div class = "col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff"><a href="#menu"><img src="img/foodIcon.png" style="width:25px;height:25px"></a></div>
-          <div class = "col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff"><a href="#reservation"><img src="img/reserveIcon.png" style="width:25px;height:25px"></a></div>
-          <div class = "col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff"><a href="#events"><img src="img/eventsIcon.png" style="width:25px;height:25px"></a></div>
-          <div class = "col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff"><a href=".#about"><img src="img/aboutIcon.png" style="width:25px;height:25px"></a></div>
+        <div class="col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff">
+          <a href="#menu"><img src="img/foodIcon.png" style="width:25px;height:25px"></a>
+        </div>
+        <div class="col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff">
+          <a href="#reservation"><img src="img/reserveIcon.png" style="width:25px;height:25px"></a>
+        </div>
+        <div class="col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff">
+          <a href="#events"><img src="img/eventsIcon.png" style="width:25px;height:25px"></a>
+        </div>
+        <div class="col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff">
+          <a href=".#about"><img src="img/aboutIcon.png" style="width:25px;height:25px"></a>
+        </div>
       </div>
-    <div class= "row-xs-12 row-md-12 row-lg-12"></div>
-  </div>
-  </div>
-
-
-
-
-
-
-
-      <div class="landing-page">
-      <div class=" row-xs-12 row-md-10 row-lg-10">
-      <div class="center-block">
-      <div class="col-xs-14 col-md-10 col-lg-10 col-lg-offset-1">
-      <img src = "img/Landing-top.jpg" class= "img-responsive">
-      </div>
-      </div>
-      </div>
-
-      <div class=" row-xs-12 row-md-10 row-lg-10">
-      <div class="center-block">
-      <div class="col-xs-14 col-md-10 col-lg-10 col-lg-offset-1">
-          <img src = "img/Landing-middle.jpg" class="img-responsive">
-      </div>
-      </div>
-      </div>
-      <div class=" row-xs-12 row-md-10 row-lg-10">
-      <div class="center-block">
-      <div class="col-xs-14 col-md-10 col-lg-10 col-lg-offset-1">
-      <img src = "img/Landing-bottom.jpg" class="img-responsive">
+      <div class="row-xs-12 row-md-12 row-lg-12"></div>
     </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="landing-page">
+    <div class=" row-xs-12 row-md-10 row-lg-10">
+      <div class="center-block">
+        <div class="col-xs-14 col-md-10 col-lg-10 col-lg-offset-1">
+          <img src="img/Landing-top.jpg" class="img-responsive">
+        </div>
       </div>
+    </div>
+
+    <div class=" row-xs-12 row-md-10 row-lg-10">
+      <div class="center-block">
+        <div class="col-xs-14 col-md-10 col-lg-10 col-lg-offset-1">
+          <img src="img/Landing-middle.jpg" class="img-responsive">
+        </div>
       </div>
+    </div>
+    <div class=" row-xs-12 row-md-10 row-lg-10">
+      <div class="center-block">
+        <div class="col-xs-14 col-md-10 col-lg-10 col-lg-offset-1">
+          <img src="img/Landing-bottom.jpg" class="img-responsive">
+        </div>
       </div>
+    </div>
+  </div>
 
 
 
@@ -100,102 +124,100 @@
 
 
 
-      <div class = "info-page"  style="margin-bottom:60%" id="info-page">
+  <div class="info-page" style="margin-bottom:60%" id="info-page">
 
-      <div id="info-page"></div>
+    <div id="info-page"></div>
 
-        <div class="container">
-        <div class="row-xs-12 row-md-12 row-lg-12">
+    <div class="container">
+      <div class="row-xs-12 row-md-12 row-lg-12">
         <h1 class="text-center" id="info"> INFO</h1>
 
-        </div>
-        <div class=" row">
-          <div class="col-xs-4 col-md-4 col-lg-4">
-            <span><h2 class="text-center" id="prices">Hours</h2>
+      </div>
+      <div class=" row">
+        <div class="col-xs-4 col-md-4 col-lg-4">
+          <span><h2 class="text-center" id="prices">Hours</h2>
             </span>
-            <span><h5 class="text-center" id="days" style="padding:0%"> M - F</h5></span>
-             <span> <h5 class="text-center" id="days" style="padding:0%">11 - 11</h5></span>
+          <span><h5 class="text-center" id="days" style="padding:0%"> M - F</h5></span>
+          <span> <h5 class="text-center" id="days" style="padding:0%">11 - 11</h5></span>
 
-            <span> <h5 class="text-center" id="days" style="padding:0%">S - Su</h5></span>
-             <span> <h5 class="text-center" id="days" style="padding:0%">Reservation Only</h5></span>
+          <span> <h5 class="text-center" id="days" style="padding:0%">S - Su</h5></span>
+          <span> <h5 class="text-center" id="days" style="padding:0%">Reservation Only</h5></span>
 
-            </div>
-             <div class="col-xs-4 col-md-4 col-lg-4">
-            <span><h2 class="text-center" id="prices">Price</h2></span>
-            <span><h5 class="text-center" id="games"> POOL</h5></span>
-            <span><h5 class="text-center" id="hourPrice"> $4/hour </h5></span>
-            <span><h5 class="text-center" id="games">PING PONG</h5></span>
-            <span><h5 class="text-center" id="hourPrice">$2/hour </h5></span>
-            </div>
-            <div class="col-xs-4 col-md-4 col-lg-4">
-            <div class="center-block">
+        </div>
+        <div class="col-xs-4 col-md-4 col-lg-4">
+          <span><h2 class="text-center" id="prices">Price</h2></span>
+          <span><h5 class="text-center" id="games"> POOL</h5></span>
+          <span><h5 class="text-center" id="hourPrice"> $4/hour </h5></span>
+          <span><h5 class="text-center" id="games">PING PONG</h5></span>
+          <span><h5 class="text-center" id="hourPrice">$2/hour </h5></span>
+        </div>
+        <div class="col-xs-4 col-md-4 col-lg-4">
+          <div class="center-block">
             <a href="https://www.google.com/maps/place/Shogun+of+La+Jolla/@32.8800079,-117.2390936,17z/data=!3m1!4b1!4m2!3m1!1s0x80dc06d869a3c4bd:0xb6363e71a61bcfa1" target="blank">
-            <img src = "img/map.jpg" class="img-responsive" id="map">
+              <img src="img/map.jpg" class="img-responsive" id="map">
             </a>
-            </div>
-            </div>
-            </div>
+          </div>
+        </div>
+      </div>
 
 
 
 
-            <div class="row">
-            
-            <div class="col-xs-3 centered">
-                       <a href="https://www.facebook.com/ucsdgameroom/?fref=ts" target="_blank">
+      <div class="row">
+
+        <div class="col-xs-3 centered">
+          <a href="https://www.facebook.com/ucsdgameroom/?fref=ts" target="_blank">
             <img src="img/facebookIcon.jpg" class="img-responsive" id="social-icon-bar">
-            </a>
-           
-            </div>
-            
+          </a>
 
-            <div class="col-xs-3 right" style="float:left">
-          
-            <a href="http://www.yelp.com/biz/ucsd-gameroom-la-jolla" target="_blank">
-            <img src="img/yelpIcon.jpg" class="img-responsive" id="social-icon-bar">
-            </a>
-          
-            </div>
-           
-            <div class="col-xs-3" style="float:left">
-          
-            <a href="mailto:gameroom@ucsd.edu">
-            <img src = "img/emailIcon.jpg" class="img-responsive" id="social-icon-bar">
-            </a>
-           
-            </div>
-           
-           
-            <div class="col-xs-3 centered"> 
-           
-            <a href="tel:+1858-534-0382">
-            <img src="img/phoneIcon.jpg" class="img-responsive" id="social-icon-bar">
-            </a>
-         
-           </div>
-        
         </div>
 
 
-        <div class="row-xs-12 row-md-12 row-lg-12" style="margin-top:0%">
-        <div class="col-xs-6 col-md-4 col-lg-4" style="margin-top:40%"> 
-        <span><h3 class="text-right" id="numbers" style="padding:"> 6 </h3></span>
-        <span><h3 class="text-right"  id="numbers"> 1 </h3></span>
-        <span><h3 class="text-right"  id="numbers"> 1 </h3></span>
+        <div class="col-xs-3 right" style="float:left">
+
+          <a href="http://www.yelp.com/biz/ucsd-gameroom-la-jolla" target="_blank">
+            <img src="img/yelpIcon.jpg" class="img-responsive" id="social-icon-bar">
+          </a>
+
+        </div>
+
+        <div class="col-xs-3" style="float:left">
+
+          <a href="mailto:gameroom@ucsd.edu">
+            <img src="img/emailIcon.jpg" class="img-responsive" id="social-icon-bar">
+          </a>
+
+        </div>
+
+
+        <div class="col-xs-3 centered">
+
+          <a href="tel:+1858-534-0382">
+            <img src="img/phoneIcon.jpg" class="img-responsive" id="social-icon-bar">
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="row-xs-12 row-md-12 row-lg-12" style="margin-top:0%">
+        <div class="col-xs-6 col-md-4 col-lg-4" style="margin-top:40%">
+          <span><h3 class="text-right" id="numbers" style="padding:"> 6 </h3></span>
+          <span><h3 class="text-right"  id="numbers"> 1 </h3></span>
+          <span><h3 class="text-right"  id="numbers"> 1 </h3></span>
         </div>
 
 
         <div class="col-xs-6 col-md-6 col-lg-6" style="margin-top:0%">
-        <span><h3 class="text-center" style="margin-top:120%" id="tables">Pool Table</h3></span>
-         <span><h3 class="text-center" style="margin-top:40%" id="tables">Ping Pong Table</h3></span>
+          <span><h3 class="text-center" style="margin-top:120%" id="tables">Pool Table</h3></span>
+          <span><h3 class="text-center" style="margin-top:40%" id="tables">Ping Pong Table</h3></span>
           <span><h3 class="text-center" style="margin-top:40%" id="tables">Foosball Table</h3></span>
         </div>
-        </div>
+      </div>
 
-        </div>
-        </div>
-
-
+    </div>
+  </div>
 
 
 
@@ -206,46 +228,37 @@
 
 
 
+  <div class="menu-page" id="menu">
+
+    <div class="row-xs-12 row-md-12 row-lg-12">
 
 
+      <img src="img/poolImg.jpg" class="img-responsive" style="height:15em;margin-top:10%;width:100%">
 
 
-
-
-
-
-
-      <div class = "menu-page" id="menu">
-
-         <div class="row-xs-12 row-md-12 row-lg-12">
-
-
-           <img src = "img/poolImg.jpg" class="img-responsive" style="height:15em;margin-top:10%;width:100%">
-
-
-         </div>
-         <div class="container">
-          <div class="container">
-         <div class="row-xs-12 row-md-12 row-lg-12">
-         <div class="col-xs-12 col-md-12 col-lg-12">
-          <h1 class="text-center" style="padding:10%" id="shogunFood">FOOD</h1>
+    </div>
+    <div class="container">
+      <div class="container">
+        <div class="row-xs-12 row-md-12 row-lg-12">
+          <div class="col-xs-12 col-md-12 col-lg-12">
+            <h1 class="text-center" style="padding:10%" id="shogunFood">FOOD</h1>
           </div>
         </div>
         <div class="row-xs-12 row-md-12 row-lg-12 " style="margin-bottom:10%">
           <div class="col-xs-6 col-md-6 col-lg-4">
-          <div class="center-block">
-          <img src="img/shogun.jpg" class="img-responsive" style="vertical-align:right; width:175px;height:175px;vertical-align:center">
-          <a ng-click="scrollMe('info-page')">info</a>
-          </div>
+            <div class="center-block">
+              <img src="img/shogun.jpg" class="img-responsive" style="vertical-align:right; width:175px;height:175px;vertical-align:center">
+              <a ng-click="scrollMe('info-page')">info</a>
+            </div>
           </div>
           <div class="col-xs-6 col-md-6 col-lg-6">
-          <h4 class="text-center" style="padding:10%" id="shogunLoc">the gameroom is located right next to SHOGUN</h4>
+            <h4 class="text-center" style="padding:10%" id="shogunLoc">the gameroom is located right next to SHOGUN</h4>
           </div>
         </div>
         <div class="row-xs-12 row-md-12 row-lg-12 row-lg-offset-1" style="margin-top:20%;margin-bottom:20; padding:10%">
-        <div class="col-xs-12 col-md-12 col-lg-12">
-        <h2 class = "text-center" id="shogunHours" style="margin-top:10%"> SHOGUN HOURS </h2>
-        </div>
+          <div class="col-xs-12 col-md-12 col-lg-12">
+            <h2 class="text-center" id="shogunHours" style="margin-top:10%"> SHOGUN HOURS </h2>
+          </div>
         </div>
         <div class="row-xs-12 row-md-12 row-lg-12 row-lg-offset-1" style="margin-top:5%;margin-bottom:20; padding:0%;margin-left:10%">
           <div class="col-xs-7 col-md-7 col-lg-7">
@@ -257,7 +270,7 @@
             <h4 id="shogunTxt"> 11:30 - 8</h4>
           </div>
         </div>
-       <!-- <div class="row-xs-12 row-md-12 row-lg-12">
+        <!-- <div class="row-xs-12 row-md-12 row-lg-12">
           <div class="col-xs-6 col-md-6 col-lg-6">
             <h4> SAT - SUN</h4>
           </div>
@@ -267,15 +280,15 @@
         </div>-->
         <div class="row-xs-12 row-md-12 row-lg-12" style="margin-bottom:10%">
           <div class="col-xs-6 col-md-6 col-lg-6" style="margin-top:10%">
-          <img src="img/bottle.jpg" class="img-responsive" style="margin-bottom:50%;margin-left:25%; height:250px;width:75px">
+            <img src="img/bottle.jpg" class="img-responsive" style="margin-bottom:50%;margin-left:25%; height:250px;width:75px">
           </div>
           <div class="col-xs-6 col-md-6 col-lg-6" style="margin-top:15%">
-          <h4 class="text-center" style="margin-top:10%" id="shogunLoc">not into sushi? bring your own food and drink</h4>
+            <h4 class="text-center" style="margin-top:10%" id="shogunLoc">not into sushi? bring your own food and drink</h4>
           </div>
         </div>
-        </div>
-       </div>
-       </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -286,48 +299,44 @@
 
 
 
-
-
-
-
-      <div class ="reservation-page" id="reservation">
-      <div class="row-xs-12 row-md-12 row-lg-12">
+  <div class="reservation-page" id="reservation">
+    <div class="row-xs-12 row-md-12 row-lg-12">
       <div class="center-block">
-      <img src="img/poolBallsImg.jpg" class="img-responsive" style="height:10em">
+        <img src="img/poolBallsImg.jpg" class="img-responsive" style="height:10em">
       </div>
-      </div>
-     <div class="row-xs-12 row-md-12 row-lg-12 center-text">
-      <h1  id="reserve">RESERVE</h1>
+    </div>
+    <div class="row-xs-12 row-md-12 row-lg-12 center-text">
+      <h1 id="reserve">RESERVE</h1>
       <h1 class="text-center" id="How_">How?</h1>
       <h4 class="text-center" id="minimum">Minimum requirements for a reservation:</h4>
       <div class="col-xs-6 col-m-6 col-lg-6">
         <h3 class="text-right" id="numbers">2</h3>
-        <h3 class="text-right" id="numbers" style="padding:7%">1</h3>
+        <h3 class="text-right" id="numbers">1</h3>
       </div>
       <div class="col-xs-6 col-md-6 col-lg-6">
         <div class="Pool_tables"> Pool Tables</div>
         <div class="Pool_tables"> Hour</div>
       </div>
 
-            </div>
+    </div>
 
-      </div>
-
-
-
-      <div id="TTE-653779c5-8d13-49b1-9587-d85995fcebf8" style="margin:auto;height:50em"></div>
-<script src="https://d3saea0ftg7bjt.cloudfront.net/embed/js/embed.min.js"></script>
-<script>
-  window.TTE.init({
-    targetDivId: "TTE-653779c5-8d13-49b1-9587-d85995fcebf8",
-    uuid: "653779c5-8d13-49b1-9587-d85995fcebf8"
-  });
-</script>
-      </div>
+  </div>
 
 
 
-<!--  <ion-nav-back-button class="button-clear">
+  <div id="TTE-653779c5-8d13-49b1-9587-d85995fcebf8" style="margin:auto;height:50em"></div>
+  <script src="https://d3saea0ftg7bjt.cloudfront.net/embed/js/embed.min.js"></script>
+  <script>
+    window.TTE.init({
+      targetDivId: "TTE-653779c5-8d13-49b1-9587-d85995fcebf8",
+      uuid: "653779c5-8d13-49b1-9587-d85995fcebf8"
+    });
+  </script>
+  </div>
+
+
+
+  <!--  <ion-nav-back-button class="button-clear">
       <i class="ion-arrow-left-c"></i> Back
     </ion-nav-back-button>
   </ion-nav-bar>
@@ -399,219 +408,217 @@
     </div>
   </script>   -->
 
-</div>
+  </div>
 
-<div class="events-page" id="events">
-      <div class="row-xs-12 row-md-12 row-lg-12">
-        <div class="center-block">
-          <img src="img/poolImg.jpg" class="img-responsive" style="height:10em;width:100%">
-        </div>
-      </div>
-      <div class="container">
-        <div class="row-xs-12 row-md-12 row-lg-12 center-text" style="padding:5%">
-            <h1  id="events-txt">EVENTS</h1>
-        </div>
-        <div class="row-xs-12 row-md-12 row-lg-12">
-
-              <img src="img/upcoming.jpg" class="img-responsive" style=" padding: 0%;vertical-align:center; width:40%;">
-
-        </div>
-
-
-<div class = "champions">
+  <div class="events-page" id="events">
     <div class="row-xs-12 row-md-12 row-lg-12">
-      <div class="container">
-        <div class="center-block">
-            <img src = "img/eventsPoster.jpg" class="img-responsive" style="height:30em;width:70%;vertical-align:center">
+      <div class="center-block">
+        <img src="img/poolImg.jpg" class="img-responsive" style="height:10em;width:100%">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row-xs-12 row-md-12 row-lg-12 center-text" style="padding:5%">
+        <h1 id="events-txt">EVENTS</h1>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <img src="img/upcoming.jpg" class="img-responsive" style=" padding: 0%;vertical-align:center; width:100%;">
         </div>
       </div>
-    </div>
 
-    <div class="row center-text">
-      <div class="col-xs-12">
-        <img src="img/champions.jpg" class="img-responsive" id="trophy">
+
+      <div class="champions">
+        <div class="row-xs-12 row-md-12 row-lg-12">
+          <div class="container">
+            <div class="center-block">
+              <img src="img/eventsPoster.jpg" class="img-responsive" style="height:30em;width:70%;vertical-align:center">
+            </div>
+          </div>
+        </div>
+
+        <div class="row center-text">
+          <div class="col-xs-12">
+            <img src="img/champions.jpg" class="img-responsive" id="trophy">
+          </div>
+        </div>
+
+        <div class="row champion_row">
+          <div class="col-xs-6">
+            <img src="img/winner1.jpg" class="champ_pic">
+          </div>
+          <div class="col-xs-6">
+            <h4 class="champ_name">
+            Robin<br>First Place<br>Winter 2016<br>
+          </h4>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class="row champion_row">
+      <div class="row champion_row">
         <div class="col-xs-6">
-          <img src="img/winner1.jpg" class="champ_pic" >
+          <img src="img/winner2.jpg" class="champ_pic">
         </div>
         <div class="col-xs-6">
           <h4 class="champ_name">
-            Robin<br>First Place<br>Winter 2016<br>
-          </h4>
-        </div>
-    </div>
-    </div>
-    <div class="row champion_row">
-      <div class="col-xs-6">
-        <img src="img/winner2.jpg" class="champ_pic" >
-      </div>
-      <div class="col-xs-6">
-        <h4 class="champ_name">
           Tim<br>Second Place<br>Winter 2016<br>
         </h4>
+        </div>
       </div>
-    </div>
-    <div class="row champion_row">
-      <div class="col-xs-6">
-        <img src="img/winner3.jpg" class="champ_pic">
+      <div class="row champion_row">
+        <div class="col-xs-6">
+          <img src="img/winner3.jpg" class="champ_pic">
+        </div>
+        <div class="col-xs-6">
+          <h4 class="champ_name"> Forrest<br>Third Place<br>Winter 2016<br></h4>
+        </div>
       </div>
-      <div class="col-xs-6">
-        <h4 class="champ_name"> Forrest<br>Third Place<br>Winter 2016<br></h4>
-      </div>
-    </div>
 
-  </div>
-</div>
-
-
-</div>
-</div>
-
-
-<div class = "equipment-page" id="about">
-<div class="row-xs-12 row-md-12 row-lg-12">
-  
-      <img src = "img/eightBall.jpg" class="eightBall" style="height:20em">
-  
-</div>
-  <div class= "container">
-  <h1 style="text-align:center" id="aboutTxt">ABOUT</h1>
-
-  <div class="row-xs-12 row-md-12 row-lg-12">
-      <img src = "img/equipmentTitle.jpg" class="img-responsive" style="height:5em;width:70%;vertical-align:center">
-  <div class="row-xs-8 row-md-8 row-lg-8">
-    <div class="center-block">
-      <img src = "img/brunswick.jpg" class="brunswick img-responsive">
-      </div>
-        <h2 style="text-align:center"><b>Brunswick Gold Crown 3</b></h2>
-        <h4 style="text-align:center"><b>Simonis 860 HR (Felted 2015)</b></h4><h4 style="text-align:center"> Nine feet of tournament level playing space. Beautifully crafted for your playing pleasure.</h4>
-
-</div>
-<div class="row-xs-8 row-md-8 row-lg-8">
-  <div class="center-block">
-      <img src = "img/aramith.jpg" class="aramith img-responsive">
-  </div>
-      <p>
-        <h2 style="text-align:center"><b>Aramith Billiard Balls</b></h2>
-        <h4 style="text-align:center">Outstanding performance and uncompromising quality.</h4>
-      </p>
-</div>
-<div class="row-xs-8 row-md-8 row-lg-8">
-  <div class="center-block">
-      <img src = "img/dufferin.jpg" class="dufferin img-responsive">
-  </div>
-      <p>
-        <h2 style="text-align:center"><b>Dufferin Cues</b></h2>
-        <h4 style="text-align:center">Known for their legendary quality and perfect straightness.</h4>
-      </p>
-</div>
-</div>
-</div>
-   
-
-<div class="staff-page">
-  <div class="row-xs-12 row-md-12 row-lg-12">
-    <div class="center-block">
-      <img src= "img/staff.jpg" class="img-responsive" style="height:11em;width:70%;vertical-align:center;padding:10%">
     </div>
   </div>
-  
-  <div class="container">
+
+
+  </div>
+  </div>
+
+
+  <div class="equipment-page" id="about">
     <div class="row-xs-12 row-md-12 row-lg-12">
-      <img src = "img/manager.jpg" class="managerImg img-responsive">
-      <p>
-      <h2 style="text-align:center"><b>Roy Barnea</b></h2>
-      <h4 style="text-align:center">Manager and pool enthusiast.</h4>
-      </p>
-    </div>
-    </div>
-    
-    <div class="row-xs-12 row-md-12 row-lg-12">
-    <img src = "img/studStaff.jpg" class="teamImg img-responsive">
-    <p>
-      <h2 style="text-align:center"><b>The Team</b></h2>
-      <h4 style="text-align:center">Tritons dedicated to making the Gameroom great!</h4>
-    </p>
-    </div>
-  </div>
 
-   
+      <img src="img/eightBall.jpg" class="eightBall" style="height:20em">
 
-<div class = "footer">
-<div class = "row">
-<h1 style="text-align:center" id="footerHours">HOURS</h1>
-</div>
-<div class="row">
-  <div class="col-xs-6 col-md-6 col-lg-6">
-  <h3 style="text-align:left" id="footerDays">mon - fri</h3>
-  <h3 style="text-align:left" id="footerDays">sat - sun</h3>
-  </div>
-  <div class="col-xs-6 col-md-6 col-lg-6">
-  <h3 style="text-align:center" id="footerDays">11 - 11</h3>
-  <h3 style="text-align:center" id="footerDays">reservation only</h3>
-  </div>
-  </div>
+    </div>
+    <div class="container">
+      <h1 style="text-align:center" id="aboutTxt">ABOUT</h1>
 
-     <div class="row-xs-12 row-md-12 row-lg-12" style="margin-right:0;paddinf:0%">
-            
-            <div class="col-xs-3 col-xs-offset-0 col-md-2 col-lg-2 col-lg-offset-3 centered">
-            <a href="https://www.facebook.com/ucsdgameroom/?fref=ts" target="_blank">
+      <div class="row-xs-12 row-md-12 row-lg-12">
+        <img src="img/equipmentTitle.jpg" class="img-responsive" style="height:5em;width:70%;vertical-align:center">
+        <div class="row-xs-8 row-md-8 row-lg-8">
+          <div class="center-block">
+            <img src="img/brunswick.jpg" class="brunswick img-responsive">
+          </div>
+          <h2 style="text-align:center"><b>Brunswick Gold Crown 3</b></h2>
+          <h4 style="text-align:center"><b>Simonis 860 HR (Felted 2015)</b></h4>
+          <h4 style="text-align:center"> Nine feet of tournament level playing space. Beautifully crafted for your playing pleasure.</h4>
+
+        </div>
+        <div class="row-xs-8 row-md-8 row-lg-8">
+          <div class="center-block">
+            <img src="img/aramith.jpg" class="aramith img-responsive">
+          </div>
+          <p>
+            <h2 style="text-align:center"><b>Aramith Billiard Balls</b></h2>
+            <h4 style="text-align:center">Outstanding performance and uncompromising quality.</h4>
+          </p>
+        </div>
+        <div class="row-xs-8 row-md-8 row-lg-8">
+          <div class="center-block">
+            <img src="img/dufferin.jpg" class="dufferin img-responsive">
+          </div>
+          <p>
+            <h2 style="text-align:center"><b>Dufferin Cues</b></h2>
+            <h4 style="text-align:center">Known for their legendary quality and perfect straightness.</h4>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="staff-page">
+      <div class="row-xs-12 row-md-12 row-lg-12">
+        <div class="center-block">
+          <img src="img/staff.jpg" class="img-responsive" style="height:11em;width:70%;vertical-align:center;padding:10%">
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row-xs-12 row-md-12 row-lg-12">
+          <img src="img/manager.jpg" class="managerImg img-responsive">
+          <p>
+            <h2 style="text-align:center"><b>Roy Barnea</b></h2>
+            <h4 style="text-align:center">Manager and pool enthusiast.</h4>
+          </p>
+        </div>
+      </div>
+
+      <div class="row-xs-12 row-md-12 row-lg-12">
+        <img src="img/studStaff.jpg" class="teamImg img-responsive">
+        <p>
+          <h2 style="text-align:center"><b>The Team</b></h2>
+          <h4 style="text-align:center">Tritons dedicated to making the Gameroom great!</h4>
+        </p>
+      </div>
+    </div>
+
+
+
+    <div class="footer">
+      <div class="row">
+        <h1 style="text-align:center" id="footerHours">HOURS</h1>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-md-6 col-lg-6">
+          <h3 style="text-align:left" id="footerDays">mon - fri</h3>
+          <h3 style="text-align:left" id="footerDays">sat - sun</h3>
+        </div>
+        <div class="col-xs-6 col-md-6 col-lg-6">
+          <h3 style="text-align:center" id="footerDays">11 - 11</h3>
+          <h3 style="text-align:center" id="footerDays">reservation only</h3>
+        </div>
+      </div>
+
+      <div class="row-xs-12 row-md-12 row-lg-12" style="margin-right:0;paddinf:0%">
+
+        <div class="col-xs-3 col-xs-offset-0 col-md-2 col-lg-2 col-lg-offset-3 centered">
+          <a href="https://www.facebook.com/ucsdgameroom/?fref=ts" target="_blank">
             <img src="img/footerFacebook.jpg" class="img-responsive" id="social-icon-bar" style="height:50px;width:60%;float:left">
-            </a>
+          </a>
 
-            </div>
+        </div>
 
-            <div class="col-xs-3 col-md-2 col-lg-2 centered">
-            <a href="http://www.yelp.com/biz/ucsd-gameroom-la-jolla" target="_blank">
+        <div class="col-xs-3 col-md-2 col-lg-2 centered">
+          <a href="http://www.yelp.com/biz/ucsd-gameroom-la-jolla" target="_blank">
             <img src="img/footerYelp.jpg" class="img-responsive" id="social-icon-bar" style="height:50px;width:60%;float:left">
-            </a>
+          </a>
 
-            </div>
+        </div>
 
-            <div class="col-xs-3 col-md-2 col-lg-2 centered">
-            <a href="mailto:gameroom@ucsd.edu">
-            <img src = "img/footerEmail.jpg" class="img-responsive" id="social-icon-bar" style="height:50px;width:60%;float:left">
-            </a>
+        <div class="col-xs-3 col-md-2 col-lg-2 centered">
+          <a href="mailto:gameroom@ucsd.edu">
+            <img src="img/footerEmail.jpg" class="img-responsive" id="social-icon-bar" style="height:50px;width:60%;float:left">
+          </a>
 
-            </div>
+        </div>
 
-            <div class="col-xs-3 col-md-2 col-lg-2 center">
-            <a href="tel:+1858-534-0382">
+        <div class="col-xs-3 col-md-2 col-lg-2 center">
+          <a href="tel:+1858-534-0382">
             <img src="img/footerPhone.jpg" class="img-responsive" id="social-icon-bar" style="height:50px;width:60%;float:left">
-            </a>
-            </div>
+          </a>
         </div>
-        </div>
-        </div>
+      </div>
+    </div>
+  </div>
 
-</div>
-      
-            <div>
-      </ion-content>
+  </div>
+
+  <div>
+    </ion-content>
     </ion-pane>
-   <script>
-$( "#ham" ).click(function() {
-  $( "#staff" ).slideToggle( "fast" );
-});
-</script>
+    <script>
+      $("#ham").click(function() {
+        $("#staff").slideToggle("fast");
+      });
+    </script>
 
-<script>
-$("#ham").click(function(){
-if($(this).attr('src')==$(this).attr('imageOne'))
-  {
-    var a = $(this).attr('imageTwo');
-    $(this).attr('src',a);
-  }
-else
-  {
-    var b = $(this).attr('imageOne');
-    $(this).attr('src',b);
-  }
-});
-</script>
+    <script>
+      $("#ham").click(function() {
+        if ($(this).attr('src') == $(this).attr('imageOne')) {
+          var a = $(this).attr('imageTwo');
+          $(this).attr('src', a);
+        } else {
+          var b = $(this).attr('imageOne');
+          $(this).attr('src', b);
+        }
+      });
+    </script>
 
 
 
@@ -622,4 +629,5 @@ else
 
 
 </body>
+
 </html>

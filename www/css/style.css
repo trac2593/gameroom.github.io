@@ -10,13 +10,13 @@ champion.center-block{
 
 /* Empty. Add your own CSS if you like */
 .headerImg{
-	width:90%;
-	margin-left:5%;
-	position: absolute;
-	z-index:9000;
+	width:100%;
+	/*margin-left:5%;*/
+	/*position: absolute;*/
+	/*z-index:9000;*/
 	height:4em;
-	margin-top: 1%;
-	padding:0%;
+	/*margin-top: 1%;*/
+	/*padding:0%;*/
 }
 .bar-light{
 	height:10%;
@@ -29,6 +29,7 @@ margin-right: 0%;
 height:4em;
 position: absolute;
 z-index:9000;
+
 
 }
 #closeImg{
@@ -169,7 +170,7 @@ h1,h3,h5{
 
 
 #reserve {
-  font-size:60;
+  font-size:60px;
   font-family: "Lemon/Milk";
   color: rgb(0, 0, 0);
   line-height: 1.2;
@@ -393,7 +394,7 @@ h1,h3,h5{
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
-  
+
 
 }
 
@@ -455,7 +456,7 @@ img.champ_pic{
 	border-radius:100%;
 	vertical-align: middle;
 	float:center;
-	
+
 }
 .dufferin{
 	width: 80%;
@@ -507,7 +508,7 @@ img.champ_pic{
   line-height: 1.2;
   text-align: center;
   padding:5%;
-  
+
 }
 
 .footer{
@@ -531,5 +532,3 @@ img.champ_pic{
   line-height: 1.2;
   text-align: left;
 }
-
-
