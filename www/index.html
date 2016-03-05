@@ -15,12 +15,12 @@
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-<!-- This Section was placed in order to use bootstrap icons  -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<!-- This Section was placed in order to use bootstrap icons  -->
+  <!-- This Section was placed in order to use bootstrap icons  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- This Section was placed in order to use bootstrap icons  -->
 
 
 
@@ -48,43 +48,48 @@
 
 
   <!-- <link href="lib/ionic/css/ionic.css" rel="stylesheet"> -->
-  <div id="navbar">
-    <div class="row" style="background-color: #0e89e7">
-      <div class="col-xs-2 col-md-2">
-        <a href="#">
-          <span class="glyphicon glyphicon-menu-hamburger" style="width:100%; font-size:55px; color:#ffffff;"></span>
-        </a>
-        <!-- <img src='img/hamburger.png' id="ham" imageOne='img/hamburger.png' imageTwo='img/close.png'> -->
+    <div id="navbar">
+      <div class="row" style="background-color: #0e89e7; position:fixed;">
+        <div class="col-xs-2 col-md-2 col-lg-2">
+          <a href="#">
+            <span class="glyphicon glyphicon-menu-hamburger" id="ham" ham="glyphicon glyphicon-menu-hamburger" close="glyphicon glyphicon-remove" style="width:100%; font-size:55px; color:#ffffff;"></span>
+          </a>
+        </div>
+        <div class="col-xs-10 col-md-10 col-lg-10">
+          <img src="img/header.jpg" class="headerImg">
+        </div>
       </div>
-      <div class="col-xs-10 col-md-10">
-        <img src="img/header.jpg" class="headerImg">
-      </div>
-    </div>
-  </div>
-    <div id="staff">
-      <div class="row-xs-12 row-md-12 row-lg-12" style="background-color:#0f89e8"></div>
 
-      <div class="row-xs-12 row-md-12 row-lg-12" style="background-color:#ffffff">
-        <div class="col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff">
-          <a href="#info"><img src="img/infoIcon.png" style="width:25px;height:25px"></a>
+      <div id="staff" style="background-color:#ffffff; width:100%;">
+        <div class="row">
+          <div class="col-xs-10" id="white">
+          </div>
         </div>
 
-        <div class="col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff">
-          <a href="#menu"><img src="img/foodIcon.png" style="width:25px;height:25px"></a>
+        <div class="row">
+          <div class="col-xs-2 col-md-2 col-lg-2 col-xs-offset-1 col-md-offset-1 col-lg-offset-1 ">
+            <a href="#info"><img src="img/infoIcon.png" class="infoIcon"></a>
+          </div>
+
+          <div class="col-xs-2 col-md-2 col-lg-2">
+            <a href="#menu"><img src="img/foodIcon.png" class="menuIcon"></a>
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2">
+            <a href="#reservation"><img src="img/reserveIcon.png" class="resIcon"></a>
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2">
+            <a href="#events"><img src="img/eventsIcon.png" class="eventsIcon"></a>
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2">
+            <a href=".#about"><img src="img/aboutIcon.png" class="aboutIcon"></a>
+          </div>
         </div>
-        <div class="col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff">
-          <a href="#reservation"><img src="img/reserveIcon.png" style="width:25px;height:25px"></a>
-        </div>
-        <div class="col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff">
-          <a href="#events"><img src="img/eventsIcon.png" style="width:25px;height:25px"></a>
-        </div>
-        <div class="col-xs-2 col-md-2 col-lg-2" style="background-color:#ffffff">
-          <a href=".#about"><img src="img/aboutIcon.png" style="width:25px;height:25px"></a>
+        <div class="row">
+          <div class="col-xs-12" id="white">
+          </div>
         </div>
       </div>
-      <div class="row-xs-12 row-md-12 row-lg-12"></div>
     </div>
-  </div>
 
 
 
@@ -93,7 +98,7 @@
 
 
   <div class="landing-page">
-    <div class=" row-xs-12 row-md-10 row-lg-10">
+    <div class=" row">
       <div class="center-block">
         <div class="col-xs-14 col-md-10 col-lg-10 col-lg-offset-1">
           <img src="img/Landing-top.jpg" class="img-responsive">
@@ -101,14 +106,14 @@
       </div>
     </div>
 
-    <div class=" row-xs-12 row-md-10 row-lg-10">
+    <div class=" row">
       <div class="center-block">
         <div class="col-xs-14 col-md-10 col-lg-10 col-lg-offset-1">
           <img src="img/Landing-middle.jpg" class="img-responsive">
         </div>
       </div>
     </div>
-    <div class=" row-xs-12 row-md-10 row-lg-10">
+    <div class=" row">
       <div class="center-block">
         <div class="col-xs-14 col-md-10 col-lg-10 col-lg-offset-1">
           <img src="img/Landing-bottom.jpg" class="img-responsive">
@@ -129,7 +134,7 @@
     <div id="info-page"></div>
 
     <div class="container">
-      <div class="row-xs-12 row-md-12 row-lg-12">
+      <div class="row">
         <h1 class="text-center" id="info"> INFO</h1>
 
       </div>
@@ -201,7 +206,7 @@
       </div>
 
 
-      <div class="row-xs-12 row-md-12 row-lg-12" style="margin-top:0%">
+      <div class="row" style="margin-top:0%">
         <div class="col-xs-6 col-md-4 col-lg-4" style="margin-top:40%">
           <span><h3 class="text-right" id="numbers" style="padding:"> 6 </h3></span>
           <span><h3 class="text-right"  id="numbers"> 1 </h3></span>
@@ -230,7 +235,7 @@
 
   <div class="menu-page" id="menu">
 
-    <div class="row-xs-12 row-md-12 row-lg-12">
+    <div class="row">
 
 
       <img src="img/poolImg.jpg" class="img-responsive" style="height:15em;margin-top:10%;width:100%">
@@ -239,12 +244,12 @@
     </div>
     <div class="container">
       <div class="container">
-        <div class="row-xs-12 row-md-12 row-lg-12">
+        <div class="row">
           <div class="col-xs-12 col-md-12 col-lg-12">
             <h1 class="text-center" style="padding:10%" id="shogunFood">FOOD</h1>
           </div>
         </div>
-        <div class="row-xs-12 row-md-12 row-lg-12 " style="margin-bottom:10%">
+        <div class="row " style="margin-bottom:10%">
           <div class="col-xs-6 col-md-6 col-lg-4">
             <div class="center-block">
               <img src="img/shogun.jpg" class="img-responsive" style="vertical-align:right; width:175px;height:175px;vertical-align:center">
@@ -255,12 +260,12 @@
             <h4 class="text-center" style="padding:10%" id="shogunLoc">the gameroom is located right next to SHOGUN</h4>
           </div>
         </div>
-        <div class="row-xs-12 row-md-12 row-lg-12 row-lg-offset-1" style="margin-top:20%;margin-bottom:20; padding:10%">
+        <div class="row" style="margin-top:20%;margin-bottom:20; padding:10%">
           <div class="col-xs-12 col-md-12 col-lg-12">
             <h2 class="text-center" id="shogunHours" style="margin-top:10%"> SHOGUN HOURS </h2>
           </div>
         </div>
-        <div class="row-xs-12 row-md-12 row-lg-12 row-lg-offset-1" style="margin-top:5%;margin-bottom:20; padding:0%;margin-left:10%">
+        <div class="row" style="margin-top:5%;margin-bottom:20; padding:0%;margin-left:10%">
           <div class="col-xs-7 col-md-7 col-lg-7">
             <h4 id="shogunTxt"> MON - FRI</h4>
             <h4 id="shogunTxt"> SAT - SUN</h4>
@@ -270,7 +275,7 @@
             <h4 id="shogunTxt"> 11:30 - 8</h4>
           </div>
         </div>
-        <!-- <div class="row-xs-12 row-md-12 row-lg-12">
+        <!-- <div class="row">
           <div class="col-xs-6 col-md-6 col-lg-6">
             <h4> SAT - SUN</h4>
           </div>
@@ -278,7 +283,7 @@
             <h4> 11:30 - 8</h4>
           </div>
         </div>-->
-        <div class="row-xs-12 row-md-12 row-lg-12" style="margin-bottom:10%">
+        <div class="row" style="margin-bottom:10%">
           <div class="col-xs-6 col-md-6 col-lg-6" style="margin-top:10%">
             <img src="img/bottle.jpg" class="img-responsive" style="margin-bottom:50%;margin-left:25%; height:250px;width:75px">
           </div>
@@ -300,12 +305,12 @@
 
 
   <div class="reservation-page" id="reservation">
-    <div class="row-xs-12 row-md-12 row-lg-12">
+    <div class="row">
       <div class="center-block">
         <img src="img/poolBallsImg.jpg" class="img-responsive" style="height:10em">
       </div>
     </div>
-    <div class="row-xs-12 row-md-12 row-lg-12 center-text">
+    <div class="row center-text">
       <h1 id="reserve">RESERVE</h1>
       <h1 class="text-center" id="How_">How?</h1>
       <h4 class="text-center" id="minimum">Minimum requirements for a reservation:</h4>
@@ -411,13 +416,13 @@
   </div>
 
   <div class="events-page" id="events">
-    <div class="row-xs-12 row-md-12 row-lg-12">
+    <div class="row">
       <div class="center-block">
         <img src="img/poolImg.jpg" class="img-responsive" style="height:10em;width:100%">
       </div>
     </div>
     <div class="container">
-      <div class="row-xs-12 row-md-12 row-lg-12 center-text" style="padding:5%">
+      <div class="row center-text" style="padding:5%">
         <h1 id="events-txt">EVENTS</h1>
       </div>
       <div class="row">
@@ -428,7 +433,7 @@
 
 
       <div class="champions">
-        <div class="row-xs-12 row-md-12 row-lg-12">
+        <div class="row">
           <div class="container">
             <div class="center-block">
               <img src="img/eventsPoster.jpg" class="img-responsive" style="height:30em;width:70%;vertical-align:center">
@@ -481,7 +486,7 @@
 
 
   <div class="equipment-page" id="about">
-    <div class="row-xs-12 row-md-12 row-lg-12">
+    <div class="row">
 
       <img src="img/eightBall.jpg" class="eightBall" style="height:20em">
 
@@ -489,9 +494,9 @@
     <div class="container">
       <h1 style="text-align:center" id="aboutTxt">ABOUT</h1>
 
-      <div class="row-xs-12 row-md-12 row-lg-12">
+      <div class="row">
         <img src="img/equipmentTitle.jpg" class="img-responsive" style="height:5em;width:70%;vertical-align:center">
-        <div class="row-xs-8 row-md-8 row-lg-8">
+        <div class="row">
           <div class="center-block">
             <img src="img/brunswick.jpg" class="brunswick img-responsive">
           </div>
@@ -500,7 +505,7 @@
           <h4 style="text-align:center"> Nine feet of tournament level playing space. Beautifully crafted for your playing pleasure.</h4>
 
         </div>
-        <div class="row-xs-8 row-md-8 row-lg-8">
+        <div class="row">
           <div class="center-block">
             <img src="img/aramith.jpg" class="aramith img-responsive">
           </div>
@@ -509,7 +514,7 @@
             <h4 style="text-align:center">Outstanding performance and uncompromising quality.</h4>
           </p>
         </div>
-        <div class="row-xs-8 row-md-8 row-lg-8">
+        <div class="row">
           <div class="center-block">
             <img src="img/dufferin.jpg" class="dufferin img-responsive">
           </div>
@@ -523,14 +528,14 @@
 
 
     <div class="staff-page">
-      <div class="row-xs-12 row-md-12 row-lg-12">
+      <div class="row">
         <div class="center-block">
           <img src="img/staff.jpg" class="img-responsive" style="height:11em;width:70%;vertical-align:center;padding:10%">
         </div>
       </div>
 
       <div class="container">
-        <div class="row-xs-12 row-md-12 row-lg-12">
+        <div class="row">
           <img src="img/manager.jpg" class="managerImg img-responsive">
           <p>
             <h2 style="text-align:center"><b>Roy Barnea</b></h2>
@@ -539,7 +544,7 @@
         </div>
       </div>
 
-      <div class="row-xs-12 row-md-12 row-lg-12">
+      <div class="row">
         <img src="img/studStaff.jpg" class="teamImg img-responsive">
         <p>
           <h2 style="text-align:center"><b>The Team</b></h2>
@@ -565,7 +570,7 @@
         </div>
       </div>
 
-      <div class="row-xs-12 row-md-12 row-lg-12" style="margin-right:0;paddinf:0%">
+      <div class="row" style="margin-right:0;paddinf:0%">
 
         <div class="col-xs-3 col-xs-offset-0 col-md-2 col-lg-2 col-lg-offset-3 centered">
           <a href="https://www.facebook.com/ucsdgameroom/?fref=ts" target="_blank">
@@ -610,12 +615,12 @@
 
     <script>
       $("#ham").click(function() {
-        if ($(this).attr('src') == $(this).attr('imageOne')) {
-          var a = $(this).attr('imageTwo');
-          $(this).attr('src', a);
+        if ($(this).attr('class') == $(this).attr('ham')) {
+          var a = $(this).attr('close');
+          $(this).attr('class', a);
         } else {
-          var b = $(this).attr('imageOne');
-          $(this).attr('src', b);
+          var b = $(this).attr('ham');
+          $(this).attr('class', b);
         }
       });
     </script>
