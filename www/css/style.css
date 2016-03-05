@@ -10,25 +10,31 @@ champion.center-block{
 
 /* Empty. Add your own CSS if you like */
 .headerImg{
-	width:100%;
+	width:99%;
+	top:0%;
 	/*margin-left:5%;*/
 	/*position: absolute;*/
 	/*z-index:9000;*/
-	height:4em;
+	height:3.9em;
 	/*margin-top: 1%;*/
 	/*padding:0%;*/
 }
-.bar-light{
-	height:10%;
-	position:absolute;
+#headerImg{
+	background-color: #0e89e7;
 }
+#hamburger{
+	background-color: #0e89e7;
+}
+
 #ham{
-width: 100%;
+	top:0;
+width: 50%;
 padding:0%;
 margin-right: 0%;
-height:4em;
+height:1.4em;
 position: absolute;
 z-index:9000;
+/*background-color:#0e89e7;*/
 }
 #white{
 	height:4em;
@@ -64,6 +70,7 @@ z-index:9000;
 	height: 4em;
 	background-color:#ffffff;
 	padding: 2%;
+
 }
 
 #closeImg{
@@ -71,22 +78,25 @@ width: 20%;
 height: 4em;
 padding:0%;
 position: absolute;
-z-index:9000;
+z-index:9500;
 }
 
 #staff{
 	display: none;
 	position:fixed;
 	top:4em;
+	width:100%
 }
-#navbar{
-	position:fixed;
+.navbar{
+	position:absolute;
 	top:0;
 	width:100%;
-	background-color: #fff;
-	z-index: 8000;
-	height:0;
+	z-index: 9500;
+	height:5em;
+	background-color: #0e89e7;
+	box-sizing: border-box;
 }
+
 table{
 	height: ;
 	width: 100%;
@@ -111,6 +121,7 @@ h1,h3,h5{
 
 .landing-page{
 	height:auto;
+	top:0;
 }
 .img-responsive{
 	display:block;
