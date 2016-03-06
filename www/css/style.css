@@ -24,6 +24,7 @@ champion.center-block{
 }
 #hamburger{
 	background-color: #0e89e7;
+	float:left;
 }
 
 #ham{
@@ -34,6 +35,7 @@ margin-right: 0%;
 height:1.4em;
 position: absolute;
 z-index:9000;
+float:left;
 /*background-color:#0e89e7;*/
 }
 #white{
@@ -41,35 +43,41 @@ z-index:9000;
 	width:100%;
   background-color: #0e89e7;
 }
-.infoIcon {
+#icons{
 	width:100%;
 	height: 4em;
+	background-color:#ffffff; 
+}
+.infoIcon {
+	vertical-align:center ;
+	width:60%;
+	height: 4em;
 	background-color:#ffffff;
-	padding: 2%;
+	padding: 5%;
 }
 .menuIcon {
-	width:100%;
+	width:60%;
 	height: 4em;
 	background-color:#ffffff;
-	padding: 2%;
+	padding: 5%;
 }
 .resIcon {
-	width:100%;
+	width:60%;
 	height: 4em;
 	background-color:#ffffff;
-	padding: 2%;
+	padding: 5%;
 }
 .eventsIcon {
-	width:100%;
+	width:60%;
 	height: 4em;
 	background-color:#ffffff;
-	padding: 2%;
+	padding: 5%;
 }
 .aboutIcon {
-	width:100%;
+	width:60%;
 	height: 4em;
 	background-color:#ffffff;
-	padding: 2%;
+	padding: 5%;
 
 }
 
@@ -130,6 +138,10 @@ h1,h3,h5{
 	width:100%;
 
 }
+#infoDivider{
+	vertical-align: center;
+	width:100%;
+}
 #info {
   font-size: 60px;
   font-family: "Lemon/Milk";
@@ -139,11 +151,12 @@ h1,h3,h5{
 }
 
 #tables{
-  font-size: 16px;
+  font-size: 22px;
   font-family: "Lemon/Milk";
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: left;
+  padding:10%;
 }
 #numbers{
  font-size: 40px;
@@ -283,7 +296,7 @@ h1,h3,h5{
 	width: 80%;
 	height: 8em;
 	padding: 0%;
-	margin-top:30%;
+	margin-top:0%;
 	margin-bottom:20%;
 }
 .info-page-det{
@@ -294,9 +307,9 @@ h1,h3,h5{
 	font-family: 'Lemon milk';
 }
 #social-icon-bar{
-	width: 40%;
-	height:3em;
-	padding:0%;
+	width: 100%;
+	height:10em;
+	padding:10%;
 	border-collapse: collapse;
 }
 #social-bar{
@@ -378,7 +391,13 @@ h1,h3,h5{
 	height:50%;
 	z-index: 9000;
 }
-
+#reserveDivider{
+	vertical-align: center;
+	width:100%;
+}
+#TTE-booknow-0Fuf-rjRDCI715JXYkATQx-iJMHfVS4HxMX1QGW9{
+	-color:#fff;
+}
 
 
 /* Form CSS */
@@ -457,6 +476,10 @@ h1,h3,h5{
 	padding:5%;
 }
 
+#upcoming{
+	width: 60%;
+	padding:5%;
+}
 }
 #winners{
   font-size: 24px;
@@ -468,12 +491,12 @@ h1,h3,h5{
 
 }
 #trophy{
-	margin:0;
-	padding:0;
-	position:relative;
-	top:50;
-	left:-70;
+	width:20%;
+	padding:20%;
+	vertical-align:center;
+
 }
+
 img.champ_pic{
 	margin: 5%;
 	border-radius: 50%;
@@ -489,6 +512,11 @@ img.champ_pic{
 
 .equipment-page{
 	width: 100%;
+}
+#equipmentImg{
+	padding:5%;
+	vertical-align: center;
+	width:50%;
 }
 .aramith{
 	width:80%;
