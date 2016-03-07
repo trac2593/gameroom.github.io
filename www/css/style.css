@@ -180,7 +180,7 @@ h1,h3,h5{
 }
 #minDiv{
 	text-align: center;
-	padding:5%;
+	padding-bottom:15%;
 }
 #tables{
   font-size: 22px;
@@ -258,7 +258,7 @@ h1,h3,h5{
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
-  padding: 0%
+  padding-bottom: 5%
 
   }
 
@@ -271,6 +271,11 @@ h1,h3,h5{
   text-align: center;
   padding:5%;
 
+}
+
+#resAltern{
+	padding-bottom: 10%;
+	padding-top: 15%;
 }
 
 .Pool_tables {
@@ -290,6 +295,7 @@ h1,h3,h5{
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
+  padding-bottom: 10%;
 }
 
 
@@ -456,12 +462,13 @@ h1,h3,h5{
 }
 #callTxt{
 	text-align:center;
-	padding: 0%;
+	padding-bottom: 5%;
 	width:50%;
 }
 #orgTxt{
 	float: center;
 	width:55%;
+	padding-bottom:10%;
 }
 
 #orgIcon{
