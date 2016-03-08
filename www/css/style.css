@@ -333,7 +333,7 @@ h1,h3,h5{
 	margin-top: 0%;
 
 }
-.hidden-xs-map{
+#map{
 	width: 80%;
 	height: 8em;
 	padding: 0%;
@@ -419,7 +419,7 @@ h1,h3,h5{
 }
 /* Reserve CSS */
 
-.hidden-xs-shogunLogo{
+#shogunLogo{
 	height: 20em;
 	width:%;
 	padding-bottom: 0%;
