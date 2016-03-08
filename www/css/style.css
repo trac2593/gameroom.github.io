@@ -65,38 +65,38 @@ float:left;
 }
 .infoIcon {
 	vertical-align:center ;
-	width:50%;
+	width:;
 	height: 4em;
 	background-color:#ffffff;
-	padding: 0%;
+	padding-right: 5%;
 	float:left;
 }
 .menuIcon {
-	width:50%;
+	width:;
 	height: 4em;
 	background-color:#ffffff;
-	padding: 0%;
+	padding-right: 5%;
 	float:left;
 }
 .resIcon {
-	width:50%;
+	width:;
 	height: 4em;
 	background-color:#ffffff;
-	padding: 0%;
+	padding-right: 5%;
 	float:left;
 }
 .eventsIcon {
-	width:50%;
+	width:%;
 	height: 4em;
 	background-color:#ffffff;
-	padding: 0%;
+	padding-right: 5%;
 	float:left;
 }
 .aboutIcon {
-	width:50%;
+	width:%;
 	height: 4em;
 	background-color:#ffffff;
-	padding: 0%;
+	padding-right: 5%;
 	float:left; ;
 
 }
