@@ -51,57 +51,67 @@
 
   <!-- <link href="lib/ionic/css/ionic.css" rel="stylesheet"> -->
 
-    <div class="navbar" style="position:fixed;">
-      <div class="row" style="position:fixed;">
-        <div class="col-xs-2 col-md-2 col-lg-2 col-xs-offset-0 col-md-offset-0 col-lg-offset-0" style="background-color:#0e89e7" id="hamburger">
+  <div class="navbar" style="position:fixed;">
+    <div class="row"  "backrgound-color::#0e89e7">
+      <div class="col-xs-2 col-md-2 col-lg-2"  id="hamburger">
 
           <span class="glyphicon glyphicon-menu-hamburger" id="ham" ham="glyphicon glyphicon-menu-hamburger" close="glyphicon glyphicon-remove" style="font-size:40px; color:#ffffff;"></span>
 
+      </div>
+      <div class="col-xs-10" id="headerImg">
+        <h1 class = "headerText">GAMEROOM</h1>
+      </div>
+    </div>
+
+    <div id="staff" style="width:100%;">
+
+      <div class="row">
+        <div class="col-xs-12 col-md-10 col-lg-10 col-xs-offset-0 col-md-offset-0 col-lg-offset-0" id="white">
         </div>
-        <div class="col-xs-6 col-md-10 col-lg-10 col-md-offset-0 col-lg-offset-0" style="background-color:#0e89e7" id="headerImg">
-          <img src="img/header.jpg" class="headerImg">
+      </div>
+       <div class="row">
+        <div class="col-xs-12 col-md-10 col-lg-10 col-xs-offset-0 col-md-offset-0 col-lg-offset-0" id="white2">
         </div>
       </div>
 
-      <div id="staff" style="width:100%;">
-
-        <div class="row">
-          <div class="col-xs-12 col-md-10 col-lg-10 col-xs-offset-0 col-md-offset-0 col-lg-offset-0" id="white">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-md-10 col-lg-10 col-xs-offset-0 col-md-offset-0 col-lg-offset-0" id="white2">
-          </div>
+      <div class="row" id ="icons" style="width:100%">
+      <div class="col-xs-10 col-md-10 col-lg-10 col-xs-offset-1 col-md-offset-1 col-lg-offset-1" id="icons" >
+        <div class="col-xs-2 col-md-2 col-lg-2 col-xs-offset-0 col-md-offset-0 col-lg-offset-0" style="top:1; width:">
+          <a href="#info-page"><span class="glyphicon glyphicon-map-marker" style="font-size:40px;color:#0e89e7"><h5 class="iconsText">info</h5></span>
+            <h5>info</h5>
+            <!--<img src="img/infoIconTxt.jpg" class="infoIcon">--></a>
         </div>
 
-        <div class="row" id="icons" style="width:100%">
-          <div class="col-xs-10 col-md-10 col-lg-10 col-xs-offset-1 col-md-offset-1 col-lg-offset-1" id="icons">
-            <div class="col-xs-2 col-md-2 col-lg-2 col-xs-offset-0 col-md-offset-0 col-lg-offset-0" style="top:1; width:">
-              <a href="#info-page"><img src="img/infoIconTxt.jpg" class="infoIcon"></a>
-            </div>
-
-            <div class="col-xs-2 col-md-2 col-lg-2" style="width:">
-              <a href="#menu"><img src="img/foodIconTxt.jpg" class="menuIcon"></a>
-            </div>
-            <div class="col-xs-2 col-md-2 col-lg-2" style="width:">
-              <a href="#reservation"><img src="img/reserveIconTxt.jpg" class="resIcon"></a>
-            </div>
-            <div class="col-xs-2 col-md-2 col-lg-2" style="width:">
-              <a href="#events"><img src="img/eventsIconTxt.jpg" class="eventsIcon"></a>
-            </div>
-            <div class="col-xs-2 col-md-2 col-lg-2" style="width:">
-              <a href=".#about"><img src="img/aboutIconTxt.jpg" class="aboutIcon"></a>
-            </div>
-          </div>
+        <div class="col-xs-2 col-md-2 col-lg-2" style="width:">
+          <a href="#menu"><span class="glyphicon glyphicon-cutlery" style="font-size:40px;color:#0e89e7"><h5 class="iconsText">menu</h5></span>
+            <h5>menu</h5>
+            <!--<img src="img/foodIconTxt.jpg" class="menuIcon">--></a>
         </div>
-        <div class="row">
-          <div class="col-xs-8 col-md-10 col-lg-10 col-xs-offset-0 col-md-offset-0 col-lg-offset-0" id="white2">
-          </div>
+        <div class="col-xs-2 col-md-2 col-lg-2" style="width:">
+          <a href="#reservation"><span class="glyphicon glyphicon-bookmark" style="font-size:40px; color:#0e89e7"><h5 class="iconsText">reserve</h5></span>
+            <h5>reservations</h5>
+            <!--<img src="img/reserveIconTxt.jpg" class="resIcon">--></a>
         </div>
-        <div class="row">
-          <div class="col-xs-8 col-md-10 col-lg-10 col-xs-offset-0 col-md-offset-0 col-lg-offset-0" id="white">
-          </div>
+        <div class="col-xs-2 col-md-2 col-lg-2" style="width:">
+          <a href="#events"><span class="glyphicon glyphicon-calendar" style="font-size:40px;color:#0e89e7"><h5 class="iconsText">events</h5></span>
+            <h5>events</h5>
+            <!--<img src="img/eventsIconTxt.jpg" class="eventsIcon">--></a>
         </div>
+        <div class="col-xs-2 col-md-2 col-lg-2" style="width:">
+          <a href=".#about"><span class="glyphicon glyphicon-sunglasses" style="font-size:40px;color:#0e89e7"><h5 class="iconsText">about</h5></span>
+            <h1 style="color:#0e89e7;font-size:12px">about</h1>
+            <!--<img src="img/aboutIconTxt.jpg" class="aboutIcon">--></a>
+        </div>
+      </div>
+      </div>
+       <div class="row">
+        <div class="col-xs-8 col-md-10 col-lg-10 col-xs-offset-0 col-md-offset-0 col-lg-offset-0" id="white2">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-8 col-md-10 col-lg-10 col-xs-offset-0 col-md-offset-0 col-lg-offset-0" id="white">
+        </div>
+      </div>
       </div>
     </div>
 

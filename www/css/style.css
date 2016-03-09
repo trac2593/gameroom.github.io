@@ -19,33 +19,34 @@
 }
 
 /* Empty. Add your own CSS if you like */
-.headerImg{
-	width:100%;
-	top:0%;
-	/*margin-left:5%;*/
-	/*position: absolute;*/
-	/*z-index:9000;*/
-	/*height:3.9em;*/
-	/*margin-top: 1%;*/
-	/*padding:0%;*/
-}
-#headerImg{
-	background-color: #0e89e7;
+.headerText{
+	font-size: 46px;
+  font-family: "Lemon/Milk";
+  color: rgb(256, 256, 256);
+  line-height: 1.2;
+  text-align: center;
+	padding-right:7%;
+	margin-top: 0%;
 }
 #hamburger{
 	background-color: #0e89e7;
-	float:left;
+	/*float:left;*/
 }
-
+.iconsText{
+	color:#0e89e7;
+	font-size:12px;
+	margin-top:0;
+	text-align: center;
+}
 #ham{
-	top:0;
+/*top:0;*/
 width: 50%;
-padding:0%;
-margin-right: 0%;
-height:1.4em;
+/*padding:0%;*/
+/*margin-right: 0%;*/
+/*height:1.4em;*/
 position: absolute;
 z-index:9000;
-float:left;
+/*float:left;*/
 /*background-color:#0e89e7;*/
 }
 #white{
