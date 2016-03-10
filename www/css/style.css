@@ -19,7 +19,7 @@ html,body
 	width:100%;
 	vertical-align:center;
 	padding-top:5%;
-	margin-bottom: 0%;
+	margin-bottom: 5%;
 }
 #infoHours{
 	text-align: middle;
@@ -287,7 +287,7 @@ h1,h3,h5{
 
 }
 #How_ {
- font-size: 45;
+ font-size: 50px;
   font-family: "Lemon/Milk";
   color: rgb(0, 0, 0);
   line-height: 1.2;
@@ -348,7 +348,7 @@ h1,h3,h5{
 	/*height: 8em;*/
 	padding: 0%;
 	margin-top:0%;
-	margin-bottom:20%;
+	/*margin-bottom:20%;*/
 }
 .info-page-det{
 	width:100%;
@@ -475,7 +475,7 @@ h1,h3,h5{
 
 #resEmail{
 	width: 15%;
-	height: 5em;
+	/*height: 5em;*/
 	float:center;
 }
 #callTxt{
@@ -597,6 +597,7 @@ h1,h3,h5{
 }
 #trophyPic{
 	width: 50%;
+	margin: 5%;
 }
 #equipmentImg{
 	padding:5%;
@@ -617,6 +618,10 @@ h1,h3,h5{
 .staffBan{
 	 width:30%;
 	 vertical-align:center;
+}
+.teamNames{
+	font-family: "Myriad Pro";
+	font-size: 20px;
 }
 /*Scaling for Desktop*/
 /*Scale to 100% if in phone size:*/
@@ -652,6 +657,16 @@ h1,h3,h5{
 	.staffBan{
 		 width:70%;
 		 vertical-align:center;
+		 margin: 5%;
+	}
+	.teamNames{
+		font-family: "Myriad Pro";
+		font-size: 17px;
+		padding:3%;
+	}
+	#orgIcon{
+		width:100%;
+		float: left;
 	}
 }
 /*Scale to 100% if in phone size:*/
