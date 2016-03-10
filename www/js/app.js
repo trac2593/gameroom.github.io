@@ -7,7 +7,7 @@ angular.module('starter', ['ionic'])
 
 .controller('PageController', function($scope, $location, $anchorScroll, $ionicScrollDelegate)
 {
-  
+
   $scope.scrollToAnchorWithinCurrentPage = function(anchor)
   {
     $location.hash(anchor);
@@ -33,4 +33,3 @@ angular.module('starter', ['ionic'])
     }
   });
 })
-

@@ -5,9 +5,18 @@
 }
 .cinemagraph{
 	width:100%;
-
 }
 
+/* THIS SECTION WAS ADDED BECAUSE THERE WAS HUGE WHITE SPACE ON THE RIGHT HAND SIDE*/
+.row {
+  padding: 0px;
+  margin: 0px;
+	overflow: hidden;
+}
+.container {
+	overflow:hidden;
+}
+/* THIS SECTION WAS ADDED BECAUSE THERE WAS HUGE WHITE SPACE ON THE RIGHT HAND SIDE*/
 
 #landing{
 	width:100%;
@@ -106,24 +115,37 @@ z-index:9000;
 width: 20%;
 height: 4em;
 padding:0%;
-position: absolute;
+position: relative;
 z-index:9500;
 }
 
 #staff{
 	display: none;
-	position:fixed;
+	position:relative;
 	top:4em;
-	width:100%
+	width:100%;
 }
-.navbar{
-	position:absolute;
+@media (max-width:500px){
+	.navbar2{
+		position:fixed;
+		top:0;
+		width: 375px;
+		z-index: 9500;
+		background-color: #0e89e7;
+	}
+	#staff{
+		display: none;
+		position:relative;
+		top:4em;
+		width:375px;
+	}
+}
+.navbar2{
+	position:fixed;
 	top:0;
 	width:100%;
 	z-index: 9500;
-	/*height:5em;*/
 	background-color: #0e89e7;
-
 }
 
 table{
@@ -150,7 +172,7 @@ h1,h3,h5{
 
 .landing-page{
 	height:auto;
-	top:0;
+	/*top:0;*/
 	text-align: center
 }
 .img-responsive{
@@ -206,17 +228,16 @@ h1,h3,h5{
   float:center;
 }
 #prices{
-  font-size: 22px;
+  font-size: 50px;
   font-family: "Lemon/Milk";
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
   padding:0%;
-
   z-index: 14;
 }
 #days {
-  font-size: 12px;
+  font-size: 30px;
   font-family: "Lemon/Milk";
   color: rgb(0, 0, 0);
   line-height: 1.2;
@@ -225,7 +246,7 @@ h1,h3,h5{
 }
 
 #games {
-  font-size: 14px;
+  font-size: 30px;
   font-family: "Lemon/Milk";
   color: rgb(0, 0, 0);
   line-height: 1.2;
@@ -234,7 +255,7 @@ h1,h3,h5{
  }
 
 #hourPrice{
-  font-size: 12px;
+  font-size: 30px;
   font-family: "Lemon/Milk";
   color: rgb(3, 81, 255);
   line-height: 1.2;
@@ -291,9 +312,6 @@ h1,h3,h5{
   line-height: 1.2;
   text-align: left;
   padding:7%;
-
-
-  /*z-index: 41;*/
 }
 #minimum {
   font-size: 30px;
@@ -306,27 +324,6 @@ h1,h3,h5{
 
 
 /* Landing Page CSS */
-.landing-Img-Top{
-	height:15em;
-	width: 100%;
-	padding: 0%;
-	border-collapse: collapse;
-	/*float: left;*/
-
-}
-.landing-Img-Middle{
-	height: 50%;
-	width: 100%;
-	padding:0%;
-	border-collapse: collapse;
-
-}
-.landing-Img-Bottom{
-	height: 25%;
-	width: 100%;
-	padding: 0%;
-
-}
 .info-page{
 	padding: 0%;
 	width: 100%;
@@ -340,8 +337,8 @@ h1,h3,h5{
 
 }
 #map{
-	width: 80%;
-	height: 8em;
+	width: 100%;
+	/*height: 8em;*/
 	padding: 0%;
 	margin-top:0%;
 	margin-bottom:20%;
@@ -551,20 +548,12 @@ h1,h3,h5{
 	height:8em;
 	margin-top: 10%;
 }
-#eventsPoster{
-	padding:0%;
-	width:50%;
-	height:35em;
-}
 #events-txt{
-
   font-size: 80px;
   font-family: "Lemon/Milk";
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
-
-
 }
 
 .champion_row{
@@ -582,11 +571,7 @@ h1,h3,h5{
 	padding:5%;
 }
 
-#upcoming{
-	width: 60%;
-	padding:5%;
-}
-}
+
 #winners{
   font-size: 24px;
   font-family: "Lemon/Milk";
@@ -594,25 +579,86 @@ h1,h3,h5{
   line-height: 1.2;
   text-align: left;
 }
-
+/*Scaling for Desktop*/
+#upcoming{
+	width: 50%;
+	padding:5%;
 }
-.currentChampions{
-	width:10%;
-	height: 5em;
-	padding:%;
+#eventsPoster{
+	padding:0%;
+	width:35%;
+}
+#trophyPic{
+	width: 50%;
+}
+#equipmentImg{
+	padding:5%;
+	vertical-align: center;
+	width:50%;
+}
+.managerImg{
+	width:35%;
+	padding:0%;
 	float:center;
+	vertical-align:center;
 }
-
+.teamImg{
+	width:75%;
+	padding:0%;
+	margin-bottom: 5%;
+}
+.staffBan{
+	 width:30%;
+	 vertical-align:center;
+}
+/*Scaling for Desktop*/
+/*Scale to 100% if in phone size:*/
+@media(max-width:500px){
+	#upcoming{
+		width: 100%;
+		padding:5%;
+	}
+	#eventsPoster{
+		padding:0%;
+		width:85%;
+	}
+	#trophyPic{
+		width: 100%;
+	}
+	#equipmentImg{
+		padding:5%;
+		vertical-align: center;
+		width:100%;
+	}
+	.managerImg{
+		width:100%;
+		padding:0%;
+		float:center;
+		vertical-align:center;
+	}
+	.teamImg{
+		width:100%;
+		padding:0%;
+		margin-top:5%;
+		margin-bottom: 5%;
+	}
+	.staffBan{
+		 width:70%;
+		 vertical-align:center;
+	}
+}
+/*Scale to 100% if in phone size:*/
 #trophy{
 	text-align: center;
-
 }
+
 img.champ_pic{
 	margin: 0%;
 	border-radius: 50%;
 	width: 80%;
 	vertical-align: center;
 }
+
 .champ_name{
  font-weight: bold;
  font-size: 26px;
@@ -627,16 +673,11 @@ img.champ_pic{
 .equipImgs{
 	text-align:center;
 }
-#equipmentImg{
-	padding:5%;
-	vertical-align: center;
-	width:100%;
-}
 
 img.equipment_pic{
 	margin: 0%;
 	border-radius: 50%;
-	width: 90%;
+	width: 75%;
 	vertical-align: center;
 }
 .aramith{
@@ -680,24 +721,10 @@ img.equipment_pic{
 	padding:0%;
 	margin-top:10%;
 }
-.managerImg{
-	width:50%;
-	padding:0%;
-	float:center;
-	vertical-align:center;
-}
 .studManImg{
 	width:100%;
 	padding:0%;
 }
-
-.teamImg{
-	width:100%;
-	padding:0%;
-	margin-top:5%;
-	margin-bottom: 5%;
-}
-
 .aboutDivider{
 	width:100%;
 }
@@ -719,8 +746,7 @@ img.equipment_pic{
 .footer{
 	width: 100%;
 	height: 30em;
-
-	background-color: #034fff;
+	background-color: #0e89e7;
 }
 #footerHours {
   font-size: 50px;
