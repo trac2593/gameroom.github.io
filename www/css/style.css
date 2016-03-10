@@ -6,7 +6,12 @@
 .cinemagraph{
 	width:100%;
 }
-
+html,body
+{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
 /* THIS SECTION WAS ADDED BECAUSE THERE WAS HUGE WHITE SPACE ON THE RIGHT HAND SIDE*/
 .row {
   padding: 0px;
@@ -22,6 +27,7 @@
 	width:100%;
 	vertical-align:center;
 	padding-top:5%;
+	margin-bottom: 0%;
 }
 #infoHours{
 	text-align: middle;
@@ -436,7 +442,7 @@ h1,h3,h5{
 /* Reserve CSS */
 
 #shogunLogo{
-	height: 20em;
+
 	width:%;
 	padding-bottom: 0%;
 	padding-top: 10%;
@@ -444,7 +450,7 @@ h1,h3,h5{
 #bottleLogo{
 
 	width:%;
-	height:20em;
+
 	padding-bottom: 0%;
 	padding-top:10%;
 
