@@ -723,7 +723,7 @@ img.equipment_pic{
 	background-color: #034fff;
 }
 #footerHours {
-  font-size: 40px;
+  font-size: 50px;
   font-family: "Lemon/Milk";
   color: rgb(255, 255, 255);
   line-height: 1.2;
@@ -732,22 +732,23 @@ img.equipment_pic{
 
 }
 #footerDays1 {
-  font-size: 14px;
+  font-size: 30px;
   font-family: "Myriad Pro";
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: right;
-  font-weight: 500;
-  float:right;
-  width:70%;
+  font-weight: 500px;
+	padding-right: 15%;
+  /*float:right;*/
+  width:100%;
 }
 
 #footerDays2 {
-  font-size: 18px;
+  font-size: 30px;
   font-family: "Myriad Pro";
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: left;
-  width:70%;
-  font-weight: 300;
+  width:100%;
+  font-weight: 300px;
 }
