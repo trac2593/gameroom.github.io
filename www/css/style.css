@@ -644,7 +644,7 @@ h1,h3,h5{
 	}
 	.managerImg{
 		width:100%;
-		padding:0%;
+		padding:5%;
 		float:center;
 		vertical-align:center;
 	}
@@ -678,6 +678,7 @@ img.champ_pic{
 	margin: 0%;
 	border-radius: 50%;
 	width: 80%;
+	padding: 5%; 
 	vertical-align: center;
 }
 
