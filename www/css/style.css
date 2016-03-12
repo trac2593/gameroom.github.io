@@ -125,7 +125,7 @@ html,body{
 @media(max-width:600px){
 	.headerText{
 		font-size: 46px;
-	  font-family: "Lemon/Milk", Helvetica, Arial;
+	  font-family: 'LemonMilk', Helvetica, Arial;
 	  color: rgb(256, 256, 256);
 	  line-height: 1.2;
 	  text-align: center;
@@ -297,7 +297,7 @@ h1,h3,h5{
 }
 #info {
   font-size: 60px;
-  font-family: "Lemon/Milk", Helvetica, Arial;
+  font-family: 'LemonMilk', Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
@@ -320,7 +320,7 @@ h1,h3,h5{
 }
 #tables{
   font-size: 22px;
-  font-family: "Lemon/Milk", Helvetica, Arial;
+  font-family: 'LemonMilk', Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: left;
@@ -328,7 +328,7 @@ h1,h3,h5{
 }
 #numbers{
  font-size: 40px;
-  font-family: "Lemon/Milk", Helvetica, Arial;
+  font-family: 'LemonMilk', Helvetica, Arial;
   color: rgb(3, 79, 255);
   line-height: 1.2;
   text-align: left;
@@ -337,7 +337,7 @@ h1,h3,h5{
 }
 #prices{
   font-size: 50px;
-  font-family: "Lemon/Milk", Helvetica, Arial;
+  font-family: 'LemonMilk', Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
@@ -346,7 +346,7 @@ h1,h3,h5{
 }
 #days {
   font-size: 30px;
-  font-family: "Lemon/Milk", Helvetica, Arial;
+  font-family: 'LemonMilk', Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
@@ -355,7 +355,7 @@ h1,h3,h5{
 
 #games {
   font-size: 30px;
-  font-family: "Lemon/Milk", Helvetica, Arial;
+  font-family: 'LemonMilk', Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
@@ -364,7 +364,7 @@ h1,h3,h5{
 
 #hourPrice{
   font-size: 30px;
-  font-family: "Lemon/Milk", Helvetica, Arial;
+  font-family: 'LemonMilk', Helvetica, Arial;
   color: rgb(3, 81, 255);
   line-height: 1.2;
   text-align: center;
@@ -380,7 +380,7 @@ h1,h3,h5{
 }
 #two {
   font-size: 40px;
-  font-family: "Lemon/Milk", Helvetica, Arial;
+  font-family: 'LemonMilk', Helvetica, Arial;
   color: rgb(3, 79, 255);
   line-height: 1.2;
   text-align: center;
@@ -389,7 +389,7 @@ h1,h3,h5{
 }
 #How_ {
  font-size: 50px;
-  font-family: "Lemon/Milk", Helvetica, Arial;
+  font-family: 'LemonMilk', Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
@@ -400,7 +400,7 @@ h1,h3,h5{
 
 #reserve {
   font-size:60px;
-  font-family: "Lemon/Milk", Helvetica, Arial;
+  font-family: 'LemonMilk', Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
@@ -415,7 +415,7 @@ h1,h3,h5{
 
 .Pool_tables {
   font-size: 30px;
-  font-family: "Lemon/Milk", Helvetica, Arial;
+  font-family: 'LemonMilk', Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: left;
@@ -423,7 +423,7 @@ h1,h3,h5{
 }
 #minimum {
   font-size: 30px;
-  font-family: "Myriad Pro", Arial;
+  font-family: 'Myriad Pro', Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
@@ -456,7 +456,7 @@ h1,h3,h5{
 	height:100%;
 	padding:0%;
 	position: center;
-	font-family: 'Lemon milk';
+	font-family: 'LemonMilk';
 }
 #social-icon-bar{
 	width: 50%;
@@ -485,7 +485,7 @@ h1,h3,h5{
 }
 #shogunTxt{
   font-size: 26px;
-  font-family: "Lemon/Milk", Helvetica, Arial;
+  font-family: 'LemonMilk', Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: left;
@@ -493,21 +493,21 @@ h1,h3,h5{
 
   #shogunHours{
   font-size: 30px;
-  font-family: "Lemon/Milk", Helvetica, Arial;
+  font-family: 'LemonMilk', Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: left;
 }
 #shogunFood{
   font-size:60px;
-  font-family: "Lemon/Milk", Helvetica, Arial;
+  font-family: 'LemonMilk', Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
   }
 #shogunLoc{
   font-size: 24px;
-  font-family: "Myriad Pro", Arial;
+  font-family: 'Myriad Pro', Arial;
   color: rgb(1, 0, 0);
   line-height: 1.2;
   text-align: left;
@@ -624,7 +624,7 @@ h1,h3,h5{
 
 .error {
   padding: 10px 16px;
-  font-family: "Arial Black", Gadget, sans-serif;
+  font-family: 'Arial Black', Gadget, sans-serif;
   font-size: 11px;
   text-transform: uppercase;
   color: #555;
@@ -658,7 +658,7 @@ h1,h3,h5{
 }
 #events-txt{
   font-size: 80px;
-  font-family: "Lemon/Milk", Helvetica, Arial;
+  font-family: 'LemonMilk', Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
@@ -682,7 +682,7 @@ h1,h3,h5{
 
 #winners{
   font-size: 24px;
-  font-family: "Lemon/Milk", Helvetica, Arial;
+  font-family: 'LemonMilk', Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: left;
@@ -721,7 +721,7 @@ h1,h3,h5{
 	 vertical-align:center;
 }
 .teamNames{
-	font-family: "Myriad Pro", Arial;
+	font-family: 'Myriad Pro', Arial;
 	font-size: 20px;
 }
 /*Scaling for Desktop*/
@@ -761,7 +761,7 @@ h1,h3,h5{
 		 margin: 5%;
 	}
 	.teamNames{
-		font-family: "Myriad Pro", Arial;
+		font-family: 'Myriad Pro', Arial;
 		font-size: 17px;
 		padding:3%;
 	}
@@ -854,7 +854,7 @@ img.equipment_pic{
 }
 #aboutTxt {
   font-size: 60px;
-  font-family: "Lemon/Milk", Helvetica, Arial;
+  font-family: 'LemonMilk', Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
@@ -874,7 +874,7 @@ img.equipment_pic{
 }
 #footerHours {
   font-size: 50px;
-  font-family: "Lemon/Milk", Helvetica, Arial;
+  font-family: 'LemonMilk', Helvetica, Arial;
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: center;
@@ -883,7 +883,7 @@ img.equipment_pic{
 }
 #footerDays1 {
   font-size: 30px;
-  font-family: "Myriad Pro", Arial;
+  font-family: 'Myriad Pro', Arial;
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: right;
@@ -895,7 +895,7 @@ img.equipment_pic{
 
 #footerDays2 {
   font-size: 30px;
-  font-family: "Myriad Pro", Arial;
+  font-family: 'Myriad Pro', Arial;
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: left;
