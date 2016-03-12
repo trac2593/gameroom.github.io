@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'LemonMilk';
+  src: url('LemonMilk.eot'); /* IE9 Compat Modes */
+  src: url('LemonMilk.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('LemonMilk.woff2') format('woff2'), /* Super Modern Browsers */
+       url('LemonMilk.woff') format('woff'), /* Pretty Modern Browsers */
+       url('LemonMilk.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('LemonMilk.svg#svgLemonMilk') format('svg'); /* Legacy iOS */
+
 .center-block{
 	display:block;
 	margin-left: auto;
@@ -50,7 +59,7 @@ html,body{
 }
 .headerText{
 	font-size: 80px;
-  font-family: "Lemon/Milk", Helvetica, Arial;
+  font-family: 'LemonMilk', Helvetica, Arial;
   color: rgb(256, 256, 256);
   line-height: 1.2;
   text-align: center;
