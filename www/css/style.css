@@ -49,14 +49,9 @@ html,body{
 	background-color: #0e89e7;
 }
 
-@font-face {
-  font-family: 'LemonMilk';
-  src: url('LemonMilk.eot'); /* IE9 Compat Modes */
-  src: url('LemonMilk.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-
 .headerText{
 	font-size: 80px;
-  font-family: 'LemonMilk', Helvetica, Arial;
+  font-family: 'Lemon/Milk', Helvetica, Arial;
   color: rgb(256, 256, 256);
   line-height: 1.2;
   text-align: center;
