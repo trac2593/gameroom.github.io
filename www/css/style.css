@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'LemonMilk';
+  src:  url('LemonMilk.otf') format('otf'),
+}
+
 .center-block{
 	display:block;
 	margin-left: auto;
@@ -51,7 +56,7 @@ html,body{
 
 .headerText{
 	font-size: 80px;
-  font-family: 'Lemon/Milk', Helvetica, Arial;
+  font-family: 'LemonMilk', Helvetica, Arial;
   color: rgb(256, 256, 256);
   line-height: 1.2;
   text-align: center;
