@@ -1,12 +1,3 @@
-@font-face {
-  font-family: 'LemonMilk';
-  src: url('LemonMilk.eot'); /* IE9 Compat Modes */
-  src: url('LemonMilk.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('LemonMilk.woff2') format('woff2'), /* Super Modern Browsers */
-       url('LemonMilk.woff') format('woff'), /* Pretty Modern Browsers */
-       url('LemonMilk.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('LemonMilk.svg#svgLemonMilk') format('svg'); /* Legacy iOS */
-
 .center-block{
 	display:block;
 	margin-left: auto;
@@ -57,6 +48,12 @@ html,body{
 	display: none;
 	background-color: #0e89e7;
 }
+
+@font-face {
+  font-family: 'LemonMilk';
+  src: url('LemonMilk.eot'); /* IE9 Compat Modes */
+  src: url('LemonMilk.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+
 .headerText{
 	font-size: 80px;
   font-family: 'LemonMilk', Helvetica, Arial;
