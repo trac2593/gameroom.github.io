@@ -7,79 +7,182 @@
 	width:100%;
 }
 
-html,body
-{
+html,body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
 }
 
-
-#landing{
-	width:100%;
-	vertical-align:center;
-	padding-top:5%;
-	margin-bottom: 5%;
-}
-#infoHours{
-	text-align: middle;
-}
 #headerImg{
 	width:100%;
 }
+
+#infoHours{
+	text-align: middle;
+}
 /* Empty. Add your own CSS if you like */
+/*#################################### DESKTOP NAV STYLING START #################################*/
+
+#hamburger{
+	display: none;
+	background-color: #0e89e7;
+}
 .headerText{
-	font-size: 46px;
-  font-family: "Lemon/Milk";
+	font-size: 80px;
+  font-family: "Lemon/Milk", Helvetica, Arial;
   color: rgb(256, 256, 256);
   line-height: 1.2;
   text-align: center;
+	float: left;
 	padding-right:7%;
 	margin-top: 0%;
-}
-#hamburger{
-	background-color: #0e89e7;
-	float:left;
-	/*float:left;*/
-}
-.iconsText{
-	color:#0e89e7;
-	font-size:12px;
-	margin-top:0;
-	text-align: center;
 }
 .glyphicon{
 	font-size: 50px;
 }
-@media (max-width: 500px){
-	.glyphicon{
-		font-size: 20px;
-	}
+#landing{
+	width:100%;
+	vertical-align:center;
+	padding-top:0%;
+	margin-bottom: 1%;
 }
-#ham{
-width: 50%;
-position: absolute;
-z-index:9000;
-color:#ffffff;
+#staff{
+	display: inline;
+	position:fixed;
+	top:4em;
+	width:100%;
 }
-
 #white{
+	display:none;
 	height:4em;
 	width:100%;
   background-color: #0e89e7;
 }
 #white2{
+	display: none;
 	height:1em;
 	width:100%;
   background-color: #fff;
 }
+.navbar2{
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index: 9500;
+	background-color: #0e89e7;
+}
+.iconsText{
+	color:white;
+	font-size:25px;
+	margin-top:0;
+	text-align: center;
+}
 #icons{
 	width:100%;
 	height: 4em;
-	background-color:#fff;
+	background-color: none;
 	margin-left: 0;
+	position: relative;
+	top: -20px;
+	left: 25em;
+
 }
-.infoIcon {
+.navIcons{
+	 font-size:50px;
+	 color: white;
+	 position: relative;
+	 left: -10px;
+}
+/*#################################### DESKTOP NAV STYLING END #################################*/
+
+/*#################################### MOBILE NAV STYLING START #################################*/
+@media(max-width:500px){
+	.headerText{
+		font-size: 46px;
+	  font-family: "Lemon/Milk", Helvetica, Arial;
+	  color: rgb(256, 256, 256);
+	  line-height: 1.2;
+	  text-align: right;
+		float: none;
+		padding-right:7%;
+		margin-top: 2%;
+	}
+	#ham{
+	width: 50%;
+	position: absolute;
+	z-index:9000;
+	color:#ffffff;
+	}
+	#hamburger{
+		display: inline;
+		background-color: #0e89e7;
+	}
+	.glyphicon-menu-hamburger, .glyphicon-remove{
+		font-size: 35px;
+		margin-left: -10px;
+		padding-top: 18px;
+	}
+	#landing{
+		width:100%;
+		vertical-align:center;
+		padding-top:15%;
+		margin-bottom: 5%;
+	}
+	.navbar2{
+		position:fixed;
+		top:0;
+		width: 375px;
+		z-index: 9500;
+		background-color: #0e89e7;
+	}
+	#staff{
+		display: none;
+		position:fixed;
+		top:4em;
+		width:100%;
+	}
+	#white{
+		display: inline;
+		/*height:4em;*/
+		height:2em;
+		width:100%;
+	  background-color: #0e89e7;
+	}
+	#white2{
+		display: inline;
+		height:1em;
+		width:100%;
+	  background-color: #fff;
+	}
+	.iconsText{
+		/*display: inherit;*/
+		color:#0e89e7;
+		font-size:12px;
+		margin-top:0;
+		text-align: center;
+	}
+	#icons{
+		display: inherit;
+		width:100%;
+		height: 4em;
+		background-color:#fff;
+		margin-left: 0;
+		position: relative;
+		top: 0px;
+		left: 0px;
+	}
+	.navIcons{
+		 font-size:40px;
+		 color:#0e89e7;
+		 position: relative;
+		 left: -10px;
+	}
+
+}
+/*#################################### MOBILE NAV STYLING END #################################*/
+
+
+/*.infoIcon {
 	vertical-align:center ;
 	width:;
 	height: 4em;
@@ -114,8 +217,7 @@ color:#ffffff;
 	background-color:#ffffff;
 	padding-right: 0%;
 	float:left; ;
-
-}
+}*/
 
 #closeImg{
 width: 20%;
@@ -125,35 +227,8 @@ position: relative;
 z-index:9500;
 }
 
-#staff{
-	display: none;
-	position:relative;
-	top:4em;
-	width:100%;
-}
-@media (max-width:500px){
-	.navbar2{
-		position:fixed;
-		top:0;
-		width: 375px;
-		z-index: 9500;
-		background-color: #0e89e7;
-	}
-	#staff{
-		display: none;
-		position:fixed;
-		top:4em;
-		width:100%;
-	}
-}
-.navbar2{
-	position:fixed;
-	top:0;
-	width:100%;
-	z-index: 9500;
-	background-color: #0e89e7;
 
-}
+
 
 table{
 	height: ;
@@ -196,7 +271,7 @@ h1,h3,h5{
 }
 #info {
   font-size: 60px;
-  font-family: "Lemon/Milk";
+  font-family: "Lemon/Milk", Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
@@ -219,7 +294,7 @@ h1,h3,h5{
 }
 #tables{
   font-size: 22px;
-  font-family: "Lemon/Milk";
+  font-family: "Lemon/Milk", Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: left;
@@ -227,7 +302,7 @@ h1,h3,h5{
 }
 #numbers{
  font-size: 40px;
-  font-family: "Lemon/Milk";
+  font-family: "Lemon/Milk", Helvetica, Arial;
   color: rgb(3, 79, 255);
   line-height: 1.2;
   text-align: left;
@@ -236,7 +311,7 @@ h1,h3,h5{
 }
 #prices{
   font-size: 50px;
-  font-family: "Lemon/Milk";
+  font-family: "Lemon/Milk", Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
@@ -245,7 +320,7 @@ h1,h3,h5{
 }
 #days {
   font-size: 30px;
-  font-family: "Lemon/Milk";
+  font-family: "Lemon/Milk", Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
@@ -254,7 +329,7 @@ h1,h3,h5{
 
 #games {
   font-size: 30px;
-  font-family: "Lemon/Milk";
+  font-family: "Lemon/Milk", Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
@@ -263,7 +338,7 @@ h1,h3,h5{
 
 #hourPrice{
   font-size: 30px;
-  font-family: "Lemon/Milk";
+  font-family: "Lemon/Milk", Helvetica, Arial;
   color: rgb(3, 81, 255);
   line-height: 1.2;
   text-align: center;
@@ -279,7 +354,7 @@ h1,h3,h5{
 }
 #two {
   font-size: 40px;
-  font-family: "Lemon/Milk";
+  font-family: "Lemon/Milk", Helvetica, Arial;
   color: rgb(3, 79, 255);
   line-height: 1.2;
   text-align: center;
@@ -288,7 +363,7 @@ h1,h3,h5{
 }
 #How_ {
  font-size: 50px;
-  font-family: "Lemon/Milk";
+  font-family: "Lemon/Milk", Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
@@ -299,7 +374,7 @@ h1,h3,h5{
 
 #reserve {
   font-size:60px;
-  font-family: "Lemon/Milk";
+  font-family: "Lemon/Milk", Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
@@ -314,7 +389,7 @@ h1,h3,h5{
 
 .Pool_tables {
   font-size: 30px;
-  font-family: "Lemon/Milk";
+  font-family: "Lemon/Milk", Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: left;
@@ -322,7 +397,7 @@ h1,h3,h5{
 }
 #minimum {
   font-size: 30px;
-  font-family: "Myriad Pro";
+  font-family: "Myriad Pro", Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
@@ -384,7 +459,7 @@ h1,h3,h5{
 }
 #shogunTxt{
   font-size: 26px;
-  font-family: "Lemon/Milk";
+  font-family: "Lemon/Milk", Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: left;
@@ -392,21 +467,21 @@ h1,h3,h5{
 
   #shogunHours{
   font-size: 30px;
-  font-family: "Lemon/Milk";
+  font-family: "Lemon/Milk", Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: left;
 }
 #shogunFood{
   font-size:60px;
-  font-family: "Lemon/Milk";
+  font-family: "Lemon/Milk", Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
   }
 #shogunLoc{
   font-size: 24px;
-  font-family: "Myriad Pro";
+  font-family: "Myriad Pro", Arial;
   color: rgb(1, 0, 0);
   line-height: 1.2;
   text-align: left;
@@ -557,7 +632,7 @@ h1,h3,h5{
 }
 #events-txt{
   font-size: 80px;
-  font-family: "Lemon/Milk";
+  font-family: "Lemon/Milk", Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
@@ -581,7 +656,7 @@ h1,h3,h5{
 
 #winners{
   font-size: 24px;
-  font-family: "Lemon/Milk";
+  font-family: "Lemon/Milk", Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: left;
@@ -620,7 +695,7 @@ h1,h3,h5{
 	 vertical-align:center;
 }
 .teamNames{
-	font-family: "Myriad Pro";
+	font-family: "Myriad Pro", Arial;
 	font-size: 20px;
 }
 /*Scaling for Desktop*/
@@ -660,7 +735,7 @@ h1,h3,h5{
 		 margin: 5%;
 	}
 	.teamNames{
-		font-family: "Myriad Pro";
+		font-family: "Myriad Pro", Arial;
 		font-size: 17px;
 		padding:3%;
 	}
@@ -678,7 +753,7 @@ img.champ_pic{
 	margin: 0%;
 	border-radius: 50%;
 	width: 80%;
-	padding: 5%; 
+	padding: 5%;
 	vertical-align: center;
 }
 
@@ -753,7 +828,7 @@ img.equipment_pic{
 }
 #aboutTxt {
   font-size: 60px;
-  font-family: "Lemon/Milk";
+  font-family: "Lemon/Milk", Helvetica, Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
@@ -773,7 +848,7 @@ img.equipment_pic{
 }
 #footerHours {
   font-size: 50px;
-  font-family: "Lemon/Milk";
+  font-family: "Lemon/Milk", Helvetica, Arial;
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: center;
@@ -782,7 +857,7 @@ img.equipment_pic{
 }
 #footerDays1 {
   font-size: 30px;
-  font-family: "Myriad Pro";
+  font-family: "Myriad Pro", Arial;
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: right;
@@ -794,7 +869,7 @@ img.equipment_pic{
 
 #footerDays2 {
   font-size: 30px;
-  font-family: "Myriad Pro";
+  font-family: "Myriad Pro", Arial;
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: left;
