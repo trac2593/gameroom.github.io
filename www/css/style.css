@@ -49,6 +49,8 @@ html,body{
 	}
 }*/
 /*#################################### DESKTOP NAV STYLING START #################################*/
+@media(min-width:761px){
+
 
 #hamburger{
 	display: none;
@@ -56,7 +58,7 @@ html,body{
 }
 
 .headerText{
-	font-size: 500%;
+	font-size: 60px;
   font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
   color: rgb(256, 256, 256);
   line-height: 1.2;
@@ -66,7 +68,8 @@ html,body{
 	margin-top: 0%;
 }
 .glyphicon{
-	font-size: 20%;
+	font-size: 100%;
+  float:left;
 }
 #landing{
 	width:100%;
@@ -101,32 +104,40 @@ html,body{
 }
 .iconsText{
 	color:white;
-	font-size:25px;
+	font-size:;
 	font-family: 'Myriad Pro', Arial;
 	margin-top:0;
 	text-align: center;
+  padding:0;
 }
 #icons{
 	width:100%;
 	height: 4em;
-	background-color: none;
+  padding:0%;
+	background-color: ;
 	margin-left: 0%;
 	position: relative;
 	top: -20px;
 	left: 25%;
 }
 .navIcons{
-	 font-size:50px;
+	 font-size:300%;
 	 color: white;
 	 position: relative;
 	 left: -10px;
-   bottom:1;
    margin-top:0%;
 }
+#aboutText{
+  width:50%;
+  margin-left:25%;
+}
+
+}
+
 /*#################################### DESKTOP NAV STYLING END #################################*/
 
 /*#################################### MOBILE NAV STYLING START #################################*/
-@media(max-width:600px){
+@media(max-width:760px){
 	.headerText{
 		font-size: 46px;
 	  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
@@ -137,6 +148,12 @@ html,body{
 		padding-left:0%;
 		margin-top: 2%;
 	}
+  #bottleLogo{
+    margin-top:20%;
+    }
+  #shogunLogo{
+    padding-bottom: 10%;
+  }
 	#ham{
 	width: 50%;
 	position: absolute;
@@ -208,6 +225,12 @@ html,body{
 		 left: -10px;
      margin-bottom:1%;
 	}
+
+  #aboutText{
+    width:80%;
+    margin-left:10%;
+  }
+
 
 }
 /*#################################### MOBILE NAV STYLING END #################################*/
@@ -703,7 +726,8 @@ h1,h3,h5{
 }
 #trophyPic{
 	width: 50%;
-	margin: 5%;
+	margin-top: 10%;
+  margin-bottom:5%;
 }
 #equipmentImg{
 	padding:5%;
@@ -720,14 +744,33 @@ h1,h3,h5{
 	width:75%;
 	padding:0%;
 	margin-bottom: 5%;
+  text-align: center;
+}
+.teamImgDiv{
+  text-align:center;
+  margin-top:10%;
+  margin-bottom: 0%;
 }
 .staffBan{
 	 width:30%;
-	 vertical-align:center;
+	 float:center;
+   margin-top:10%;
 }
+.staffBanner{
+  text-align: center;
+
+}
+.roy{
+  text-align: center;
+  float:center;
+}
+
+
 .teamNames{
 	font-family: 'Myriad Pro', Arial;
 	font-size: 20px;
+  text-align: left;
+  margin-bottom: 5%;
 }
 /*Scaling for Desktop*/
 /*Scale to 100% if in phone size:*/
@@ -742,6 +785,7 @@ h1,h3,h5{
 	}
 	#trophyPic{
 		width: 100%;
+    margin-top:10%;
 	}
 	#equipmentImg{
 		padding:5%;
@@ -792,6 +836,12 @@ img.champ_pic{
  font-weight: bold;
  font-size: 26px;
  text-align: center;
+}
+
+.champ_name2{
+  font-size: 26px;
+  text-align: center;
+
 }
 
 /* Equipment CSS */
