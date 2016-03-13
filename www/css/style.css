@@ -147,6 +147,13 @@ html,body{
   padding-bottom: 5%
 
   }
+  #resForm{
+  	width:50%;
+  	float:center;
+  	text-align:right;
+    padding-bottom: 0;
+    margin-left:40%;
+  }
 
 }
 
@@ -263,6 +270,32 @@ html,body{
     padding-bottom: 5%
 
     }
+    #callTxt{
+    	text-align:center;
+    	padding-bottom: 5%;
+    	width:50%;
+      margin-top:10%;
+      margin-bottom: 10%;
+    }
+    #orgTxt{
+    	float: center;
+    	width:55%;
+    	padding-bottom:10%;
+      margin-bottom:10%;
+    }
+    #reserveButton1{
+      text-align: center;
+      margin-right:70%;
+    }
+    #resForm{
+    	width:100%;
+    	float:center;
+    	text-align:left;
+      padding-bottom: 0;
+      font-size: 20px
+
+    }
+
 
 }
 /*#################################### MOBILE NAV STYLING END #################################*/
@@ -464,6 +497,8 @@ h1,h3,h5{
 #resAltern{
 	padding-bottom: 10%;
 	padding-top: 15%;
+  text-align: center;
+  float:center;
 }
 
 .Pool_tables {
@@ -618,6 +653,10 @@ h1,h3,h5{
 	height:50%;
 	z-index: 9000;
 }
+#reserveButton1{
+  text-align: center;
+  margin-left: 20%;
+}
 #reserveDivider{
 	vertical-align: center;
 	width:100%;
@@ -633,77 +672,41 @@ h1,h3,h5{
 	float:center;
 }
 #callTxt{
-	text-align:center;
+	text-align:right;
 	padding-bottom: 5%;
 	width:50%;
-  margin-top:10%;
-  margin-bottom: 10%;
+
+  /*margin-top:10%;
+  margin-bottom: 10%;*/
 }
 #orgTxt{
-	float: center;
+	margin-left: 5%;
 	width:55%;
 	padding-bottom:10%;
-  margin-bottom:10%;
+  /*margin-bottom:10%;*/
 }
 
 #orgIcon{
 	width:50%;
 	float: left;
+  padding-bottom: 0%;
 }
 
-#resForm{
-	width:60%;
-	float:center;
-	text-align: left;
-}
 
-#reserveButton{
-	padding:0%;
+
+#reserveButton2{
+	margin-top:%;
 	float:center;
+  padding-top:10%
+
 }
 #button{
 	text-align:center;
-	padding:5%;
-}
-/* Form CSS */
-.formLocation{
-	/*height:30em;*/
-	width:100%;
-}
-.error-container {
-  margin: 5px 0;
+	padding:0%;
+  margin-bottom: 5%;
 }
 
-.error-container:last-child {
-    margin: 5px 0 0;
-}
 
-.error {
-  padding: 10px 16px;
-  font-family: 'Source Sans Pro', Gadget, sans-serif;
-  font-size: 11px;
-  text-transform: uppercase;
-  color: #555;
-  vertical-align: middle;
-}
-
-.error i {
-  font-size: 24px;
-  color: #B83E2C;
-  vertical-align: middle;
-}
-
-.last-error-container > .error {
-  padding: 10px 16px 0;
-}
-
-.has-errors {
-  border-bottom: 3px solid #B83E2C;
-}
-
-.no-errors {
-  border-bottom: 3px solid green;
-}
 
 /* Events CSS */
 .eventsImg{
