@@ -105,7 +105,7 @@ html,body{
 .iconsText{
 	color:white;
 	font-size:;
-	font-family: 'Myriad Pro', Arial;
+	font-family: 'Myriad Pro', 'Source Sans Pro', Arial;
 	margin-top:0;
 	text-align: center;
   padding:0;
@@ -451,7 +451,7 @@ h1,h3,h5{
 }
 #minimum {
   font-size: 30px;
-  font-family: 'Myriad Pro', Arial;
+  font-family: 'Myriad Pro', 'Source Sans Pro', Arial;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
@@ -535,7 +535,7 @@ h1,h3,h5{
   }
 #shogunLoc{
   font-size: 24px;
-  font-family: 'Myriad Pro', Arial;
+  font-family: 'Myriad Pro', 'Source Sans Pro', Arial;
   color: rgb(1, 0, 0);
   line-height: 1.2;
   text-align: left;
@@ -652,7 +652,7 @@ h1,h3,h5{
 
 .error {
   padding: 10px 16px;
-  font-family: 'Arial Black', Gadget, sans-serif;
+  font-family: 'Source Sans Pro', Gadget, sans-serif;
   font-size: 11px;
   text-transform: uppercase;
   color: #555;
@@ -767,7 +767,7 @@ h1,h3,h5{
 
 
 .teamNames{
-	font-family: 'Myriad Pro', Arial;
+	font-family: 'Myriad Pro', 'Source Sans Pro', Arial;
 	font-size: 20px;
   text-align: left;
   margin-bottom: 5%;
@@ -810,8 +810,9 @@ h1,h3,h5{
 		 margin: 5%;
 	}
 	.teamNames{
-		font-family: 'Myriad Pro', Arial;
+		font-family: 'Myriad Pro', 'Source Sans Pro', Arial;
 		font-size: 17px;
+		text-align:center;
 		padding:3%;
 	}
 	#orgIcon{
@@ -938,7 +939,7 @@ img.equipment_pic{
 }
 #footerDays1 {
   font-size: 30px;
-  font-family: 'Myriad Pro', Arial;
+  font-family: 'Myriad Pro', 'Source Sans Pro', Arial;
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: right;
@@ -950,7 +951,7 @@ img.equipment_pic{
 
 #footerDays2 {
   font-size: 30px;
-  font-family: 'Myriad Pro', Arial;
+  font-family: 'Myriad Pro', 'Source Sans Pro', Arial;
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: left;
