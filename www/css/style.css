@@ -970,6 +970,7 @@ img.equipment_pic{
 	padding-right: 15%;
   /*float:right;*/
   width:100%;
+
 }
 
 #footerDays2 {
@@ -982,11 +983,12 @@ img.equipment_pic{
   font-weight: 300px;
 }
 #footerNumber{
-  font-size: 30px;
+  font-size: 40px;
   font-family: 'Myriad Pro', 'Source Sans Pro', Arial;
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: center;
   width:100%;
   font-weight: 300px;
+  padding-right:5%;
 }
