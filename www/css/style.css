@@ -19,7 +19,8 @@ html,body{
 }
 
 #headerImg{
-	width:100%;
+	width:50%%;
+  text-align: left;
 }
 
 #infoHours{
@@ -55,7 +56,7 @@ html,body{
 }
 
 .headerText{
-	font-size: 80px;
+	font-size: 500%;
   font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
   color: rgb(256, 256, 256);
   line-height: 1.2;
@@ -65,7 +66,7 @@ html,body{
 	margin-top: 0%;
 }
 .glyphicon{
-	font-size: 50px;
+	font-size: 20%;
 }
 #landing{
 	width:100%;
@@ -119,6 +120,8 @@ html,body{
 	 color: white;
 	 position: relative;
 	 left: -10px;
+   bottom:1;
+   margin-top:0%;
 }
 /*#################################### DESKTOP NAV STYLING END #################################*/
 
@@ -129,9 +132,9 @@ html,body{
 	  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
 	  color: rgb(256, 256, 256);
 	  line-height: 1.2;
-	  text-align: center;
+	  text-align: left;
 		float: none;
-		padding-left:7%;
+		padding-left:0%;
 		margin-top: 2%;
 	}
 	#ham{
@@ -199,10 +202,11 @@ html,body{
 		left: 0px;
 	}
 	.navIcons{
-		 font-size:40px;
+		 font-size:400%;
 		 color:#0e89e7;
 		 position: relative;
 		 left: -10px;
+     margin-bottom:1%;
 	}
 
 }
@@ -550,7 +554,7 @@ h1,h3,h5{
 	width:%;
 
 	padding-bottom: 0%;
-	padding-top:10%;
+	padding-top:0%;
 
 }
 .reserveImg1{
