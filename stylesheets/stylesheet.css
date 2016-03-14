@@ -1,1001 +1,245 @@
-@font-face {
-  font-family: 'LemonMilk';
-  src:  url('LemonMilk.otf') format('otf'),
-}
+* {
+  box-sizing: border-box; }
 
-.center-block{
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
-}
-.cinemagraph{
-	width:100%;
-}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #606c71; }
 
-html,body{
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-}
+a {
+  color: #1e6bb8;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
 
-#headerImg{
-	width:50%%;
-  text-align: left;
-}
+.btn {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
+  .btn + .btn {
+    margin-left: 1rem; }
 
-#infoHours{
-	text-align: middle;
-}
-/* Empty. Add your own CSS if you like */
-/*@media(min-width: 1375px){
-	#icons{
-		width:100%;
-		height: 4em;
-		background-color: none;
-		margin-left: 0%;
-		position: relative;
-		top: -20px;
-		left: 25em;
-	}
-	.headerText{
-		font-size: 80px;
-	  font-family: "Lemon/Milk", Helvetica, Arial;
-	  color: rgb(256, 256, 256);
-	  line-height: 1.2;
-	  text-align: center;
-		float: left;
-		padding-right:7%;
-		margin-top: 0%;
-	}
-}*/
-#reserveButton1{
-  margin-left: 45%;
-  /*margin-left: 20%;*/
-  width: 100%;
-}
-#callTxt{
-	text-align:center;
-	padding-bottom: 5%;
-	width:50%;
+.btn:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3); }
 
-  /*margin-top:10%;
-  margin-bottom: 10%;*/
-}
-/*#################################### DESKTOP NAV STYLING START #################################*/
-@media(min-width:761px){
+@media screen and (min-width: 64em) {
+  .btn {
+    padding: 0.75rem 1rem; } }
 
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  .btn {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.9rem; } }
 
-#hamburger{
-	display: none;
-	background-color: #0e89e7;
-}
+@media screen and (max-width: 42em) {
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.9rem; }
+    .btn + .btn {
+      margin-top: 1rem;
+      margin-left: 0; } }
 
-.headerText{
-	font-size: 60px;
-  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
-  color: rgb(256, 256, 256);
-  line-height: 1.2;
+.page-header {
+  color: #fff;
   text-align: center;
-	float: left;
-	padding-right:7%;
-	margin-top: 0%;
-}
-.glyphicon{
-	font-size: 100%;
-  float:left;
-}
-#landing{
-	width:100%;
-	vertical-align:center;
-	padding-top:0%;
-	margin-bottom: 1%;
-}
-#staff{
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #155799, #159957); }
+
+@media screen and (min-width: 64em) {
+  .page-header {
+    padding: 5rem 6rem; } }
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  .page-header {
+    padding: 3rem 4rem; } }
+
+@media screen and (max-width: 42em) {
+  .page-header {
+    padding: 2rem 1rem; } }
+
+.project-name {
+  margin-top: 0;
+  margin-bottom: 0.1rem; }
+
+@media screen and (min-width: 64em) {
+  .project-name {
+    font-size: 3.25rem; } }
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  .project-name {
+    font-size: 2.25rem; } }
+
+@media screen and (max-width: 42em) {
+  .project-name {
+    font-size: 1.75rem; } }
+
+.project-tagline {
+  margin-bottom: 2rem;
+  font-weight: normal;
+  opacity: 0.7; }
+
+@media screen and (min-width: 64em) {
+  .project-tagline {
+    font-size: 1.25rem; } }
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  .project-tagline {
+    font-size: 1.15rem; } }
+
+@media screen and (max-width: 42em) {
+  .project-tagline {
+    font-size: 1rem; } }
+
+.main-content :first-child {
+  margin-top: 0; }
+.main-content img {
+  max-width: 100%; }
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  color: #159957; }
+.main-content p {
+  margin-bottom: 1em; }
+.main-content code {
+  padding: 2px 4px;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 0.9rem;
+  color: #383e41;
+  background-color: #f3f6fa;
+  border-radius: 0.3rem; }
+.main-content pre {
+  padding: 0.8rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  color: #567482;
+  word-wrap: normal;
+  background-color: #f3f6fa;
+  border: solid 1px #dce6f0;
+  border-radius: 0.3rem; }
+  .main-content pre > code {
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #567482;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0; }
+.main-content .highlight {
+  margin-bottom: 1rem; }
+  .main-content .highlight pre {
+    margin-bottom: 0;
+    word-break: normal; }
+.main-content .highlight pre, .main-content pre {
+  padding: 0.8rem;
+  overflow: auto;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  border-radius: 0.3rem; }
+.main-content pre code, .main-content pre tt {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0; }
+  .main-content pre code:before, .main-content pre code:after, .main-content pre tt:before, .main-content pre tt:after {
+    content: normal; }
+.main-content ul, .main-content ol {
+  margin-top: 0; }
+.main-content blockquote {
+  padding: 0 1rem;
+  margin-left: 0;
+  color: #819198;
+  border-left: 0.3rem solid #dce6f0; }
+  .main-content blockquote > :first-child {
+    margin-top: 0; }
+  .main-content blockquote > :last-child {
+    margin-bottom: 0; }
+.main-content table {
   display: block;
-	position:fixed;
-	top:4em;
-	width:100%;
-}
-#white{
-	display:none;
-	height:4em;
-	width:100%;
-  background-color: #0e89e7;
-}
-#white2{
-	display: none;
-	height:1em;
-	width:100%;
-  background-color: #fff;
-}
-.navbar2{
-	position:fixed;
-	top:0;
-	width:100%;
-	z-index: 9500;
-	background-color: #0e89e7;
-}
-.iconsText{
-	color:white;
-	font-size:;
-	font-family: 'Myriad Pro', 'Source Sans Pro', Arial;
-	margin-top:0;
-	text-align: center;
-  padding:0;
-}
-#icons{
-	width:100%;
-	height: 4em;
-  padding:0%;
-	background-color: ;
-	margin-left: 0%;
-	position: relative;
-	top: -20px;
-	left: 25%;
-}
-.navIcons{
-	 font-size:300%;
-	 color: white;
-	 position: relative;
-	 left: -10px;
-   margin-top:0%;
-}
-#aboutText{
-  width:50%;
-  margin-left:25%;
-}
-.teamNames{
-  font-family: 'Myriad Pro', 'Source Sans Pro', Arial;
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 5%;
-  margin-right:15%;
-}
-#How_ {
- font-size: 100px;
-  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
-  color: rgb(0, 0, 0);
-  line-height: 1.2;
-  text-align: center;
-  padding-bottom: 5%
-
-  }
-  #resForm{
-  	width:50%;
-  	float:center;
-  	text-align:right;
-    padding-bottom: 0;
-    margin-left:40%;
-  }
-
-}
-
-/*#################################### DESKTOP NAV STYLING END #################################*/
-
-/*#################################### MOBILE NAV STYLING START #################################*/
-@media(max-width:760px){
-	.headerText{
-		font-size: 46px;
-	  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
-	  color: rgb(256, 256, 256);
-	  line-height: 1.2;
-	  text-align: left;
-		float: none;
-		padding-left:0%;
-		margin-top: 2%;
-	}
-  #bottleLogo{
-    margin-top:20%;
-    }
-  #shogunLogo{
-    padding-bottom: 10%;
-  }
-	#ham{
-	width: 50%;
-	position: absolute;
-	z-index:9000;
-	color:#ffffff;
-	}
-	#hamburger{
-		display: inline;
-		background-color: #0e89e7;
-	}
-	.glyphicon-menu-hamburger, .glyphicon-remove{
-		font-size: 35px;
-		margin-left: -10px;
-		padding-top: 18px;
-	}
-	#landing{
-		width:100%;
-		vertical-align:center;
-		padding-top:12%;
-		margin-bottom: 5%;
-	}
-	.navbar2{
-		position:fixed;
-		top:0;
-		width: 100%;
-		z-index: 9500;
-		background-color: #0e89e7;
-	}
-	#staff{
-		display: none;
-		position:fixed;
-		top:4em;
-		width:100%;
-	}
-	#white{
-		display: inline;
-		/*height:4em;*/
-		height:2em;
-		width:100%;
-	  background-color: #0e89e7;
-	}
-	#white2{
-		display: inline;
-		height:1em;
-		width:100%;
-	  background-color: #fff;
-	}
-	.iconsText{
-		/*display: inherit;*/
-		color:#0e89e7;
-		font-size:12px;
-		margin-top:0;
-		text-align: center;
-	}
-	#icons{
-		display: inherit;
-		width:100%;
-		/*height: 4em;*/
-		background-color:#fff;
-		margin-left: 0;
-		position: relative;
-		top: 0px;
-		left: 0px;
-	}
-	.navIcons{
-		 font-size:400%;
-		 color:#0e89e7;
-		 position: relative;
-		 left: -10px;
-     margin-bottom:1%;
-	}
-
-  #aboutText{
-    width:80%;
-    margin-left:10%;
-  }
-  .teamNames{
-  	font-family: 'Myriad Pro', 'Source Sans Pro', Arial;
-  	font-size: 20px;
-    text-align: center;
-    margin-bottom: 5%;
-    margin-right:10%;
-    width:80%;
-  }
-  #How_ {
-   font-size: 50px;
-    font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
-    color: rgb(0, 0, 0);
-    line-height: 1.2;
-    text-align: center;
-    padding-bottom: 5%
-
-    }
-    #callTxt{
-    	text-align: center;
-    	padding-bottom: 5%;
-    	width:50%;
-      margin-top:10%;
-      margin-bottom: 10%;
-    }
-    #orgTxt{
-      margin-left: 8%;
-    	float: center;
-    	width:55%;
-    	padding-bottom:10%;
-      margin-bottom:10%;
-    }
-    #reserveButton1{
-      width: 30%;
-      margin: 0 auto;
-    }
-    #resForm{
-    	width:100%;
-    	float:center;
-    	text-align:left;
-      padding-bottom: 0;
-      font-size: 20px
-
-    }
-
-
-}
-/*#################################### MOBILE NAV STYLING END #################################*/
-
-
-/*.infoIcon {
-	vertical-align:center ;
-	width:;
-	height: 4em;
-	background-color:#ffffff;
-	padding-right: 0%;
-	float:left;
-}
-.menuIcon {
-	width:;
-	height: 4em;
-	background-color:#ffffff;
-	padding-right: 0%;
-	float:left;
-}
-.resIcon {
-	width:;
-	height: 4em;
-	background-color:#ffffff;
-	padding-right: 0%;
-	float:left;
-}
-.eventsIcon {
-	width:%;
-	height: 4em;
-	background-color:#ffffff;
-	padding-right: 0%;
-	float:left;
-}
-.aboutIcon {
-	width:%;
-	height: 4em;
-	background-color:#ffffff;
-	padding-right: 0%;
-	float:left; ;
-}*/
-
-#closeImg{
-width: 20%;
-height: 4em;
-padding:0%;
-position: relative;
-z-index:9500;
-}
-
-
-
-
-table{
-	height: ;
-	width: 100%;
-	padding: 0%;
-	border-collapse: collapse;
-	line-height: 0;
-	padding:0%;
-}
-tr{
-	line-height: 0;
-	width: 100%;
-	height:50%;
-
-}
-h1,h3,h5{
-	text-align:center;
-}
-
-.button-clear{
-	width: 33.3%;
-}
-
-.landing-page{
-	height:auto;
-	/*top:0;*/
-	text-align: center
-}
-.img-responsive{
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
-	width:100%;
-
-}
-#infoDivider{
-	vertical-align: center;
-	width:100%;
-	top:0;
-}
-#info {
-  font-size: 60px;
-  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
-  color: rgb(0, 0, 0);
-  line-height: 1.2;
-  text-align: center;
-}
-
-#infoFooter{
-	width:100%;
-	vertical-align: center;
-	margin-top:10%;
-
-
-}
-#minReq{
-	width:40%;
-
-}
-#minDiv{
-	text-align: center;
-	padding-bottom:15%;
-}
-#tables{
-  font-size: 22px;
-  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
-  color: rgb(0, 0, 0);
-  line-height: 1.2;
-  text-align: left;
-  padding: 10%;
-}
-#numbers{
- font-size: 40px;
-  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
-  color: rgb(3, 79, 255);
-  line-height: 1.2;
-  text-align: left;
-  padding-bottom:5%;
-  float:center;
-}
-#prices{
-  font-size: 50px;
-  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
-  color: rgb(0, 0, 0);
-  line-height: 1.2;
-  text-align: center;
-  padding:0%;
-  z-index: 14;
-}
-#days {
-  font-size: 30px;
-  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
-  color: rgb(0, 0, 0);
-  line-height: 1.2;
-  text-align: center;
-  padding:5%;
-}
-
-#games {
-  font-size: 30px;
-  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
-  color: rgb(0, 0, 0);
-  line-height: 1.2;
-  text-align: center;
-  padding:0%;
- }
-
-#hourPrice{
-  font-size: 30px;
-  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
-  color: rgb(3, 81, 255);
-  line-height: 1.2;
-  text-align: center;
-  padding:0%;
-
-}
-
-
-#reserveButton{
-	margin-top:10%;
-  margin-bottom:10%;
-}
-
-}
-#two {
-  font-size: 40px;
-  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
-  color: rgb(3, 79, 255);
-  line-height: 1.2;
-  text-align: center;
-  padding:5%;
-
-}
-
-
-
-#reserve {
-  font-size:60px;
-  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
-  color: rgb(0, 0, 0);
-  line-height: 1.2;
-  text-align: center;
-  padding:5%;
-
-}
-
-#resAltern{
-	padding-bottom: 10%;
-	padding-top: 15%;
-  text-align: center;
-  float:center;
-}
-
-.Pool_tables {
-  font-size: 30px;
-  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
-  color: rgb(0, 0, 0);
-  line-height: 1.2;
-  text-align: left;
-  padding:7%;
-}
-#minimum {
-  font-size: 30px;
-  font-family: 'Myriad Pro', 'Source Sans Pro', Arial;
-  color: rgb(0, 0, 0);
-  line-height: 1.2;
-  text-align: center;
-  padding-bottom: 10%;
-}
-
-
-/* Landing Page CSS */
-.info-page{
-	padding: 0%;
-	width: 100%;
-	height:50%;
-}
-.info-page-map{
-	width: 100%;
-	height:20em;
-	padding: 0%;
-	margin-top: 0%;
-
-}
-#map{
-	width: 100%;
-	/*height: 8em;*/
-	padding: 0%;
-	margin-top:0%;
-	/*margin-bottom:20%;*/
-}
-.info-page-det{
-	width:100%;
-	height:100%;
-	padding:0%;
-	position: center;
-	font-family: 'LemonMilk', 'Poppins';
-}
-#social-icon-bar{
-	width: 50%;
-	/*height:7em;*/
-	padding:10%;
-	border-collapse: collapse;
-}
-@media (max-width: 600px){
-	#social-icon-bar{
-		width: 100%;
-		/*height:7em;*/
-		padding:10%;
-		border-collapse: collapse;
-}
-}
-#social-bar{
-	margin-top:10%;
-	margin-bottom:20%;
-	height:40em;
-}
-.poolImg{
-	width: 100%;
-	height:11em;
-	padding:0%;
-	margin-top: 0%;
-}
-#shogunTxt{
-  font-size: 26px;
-  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
-  color: rgb(0, 0, 0);
-  line-height: 1.2;
-  text-align: left;
-}
-
-  #shogunHours{
-  font-size: 30px;
-  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
-  color: rgb(0, 0, 0);
-  line-height: 1.2;
-  text-align: left;
-}
-#shogunFood{
-  font-size:60px;
-  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
-  color: rgb(0, 0, 0);
-  line-height: 1.2;
-  text-align: center;
-  }
-#shogunLoc{
-  font-size: 24px;
-  font-family: 'Myriad Pro', 'Source Sans Pro', Arial;
-  color: rgb(1, 0, 0);
-  line-height: 1.2;
-  text-align: left;
-  }
-#menu{
-	text-align: center;
-}
-.foodDivider{
-	width:100%;
-	padding-top:10%;
-}
-
-.byobImg{
-	width:100%;
-	height:50%;
-	padding: 0%;
-}
-.menu-page{
-	text-align: center;
-	width: 100%;
-	padding-bottom:10%;
-	padding-top: 0%;
-}
-
-#shogun{
-	text-align: center;
-	padding-top:10%;
-}
-/* Reserve CSS */
-
-#shogunLogo{
-
-	width:%;
-	padding-bottom: 0%;
-	padding-top: 10%;
-}
-#bottleLogo{
-
-	width:%;
-
-	padding-bottom: 0%;
-	padding-top:0%;
-
-}
-.reserveImg1{
-	padding: 0%;
-	width:100%;
-	height:10em;
-	margin-top:80%;
-	z-index:8000;
-}
-.reserveImg2{
-	padding: 0%;
-	width:100%;
-	height:50%;
-	z-index: 9000;
-}
-
-#reserveDivider{
-	vertical-align: center;
-	width:100%;
-}
-#TTE-booknow-0Fuf-rjRDCI715JXYkATQx-iJMHfVS4HxMX1QGW9{
-	color:#fff;
-	vertical-align: center;
-}
-
-#resEmail{
-	width: 15%;
-	/*height: 5em;*/
-	float:center;
-}
-
-#orgTxt{
-	/*margin-left: 5%;*/
-	width:50%;
-	padding-bottom:10%;
-  /*margin-bottom:10%;*/
-}
-
-#orgIcon{
-	width:50%;
-	float: left;
-  padding-bottom: 0%;
-}
-
-
-
-#reserveButton2{
-	margin-top:%;
-	float:center;
-  padding-top:10%
-
-}
-#button{
-	text-align:center;
-	padding:0%;
-  margin-bottom: 5%;
-}
-
-
-
-/* Events CSS */
-.eventsImg{
-	padding: 0%;
-	width:100%;
-	height:8em;
-	margin-top: 10%;
-}
-#events-txt{
-  font-size: 80px;
-  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
-  color: rgb(0, 0, 0);
-  line-height: 1.2;
-  text-align: center;
-}
-
-.champion_row{
-	padding-top:0%;
-	text-align:center;
-	padding-bottom:5%;
-}
-
-#champions{
-	font-weight:bolder;
-	font-size: 40px;
-	line-height:1;
-	text-align: center-block;
-	margin:-50 auto 30 auto;
-	padding:5%;
-}
-
-
-#winners{
-  font-size: 24px;
-  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
-  color: rgb(0, 0, 0);
-  line-height: 1.2;
-  text-align: left;
-}
-/*Scaling for Desktop*/
-#upcoming{
-	width: 50%;
-	padding:5%;
-}
-#eventsPoster{
-	padding:0%;
-	width:35%;
-}
-#trophyPic{
-	width: 50%;
-	margin-top: 10%;
-  margin-bottom:5%;
-}
-#equipmentImg{
-	padding:5%;
-	vertical-align: center;
-	width:50%;
-}
-.managerImg{
-	width:35%;
-	padding:0%;
-	float:center;
-	vertical-align:center;
-}
-.teamImg{
-	width:75%;
-	padding:0%;
-	margin-bottom: 5%;
-  text-align: center;
-}
-.teamImgDiv{
-  text-align:center;
-  margin-top:10%;
-  margin-bottom: 0%;
-}
-.staffBan{
-	 width:30%;
-	 float:center;
-   margin-top:10%;
-}
-.staffBanner{
-  text-align: center;
-
-}
-.roy{
-  text-align: center;
-  float:center;
-}
-
-
-
-/*Scaling for Desktop*/
-/*Scale to 100% if in phone size:*/
-@media(max-width:600px){
-	#upcoming{
-		width: 100%;
-		padding:5%;
-	}
-	#eventsPoster{
-		padding:0%;
-		width:85%;
-	}
-	#trophyPic{
-		width: 100%;
-    margin-top:10%;
-	}
-	#equipmentImg{
-		padding:5%;
-		vertical-align: center;
-		width:100%;
-	}
-	.managerImg{
-		width:100%;
-		padding:5%;
-		float:center;
-		vertical-align:center;
-	}
-	.teamImg{
-		width:100%;
-		padding:0%;
-		margin-top:5%;
-		margin-bottom: 5%;
-	}
-	.staffBan{
-		 width:70%;
-		 vertical-align:center;
-		 margin: 5%;
-	}
-	.teamNames{
-		font-family: 'Myriad Pro', 'Source Sans Pro', Arial;
-		font-size: 17px;
-		text-align:center;
-		padding:3%;
-	}
-	#orgIcon{
-		width:100%;
-		float: left;
-	}
-}
-/*Scale to 100% if in phone size:*/
-#trophy{
-	text-align: center;
-}
-
-img.champ_pic{
-	margin: 0%;
-	border-radius: 50%;
-	width: 80%;
-	padding: 5%;
-	vertical-align: center;
-}
-
-.champ_name{
- font-weight: bold;
- font-size: 26px;
- text-align: center;
-}
-
-.champ_name2{
-  font-size: 26px;
-  text-align: center;
-
-}
-
-/* Equipment CSS */
-
-.equipment-page{
-	width: 100%;
-}
-.equipImgs{
-	text-align:center;
-}
-
-img.equipment_pic{
-	margin: 0%;
-	border-radius: 50%;
-	width: 75%;
-	vertical-align: center;
-}
-.aramith{
-	width:80%;
-	padding:0%;
-	float:center;
-	border-radius:100%;
-}
-.brunswick{
-	width:80%;
-	padding:0%;
-	border-radius:100%;
-	vertical-align: middle;
-	float:center;
-
-}
-.dufferin{
-	width: 80%;
-	padding:0%;
-	border-radius:0%;
-	float:center;
-}
-.equipmentImg{
-	width:100%;
-	padding:0%;
-	margin-top:10%;
-}
-.eightBall{
-	width:100%;
-	padding:0%;
-}
-
-/* Staff CSS */
-.staff-page{
-	padding:0%;
-	width:100%;
-
-}
-.staffImg{
-	width:100%;
-	padding:0%;
-	margin-top:10%;
-}
-.studManImg{
-	width:100%;
-	padding:0%;
-}
-.aboutDivider{
-	width:100%;
-}
-#aboutTxt {
-  font-size: 60px;
-  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
-  color: rgb(0, 0, 0);
-  line-height: 1.2;
-  text-align: center;
-  padding:5%;
-
-}
-#roy{
-	text-align: center;
-}
-#about{
-	text-align:center;
-}
-.footer{
-	width: 100%;
-	/*height: 30em;*/
-	background-color: #0e89e7;
-}
-#footerHours {
-  font-size: 50px;
-  font-family: 'LemonMilk', 'Poppins', Helvetica, Arial;
-  color: rgb(255, 255, 255);
-  line-height: 1.2;
-  text-align: center;
-  width:100%;
-
-}
-#footerDays1 {
-  font-size: 30px;
-  font-family: 'Myriad Pro', 'Source Sans Pro', Arial;
-  color: rgb(255, 255, 255);
-  line-height: 1.2;
-  text-align: right;
-  font-weight: 500px;
-	padding-right: 15%;
-  /*float:right;*/
-  width:100%;
-
-}
-
-#footerDays2 {
-  font-size: 30px;
-  font-family: 'Myriad Pro', 'Source Sans Pro', Arial;
-  color: rgb(255, 255, 255);
-  line-height: 1.2;
-  text-align: left;
-  width:100%;
-  font-weight: 300px;
-}
-#footerNumber{
-  font-size: 40px;
-  font-family: 'Myriad Pro', 'Source Sans Pro', Arial;
-  color: rgb(255, 255, 255);
-  line-height: 1.2;
-  text-align: center;
-  width:100%;
-  font-weight: 300px;
-  padding-right:5%;
-}
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all; }
+  .main-content table th {
+    font-weight: bold; }
+  .main-content table th, .main-content table td {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e9ebec; }
+.main-content dl {
+  padding: 0; }
+  .main-content dl dt {
+    padding: 0;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold; }
+  .main-content dl dd {
+    padding: 0;
+    margin-bottom: 1rem; }
+.main-content hr {
+  height: 2px;
+  padding: 0;
+  margin: 1rem 0;
+  background-color: #eff0f1;
+  border: 0; }
+
+@media screen and (min-width: 64em) {
+  .main-content {
+    max-width: 64rem;
+    padding: 2rem 6rem;
+    margin: 0 auto;
+    font-size: 1.1rem; } }
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  .main-content {
+    padding: 2rem 4rem;
+    font-size: 1.1rem; } }
+
+@media screen and (max-width: 42em) {
+  .main-content {
+    padding: 2rem 1rem;
+    font-size: 1rem; } }
+
+.site-footer {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: solid 1px #eff0f1; }
+
+.site-footer-owner {
+  display: block;
+  font-weight: bold; }
+
+.site-footer-credits {
+  color: #819198; }
+
+@media screen and (min-width: 64em) {
+  .site-footer {
+    font-size: 1rem; } }
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  .site-footer {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 42em) {
+  .site-footer {
+    font-size: 0.9rem; } }
