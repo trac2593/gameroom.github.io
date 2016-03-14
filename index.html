@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Poppins:700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <!--<link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet"/> -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+  <!-- <script src="//code.ionicframework.com/nightly/js/ionic.bundle.js"></script>-->
+  <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-messages.js"></script>-->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  <!-- This Section was placed in order to use bootstrap icons  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- This Section was placed in order to use bootstrap icons  -->
+
+  <!-- This Section was placed in order to access social media bootstrap icons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- This Section was placed in order to access social media bootstrap icons -->
+
+
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+  <!-- ionic/angularjs js -->
+  <!-- <script src="lib/ionic/js/ionic.bundle.js"></script>-->
+
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+
+  <!-- your app's js -->
+  <script src="js/app.js"></script>
+  <scipt src="script.js"></scipt>
+</head>
+
+<body>
+
+
+  <div class="navbar2" style="position: fixed;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-2 visbile-xs" id="hamburger">
+          <span class="glyphicon glyphicon-menu-hamburger" id="ham" ham="glyphicon glyphicon-menu-hamburger" close="glyphicon glyphicon-remove"></span>
+        </div>
+        <div class="col-xs-10 col-sm-6 col-md-6 col-lg-6" >
+          <a href="#here">
+            <p class="headerText">GAMEROOM</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="staff">
+
+      <div class="row">
+        <div class="col-xs-10 col-md-10 col-lg-10 " id="white">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-10 col-md-10 col-lg-10 " id="white2">
+        </div>
+      </div>
+
+      <div class="row" id="icons">
+        <div class="col-xs-8 col-sm-10 col-md-10 col-lg-10 col-xs-offset-0 col-md-offset-1 col-lg-offset-1" id="icons">
+          <div class="row">
+            <div class="col-xs-2 col-sm-1 col-md-1 col-lg-1 col-xs-offset-1 col-md-offset-0 col-lg-offset-0">
+              <a href="#info-page"><span class="glyphicon glyphicon-map-marker navIcons" ><h5 class="iconsText">info</h5></span>
+
+              </a>
+            </div>
+
+            <div class="col-xs-2 col-sm-1 col-md-1 col-lg-1">
+              <a href="#reservation"><span class="glyphicon glyphicon-bookmark navIcons" ><h5 class="iconsText">reserve</h5></span>
+
+              </a>
+            </div>
+
+            <div class="col-xs-2 col-sm-1 col-md-1 col-lg-1">
+              <a href="#menu"><span class="glyphicon glyphicon-cutlery navIcons" ><h5 class="iconsText">food</h5></span>
+
+              </a>
+            </div>
+
+            <div class="col-xs-2 col-sm-1 col-md-1 col-lg-1">
+              <a href="#events"><span class="glyphicon glyphicon-calendar navIcons" ><h5 class="iconsText">events</h5></span>
+
+              </a>
+            </div>
+            <div class="col-xs-2 col-sm-1 col-md-1 col-lg-1">
+              <a href="#about"><span class="glyphicon glyphicon-sunglasses navIcons"><h5 class="iconsText">about</h5></span>
+
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-8 col-md-10 col-lg-10 col-xs-offset-0 col-md-offset-0 col-lg-offset-0" id="white2">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-8 col-md-10 col-lg-10 col-xs-offset-0 col-md-offset-0 col-lg-offset-0" id="white">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="landing-page"  id = "here">
+    <div class="row">
+      <div class="col-xs-12 col-md-12 col-lg-12">
+        <video loop src="img/cinemagraph.mp4" autoplay id = "landing" class="hidden-xs" >
+        </div>
+        <div class="col-xs-12">
+        <img src="img/cinemagraph.jpg" class="visible-xs" id="landing">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div class="info-page" id="info-page">
+
+
+
+    <div class="row">
+      <div class="col-xs-12 col-md-12 col-lg-12">
+        <img src="img/infodesk.jpg" id="infoDividerD" class="hidden-xs" style="width:100%">
+        <img src="img/infomobile.jpg" id="infoDividerM" class="visible-xs" style="width:100%">
+      </div>
+    </div>
+    <div class="container">
+      <div class=" row">
+        <div class="col-xs-12 col-md-4 col-lg-4" id="infoHours">
+          <span><h2 class="text-center" id="prices">Hours</h2>
+            </span>
+          <span><h5 class="text-center" id="days" style="padding:0%"> M - F</h5></span>
+          <span> <h5 class="text-center" id="days" style="padding:0%">11a - 11p</h5></span>
+
+          <span> <h5 class="text-center" id="days" style="padding:0%">S - Su</h5></span>
+          <span> <h5 class="text-center" id="days" style="padding:0%">Reservation Only</h5></span>
+
+        </div>
+        <div class="col-xs-12 col-md-4 col-lg-4" id="infoHours">
+
+          <span><h2 class="text-center" id="prices">Price</h2></span>
+          <span><h5 class="text-center" id="games"> POOL</h5></span>
+          <span><h5 class="text-center" id="hourPrice"> $4/hour </h5></span>
+          <span><h5 class="text-center" id="games">PING PONG</h5></span>
+          <span><h5 class="text-center" id="hourPrice">$2/hour </h5></span>
+        </div>
+        <div class="col-xs-12 col-md-4 col-lg-4" id="infoHours">
+          <!-- <div class="center-block"> -->
+            <a href="https://www.google.com/maps/place/Shogun+of+La+Jolla/@32.8800079,-117.2390936,17z/data=!3m1!4b1!4m2!3m1!1s0x80dc06d869a3c4bd:0xb6363e71a61bcfa1" target="blank">
+              <img src="img/map.jpg" id="map">
+            </a>
+          <!-- </div> -->
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:10%">
+        <div class="col-xs-3 col-md-3 col-lg-3 col-md-offset-2 col-lg-offset-2">
+          <!-- col-md-1 col-lg-1 col-md-offset-4 col-lg-offset-4 -->
+          <a href="https://www.facebook.com/ucsdgameroom/?fref=ts" target="_blank">
+            <img src="img/facebookIcon.jpg" class="img-responsive" id="social-icon-bar">
+          </a>
+        </div>
+
+
+        <div class="col-xs-3 col-md-3 col-lg-3">
+          <!-- col-md-1 col-lg-1 -->
+          <a href="http://www.yelp.com/biz/ucsd-gameroom-la-jolla" target="_blank">
+            <img src="img/yelpIcon.jpg" class="img-responsive" id="social-icon-bar">
+          </a>
+
+        </div>
+
+        <div class="col-xs-3 col-md-3 col-lg-3">
+          <!-- col-md-1 col-lg-1 -->
+          <a href="mailto:gameroom@ucsd.edu">
+            <img src="img/emailIcon.jpg" class="img-responsive" id="social-icon-bar">
+          </a>
+
+        </div>
+
+
+        <div class="col-xs-3">
+          <!-- col-md-1 col-lg-1 -->
+          <a href="tel:+1858-534-0382">
+            <img src="img/phoneIcon.jpg" class="img-responsive visible-xs" id="social-icon-bar">
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-xs-12 col-md-12 col-lg-12">
+        <img src="img/infoFooter.jpg" id="infoFooter">
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="reservation-page" id="reservation">
+    <div class="row">
+      <div class="col-xs-12 col-md-12 col-lg-12">
+        <img src="img/reservedesk.jpg" id="reserveDivider" class="hidden-xs" styele="100%">
+        <img src="img/reservemobile.jpg" id="reserveDivider" class="visible-xs" styele="100%">
+      </div>
+    </div>
+
+    <div class="row center-text">
+      <h1 class="text-center" id="How_">How?</h1>
+      <h2 class="text-center" id="minimum">minimum requirements for a reservation:</h2>
+      <!--<div class="row">
+      <div class="col-xs-2 col-m-6 col-lg-6 col-xs-offset-4">
+        <h3 class="text-right" id="numbers">2</h3>
+        <h3 class="text-right" id="numbers">1</h3>
+      </div>
+      <div class="col-xs-5 col-md-6 col-lg-6">
+        <div class="Pool_tables"> Pool Tables</div>
+        <div class="Pool_tables"> Hour</div>
+      </div>
+    </div>-->
+      <div class="row" id="minDiv">
+        <div class="col-xs-12 col-md-12 col-lg-12">
+          <img src="img/minReq.jpg" id="minReq">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row" id="reserveButton1">
+      <div class="col-xs-12 col-md-12 col-lg-12" >
+        <!-- <div id="TTE-booknow-0Fuf-rjRDCI715JXYkATQx-iJMHfVS4HxMX1QGW9"></div>
+        <script src="//d3saea0ftg7bjt.cloudfront.net/bn/js/bn.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+          TTEBOOKNOW.init({
+            "targetDivId": "TTE-booknow-0Fuf-rjRDCI715JXYkATQx-iJMHfVS4HxMX1QGW9",
+            "cpgn": "0Fuf-rjRDCI715JXYkATQx-iJMHfVS4HxMX1QGW9"
+          });
+        </script> -->
+        <a href="https://10to8.com/book/sctfoz-free/" target="_blank">
+        <button type="button" class="btn- btn-primary btn-lg">BOOK NOW</button>
+        </a>
+      </div>
+    </div>
+      <div class="row" id="resAltern">
+        <div class="col-xs-12 col-sm-12 col-md- 4 col-lg-4 col-xs-offset-3 col-md-offset-1 col-lg-offset-2" style="text-align:center">
+
+          <h3 id="callTxt"> would you rather talk to a human? feel free to call or email to make a reservation</h3>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-5 col-md-offset-0 col-lg-offset-0" style="text-align:center">
+
+          <a href="mailto:gameroom@ucsd.edu">
+            <img src="img/emailIcon.jpg" class="img-responsive" id="resEmail">
+          </a>
+          <h3>(858) 534-0382</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12 col-xs-offset-2 col-md-offset-3 col-lg-offset-3">
+          <img src="img/orgTxt.jpg" id="orgTxt">
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-xs-4 col-md-4 col-lg-4 col-xs-offset-2 col-md-offset-3 col-lg-offset-3">
+          <img src="img/orgIcon.jpg" id="orgIcon">
+        </div>
+        <div class="col-xs-4 col-md-4 col-lg-4 col-xs-offset-0 col-md-offset-1 col-lg-offset-0">
+          <h3 id="resForm">fill out the reservation form below</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="button">
+      <div class="col-xs-12 col-md-5 col-lg-5 col-xs-offset-0 col-md-offset-4 col-lg-offset-4" id="reserveButton2">
+        <a href="img/GameroomReservationForm.pdf" target="_blank">
+        <button type="button" class="btn- btn-primary btn-lg">RESERVATION FORM</button>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="menu-page" id="menu">
+
+    <div class="row">
+      <img src="img/fooddesk.jpg" class="hidden-xs" style="width:100%;">
+      <img src="img/foodmobile.jpg" class="visible-xs" style="width:100%;">
+    </div>
+
+    <div class="row" id="shogun">
+      <div class="col-xs-12 xol-md-12 col-lg-6 col-xs-offset-0 col-md-offset-0 col-lg-offset-0">
+        <img src="img/shogun.jpg" id="shogunLogo">
+        <h3> the gameroom is located right next to shogun!</h3>
+      </div>
+
+      <div class="col-xs-12 col-md-12 col-lg-6">
+        <img src="img/bottle.jpg" id="bottleLogo">
+        <h3> not into sushi? feel free to bring your own food and drinks.</h3>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="events-page" id="events">
+    <div class="row">
+      <div class="center-block">
+        <img src="img/eventsdesk.jpg" class="hidden-xs" id="eventsDivider" style="width:100%">
+        <img src="img/eventsmobile.jpg" class="visible-xs" id="eventsDivider" style="width:100%">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <img src="img/upcoming.jpg" class="img-responsive" id="upcoming">
+      </div>
+    </div>
+
+
+    <div class="champions">
+      <div class="row">
+        <div class="col-xs-12">
+          <img src="img/eventsPoster.jpg" id="eventsPoster" class="img-responsive">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row" style="text-align:center">
+        <div class="col-xs-12 col-md-12 col-lg-12">
+          <img src="img/currentChampions.jpg" id="trophyPic">
+        </div>
+      </div>
+    </div>
+    <div class="row champion_row">
+      <div class="col-xs-12 col-md-4 col-lg-4">
+        <img src="img/winner1.jpg" class="champ_pic">
+        <h1 class="champ_name">Robin</h1>
+        <h1 class="champ_name2">1st Place</h1>
+        <h1 class="champ_name">Winter 2016</h1>
+          </h1>
+      </div>
+      <div class="col-xs-12 col-md-4 col-lg-4">
+        <img src="img/winner2.jpg" class="champ_pic">
+        <h1 class="champ_name">Tim</h1>
+        <h1 class="champ_name2">2nd Place</h1>
+        <h1 class="champ_name">Winter 2016<h1>
+        </h1>
+      </div>
+      <div class="col-xs-12 col-md-4 col-lg-4">
+        <img src="img/winner3.jpg" class="champ_pic">
+        <h1 class="champ_name"> Forrest</h1>
+        <h1 class="champ_name2">3rd Place</h1>
+        <h1 class="champ_name">Winter 2016</h1>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+  <div class="equipment-page" id="about">
+    <div class="row">
+
+      <img src="img/aboutdesk.jpg" class="hidden-xs" style="width:100%">
+      <img src="img/aboutmobile.jpg" class="visible-xs" style="width:100%">
+
+    </div>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <img src="img/equipmentTitle.jpg" class="img-responsive" id="equipmentImg">
+        <div class="row" id="equipImgs">
+          <div class="col-xs-12 col-md-4 col-lg-4">
+            <img src="img/aramith.png" class="equipment_pic">
+            <h2 style="text-align:center"><b>Aramith Billiard Balls</b></h2>
+            <h3 style="text-align:center">Outstanding performance and uncompromising quality.</h3>
+
+          </div>
+
+          <div class="col-xs-12 col-md-4 col-lg-4">
+            <img src="img/dufferin.png" class="equipment_pic">
+            <h2 style="text-align:center"><b>Dufferin Cues</b></h2>
+            <h3 style="text-align:center">Known for their legendary quality and perfect straightness.</h3>
+          </div>
+
+          <div class="col-xs-12 col-md-4 col-lg-4">
+            <img src="img/brunswick.png" class="equipment_pic">
+            <h2 style="text-align:center"><b>Brunswick Gold Crown 3</b> <b>Simonis 860 HR (Felted 2015)</b></h2>
+
+           <h3>Nine feet of tournament level playing space.</h3>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+    <div class="staff-page">
+      <div class="row">
+        <div class="col-xs-12 col-xs-offset-1 col-sm-12 col-sm-offset-4 col-md-12 col-md-offset-5 col-lg-12 col-lg-offset-4" class="staffBanner">
+          <img src="img/staff.jpg" class="staffBan">
+        </div>
+      </div>
+
+<div class="container">
+        <div class="row" id="roy" class="roy" style="text-align:center">
+          <div class="col-xs-12">
+            <img src="img/manager.jpg" class="managerImg">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12
+          col-sm-offset-0 col-md-offset-0 col-lg-offset-0" style="text-align:center">
+
+
+              <h2><b>Roy Barnea || Manager</b></h2>
+            <h4 id="aboutText">Located at the heart of UC San Diego, the Gameroom seeks to provide the best experience in pool, ping-pong and foosball.
+Our goal is to provide a friendly social environment for people of all ages to relax and destress from the pressures of student life.</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-xs-offset-0 teamImgDiv">
+          <div class="center-block">
+            <img src="img/studStaff.jpg" class="img-responsive" style="width:80%">
+        </div>
+      </div>
+      <div class="col-xs-12 col-xs-offset-1 ">
+        <p class="teamNames">Gurjeet C || Stephen T || Favi F || Andrea O || Omid T || Alexis B || Donna T || Roy B || Uriel M</p>
+      </div>
+    </div>
+    </div>
+
+
+
+    <div class="footer">
+      <div class="row">
+        <h1 style="text-align:center" id="footerHours">HOURS</h1>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-md-6 col-lg-6">
+          <h3 id="footerDays1">mon - fri</h3>
+          <h3 id="footerDays1">sat - sun</h3>
+        </div>
+        <div class="col-xs-6 col-md-6 col-lg-6">
+          <h3 id="footerDays2">11a - 11p</h3>
+          <h3 id="footerDays2">reservation only</h3>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-xs-3 col-md-3 col-lg-3 col-md-offset-1 col-lg-offset-1">
+          <!-- col-xs-offset-0 col-md-2 col-lg-2 col-lg-offset-2 centered -->
+          <a href="https://www.facebook.com/ucsdgameroom/?fref=ts" target="_blank">
+            <img src="img/facebookWhite.png" class="img-responsive" id="social-icon-bar">
+          </a>
+
+        </div>
+
+        <div class="col-xs-3">
+          <!-- col-md-2 col-lg-2 centered -->
+          <a href="http://www.yelp.com/biz/ucsd-gameroom-la-jolla" target="_blank">
+            <img src="img/yelpWhite.png" class="img-responsive" id="social-icon-bar">
+          </a>
+
+        </div>
+
+        <div class="col-xs-3">
+          <!-- col-md-2 col-lg-2 centered -->
+          <a href="mailto:gameroom@ucsd.edu">
+            <img src="img/emailWhite.png" class="img-responsive" id="social-icon-bar">
+          </a>
+
+        </div>
+
+        <div class="col-xs-3 visible-xs">
+          <!-- col-md-2 col-lg-2 center -->
+          <a href="tel:+1858-534-0382">
+            <img src="img/phoneWhite.png" class="img-responsive" id="social-icon-bar">
+          </a>
+        </div>
+      </div>
+          <div class = "hidden-xs">
+            <h3 id="footerNumber">858-534-0382</h3>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <div>
+    </ion-content>
+    </ion-pane>
+    <script>
+      $("#ham").click(function() {
+        $("#staff").slideToggle("slow");
+      });
+    </script>
+
+    <script>
+      $("#ham").click(function() {
+        if ($(this).attr('class') == $(this).attr('ham')) {
+          var a = $(this).attr('close');
+          $(this).attr('class', a);
+        } else {
+          var b = $(this).attr('ham');
+          $(this).attr('class', b);
+        }
+      });
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
