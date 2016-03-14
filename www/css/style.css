@@ -48,6 +48,19 @@ html,body{
 		margin-top: 0%;
 	}
 }*/
+#reserveButton1{
+  margin-left: 45%;
+  /*margin-left: 20%;*/
+  width: 100%;
+}
+#callTxt{
+	text-align:center;
+	padding-bottom: 5%;
+	width:50%;
+
+  /*margin-top:10%;
+  margin-bottom: 10%;*/
+}
 /*#################################### DESKTOP NAV STYLING START #################################*/
 @media(min-width:761px){
 
@@ -271,21 +284,22 @@ html,body{
 
     }
     #callTxt{
-    	text-align:center;
+    	text-align: center;
     	padding-bottom: 5%;
     	width:50%;
       margin-top:10%;
       margin-bottom: 10%;
     }
     #orgTxt{
+      margin-left: 8%;
     	float: center;
     	width:55%;
     	padding-bottom:10%;
       margin-bottom:10%;
     }
     #reserveButton1{
-      text-align: center;
-      margin-right:70%;
+      width: 30%;
+      margin: 0 auto;
     }
     #resForm{
     	width:100%;
@@ -653,10 +667,7 @@ h1,h3,h5{
 	height:50%;
 	z-index: 9000;
 }
-#reserveButton1{
-  text-align: center;
-  margin-left: 20%;
-}
+
 #reserveDivider{
 	vertical-align: center;
 	width:100%;
@@ -671,17 +682,10 @@ h1,h3,h5{
 	/*height: 5em;*/
 	float:center;
 }
-#callTxt{
-	text-align:right;
-	padding-bottom: 5%;
-	width:50%;
 
-  /*margin-top:10%;
-  margin-bottom: 10%;*/
-}
 #orgTxt{
-	margin-left: 5%;
-	width:55%;
+	/*margin-left: 5%;*/
+	width:50%;
 	padding-bottom:10%;
   /*margin-bottom:10%;*/
 }
